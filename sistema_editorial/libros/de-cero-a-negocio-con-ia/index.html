@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De Cero a Negocio con IA | Guía Práctica de 90 Días</title>
+  <meta name="description" content="Aprende a lanzar y ejecutar tu emprendimiento en 90 días usando Inteligencia Artificial. Sin programar y sin grandes presupuestos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-card: #111827;
+      --bg-card-hover: #1f2937;
+      --accent-orange: #f97316;
+      --accent-glow: rgba(249, 115, 22, 0.35);
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --border-color: rgba(255, 255, 255, 0.1);
+      --gradient-accent: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navbar */
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      background: linear-gradient(to right, #fff, var(--accent-orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: var(--gradient-accent);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--accent-glow);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 100px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(9, 13, 22, 0) 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.1);
+      color: var(--accent-orange);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .hero-title span {
+      color: var(--accent-orange);
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    .hero-price-tag {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .price-amount {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .price-period {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-media {
+      position: relative;
+      text-align: center;
+    }
+
+    .book-mockup {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(249, 115, 22, 0.2);
+      transition: transform 0.5s ease;
+    }
+
+    .book-mockup:hover {
+      transform: translateY(-8px) rotate(-1deg);
+    }
+
+    /* Benefits Section */
+    .features {
+      padding: 80px 0;
+      border-top: 1px solid var(--border-color);
+      background: rgba(17, 24, 39, 0.3);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(249, 115, 22, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .card-icon {
+      width: 54px;
+      height: 54px;
+      background: rgba(249, 115, 22, 0.1);
+      color: var(--accent-orange);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .card-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Curriculum Accordion */
+    .curriculum {
+      padding: 90px 0;
+    }
+
+    .part-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .part-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .part-info h4 {
+      font-size: 1.2rem;
+      color: var(--text-main);
+    }
+
+    .part-info p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .part-badge {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--accent-orange);
+    }
+
+    /* Modal for Preview */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .modal-content {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 700px;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 40px;
+      position: relative;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    /* CTA Section */
+    .cta-banner {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(17, 24, 39, 0.8) 100%);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      border-radius: 24px;
+      padding: 60px;
+      text-align: center;
+      margin: 80px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .hero-price-tag {
+        justify-content: center;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo">
+        🚀 Editorial IA | De Cero a Negocio
+      </div>
+      <a href="#comprar" class="btn-primary">Comprar $20 USD</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">🔥 Edición Digital 2026 • PDF Descargable</span>
+        <h1 class="hero-title">DE CERO A NEGOCIO <span>CON IA</span></h1>
+        <p class="hero-subtitle">Cómo lanzar y ejecutar tu emprendimiento en 90 días. Sin saber programar, sin grandes presupuestos y con un roadmap semana por semana.</p>
+        
+        <div class="hero-price-tag">
+          <span class="price-amount">$20 USD</span>
+          <span class="price-period">/ Pago único • Acceso de por vida</span>
+        </div>
+
+        <div class="hero-actions">
+          <button onclick="openCheckoutModal()" class="btn-primary">⚡ Comprar y Descargar Ahora</button>
+          <button onclick="openPreviewModal()" class="btn-secondary">📖 Leer Vista Previa</button>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="portada.jpg" alt="Portada De Cero a Negocio con IA" class="book-mockup">
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Qué aprenderás en este libro?</h2>
+        <p class="section-desc">Diseñado para personas que quieren resultados reales en lugar de teoría vacía.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Validación en 48 Horas</h3>
+          <p class="card-text">Aprende a encontrar dolores reales en el mercado y confirmar la disposición a pagar antes de invertir semanas construyendo.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">Stack Mínimo de IA</h3>
+          <p class="card-text">Las herramientas indispensables para redactar, diseñar y automatizar sin gastar más de $50 USD al mes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">Primeros 10 Clientes</h3>
+          <p class="card-text">La estrategia de prospección asistida por IA para cerrar tus primeras ventas sin gastar 1 solo dólar en publicidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum -->
+  <section class="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Estructura del Libro (13 Capítulos)</h2>
+        <p class="section-desc">Condensado en 4 partes fundamentales con ejercicios prácticos en cada una.</p>
+      </div>
+
+      <div class="part-list">
+        <div class="part-item">
+          <div class="part-info">
+            <h4>Parte 1: La Idea y la Validación</h4>
+            <p>Capítulos 1 al 3: Encuentra la oportunidad, valida en 48h y define tu oferta irresistible.</p>
+          </div>
+          <span class="part-badge">Semanas 1 y 2</span>
+        </div>
+
+        <div class="part-item">
+          <div class="part-info">
+            <h4>Parte 2: Construcción con IA</h4>
+            <p>Capítulos 4 al 7: Tu stack de IA, construye el MVP, automatiza y crea tu marca mínima.</p>
+          </div>
+          <span class="part-badge">Semanas 3 y 4</span>
+        </div>
+
+        <div class="part-item">
+          <div class="part-info">
+            <h4>Parte 3: Consigue tus Primeros Clientes</h4>
+            <p>Capítulos 8 al 10: Estrategia de outreach, contenido atractor y cierre consultivo de ventas.</p>
+          </div>
+          <span class="part-badge">Semanas 5 a 8</span>
+        </div>
+
+        <div class="part-item">
+          <div class="part-info">
+            <h4>Parte 4: Ejecución y Crecimiento</h4>
+            <p>Capítulos 11 al 13 + Cierre: Sistemas SOP, cuándo escalar y tu plan detallado de 90 días.</p>
+          </div>
+          <span class="part-badge">Semanas 9 a 12</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="container" id="comprar">
+    <div class="cta-banner">
+      <h2 style="font-size: 2.5rem; margin-bottom: 16px;">¡Empieza hoy tu emprendimiento con IA!</h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Recibe instantáneamente el libro digital en PDF en tu correo tras el pago seguro.</p>
+      <button onclick="openCheckoutModal()" class="btn-primary" style="font-size: 1.1rem; padding: 16px 36px;">🛒 Obtener Libro por $20 USD</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Editorial de Libros Digitales. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Vista Previa -->
+  <div class="modal" id="previewModal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closePreviewModal()">&times;</button>
+      <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--accent-orange);">Vista Previa Exclusiva</h3>
+      <h4 style="margin-bottom: 20px; font-size: 1.2rem;">Capítulo 1: Encuentra tu oportunidad de negocio</h4>
+      <div style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+        <p>Aquí es donde la mayoría de la gente se traba. Se sienta a "pensar en una idea" como si la idea perfecta fuera a aparecer de la nada, con luces de neón, mientras toman café. No funciona así.</p><br>
+        <p>Las buenas ideas de negocio casi nunca nacen de una lluvia de ideas; nacen de observar problemas reales que ya existen.</p><br>
+        <p>Antes de buscar "la idea", vale la pena entender que hay cuatro caminos principales para construir un negocio apalancado en IA:</p>
+        <ol style="margin-left: 20px; margin-top: 10px;">
+          <li><b>Productiza un servicio:</b> Tomas una habilidad que ya tienes y la conviertes en un servicio empaquetado.</li>
+          <li><b>Automatización o agente para un nicho:</b> Resuelves una tarea repetitiva específica.</li>
+          <li><b>Contenido y educación:</b> Enseñas algo apoyándote en IA para producir más rápido.</li>
+          <li><b>Producto digital ligero:</b> Una plantilla o mini-software que resuelve un problema puntual.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Checkout / Enlace de Plataforma -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-content" style="text-align: center;">
+      <button class="close-modal" onclick="closeCheckoutModal()">&times;</button>
+      <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--accent-orange);">Selecciona la Plataforma de Pago</h3>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">Puedes realizar tu compra segura a través de cualquiera de nuestras pasarelas oficiales:</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <a id="linkGumroad" href="https://gumroad.com" target="_blank" class="btn-primary" style="justify-content: center; width: 100%;">
+          💳 Comprar en Gumroad (Tarjeta de Crédito / PayPal)
+        </a>
+        <a id="linkHotmart" href="https://hotmart.com" target="_blank" class="btn-secondary" style="justify-content: center; width: 100%;">
+          🍊 Comprar en Hotmart (Pagos locales Latam / Tarjeta)
+        </a>
+        <a href="libro.pdf" download class="btn-secondary" style="justify-content: center; width: 100%; border-color: rgba(249, 115, 22, 0.4);">
+          📥 Descarga Directa de Prueba (Local)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openPreviewModal() {
+      document.getElementById('previewModal').style.display = 'flex';
+    }
+    function closePreviewModal() {
+      document.getElementById('previewModal').style.display = 'none';
+    }
+    function openCheckoutModal() {
+      document.getElementById('checkoutModal').style.display = 'flex';
+    }
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').style.display = 'none';
+    }
+
+    // Configurar enlaces si el usuario los reemplaza en el futuro
+    const GUMROAD_LINK = "#"; // Reemplazar con link de Gumroad cuando esté creado
+    const HOTMART_LINK = "#"; // Reemplazar con link de Hotmart cuando esté creado
+  </script>
+</body>
+</html>

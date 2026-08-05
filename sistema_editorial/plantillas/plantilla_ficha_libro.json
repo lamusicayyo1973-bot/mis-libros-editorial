@@ -1,0 +1,26 @@
+{
+  "id": "slug-del-libro",
+  "titulo": "TÍTULO DEL NUEVO LIBRO",
+  "subtitulo": "Subtítulo descriptivo del nuevo libro",
+  "categoria": "Categoría / Nicho",
+  "precio_usd": 20.00,
+  "formato": "eBook PDF Digital",
+  "archivo_pdf": "libro.pdf",
+  "portada": "portada.jpg",
+  "resumen_corto": "Resumen de 2 líneas del libro para usar en subtítulos y redes.",
+  "puntos_clave": [
+    "Beneficio clave 1",
+    "Beneficio clave 2",
+    "Beneficio clave 3",
+    "Beneficio clave 4"
+  ],
+  "copy_ventas": {
+    "headline": "¿Problema principal que resuelve el libro?",
+    "subheadline": "Promesa principal o transformación alcanzable.",
+    "cuerpo": "Texto introductorio de ventas para convencer al comprador.",
+    "modulos": [
+      { "titulo": "Parte 1: Título de la Parte 1", "capitulos": "Capítulos 1 a 3" },
+      { "titulo": "Parte 2: Título de la Parte 2", "capitulos": "Capítulos 4 a 6" }
+    ]
+  }
+}

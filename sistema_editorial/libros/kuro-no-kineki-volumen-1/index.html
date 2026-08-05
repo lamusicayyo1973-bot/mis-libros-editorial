@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuro no Kineki (Ecos de Tinta Negra) Vol 1 | Nicolás Noguera</title>
+  <meta name="description" content="Kuro no Kineki Vol 1: El Precio del Primer Paso. Novela ligera e ilustrada de fantasía oscura y manga por Nicolás Noguera.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07050d;
+      --bg-card: #130e24;
+      --bg-card-hover: #1e1638;
+      --accent-purple: #a855f7;
+      --accent-glow: rgba(168, 85, 247, 0.4);
+      --text-main: #faf5ff;
+      --text-muted: #a8a29e;
+      --border-color: rgba(168, 85, 247, 0.2);
+      --gradient-accent: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background: rgba(7, 5, 13, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      background: linear-gradient(to right, #fff, var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-primary {
+      background: var(--gradient-accent);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--accent-glow);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+    .hero { padding: 80px 0 100px; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .badge {
+      display: inline-block;
+      background: rgba(168, 85, 247, 0.1);
+      color: var(--accent-purple);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero-title { font-size: 3.2rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800; }
+    .hero-title span { color: var(--accent-purple); }
+    .hero-subtitle { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 32px; }
+    .price-amount { font-size: 3rem; font-weight: 800; color: var(--text-main); }
+    .book-mockup {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 40px rgba(168, 85, 247, 0.3);
+    }
+    .features { padding: 80px 0; border-top: 1px solid var(--border-color); background: rgba(19, 14, 36, 0.4); }
+    .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+    .card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 32px; }
+    .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 1000; justify-content: center; align-items: center; padding: 20px; }
+    .modal-content { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; width: 100%; max-width: 700px; max-height: 85vh; overflow-y: auto; padding: 40px; position: relative; }
+    .close-modal { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: #fff; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; }
+    footer { border-top: 1px solid var(--border-color); padding: 40px 0; text-align: center; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo">⚔️ Editorial Nicolás Noguera | Kuro no Kineki</div>
+      <a href="#comprar" class="btn-primary">Comprar $20 USD</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">⚔️ Manga / Light Novel • Fantasía Oscura</span>
+        <h1 class="hero-title">KURO NO KINEKI <span>VOL. 1</span></h1>
+        <p class="hero-subtitle"><i>"Para recordar quién eres, primero debes olvidar lo que más amabas."</i><br><br>Sumérgete en el primer volumen de la aclamada saga de fantasía oscura ilustrada por Nicolás Noguera. 5 Capítulos intensos, magia de tinta y batallas épicas.</p>
+        
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;">
+          <span class="price-amount">$20 USD</span>
+          <span style="color: var(--text-muted);">/ Pago único • Entrega digital ilustrada</span>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button onclick="openCheckoutModal()" class="btn-primary">⚡ Comprar y Descargar Ahora</button>
+          <button onclick="openPreviewModal()" class="btn-secondary">📖 Leer Capítulo 1</button>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <img src="portada.jpg" alt="Portada Kuro no Kineki Vol 1" class="book-mockup">
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Ilustraciones y Escenas del Libro</h2>
+        <p style="color: var(--text-muted);">Arte conceptual animé en alta definición e incluye los prompts oficiales de IA.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px;">
+        <img src="escena_1.jpg" alt="Escena 1 Kuro no Kineki" style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+        <img src="escena_climax.jpg" alt="Escena Clímax Kuro no Kineki" style="width: 100%; border-radius: 16px; border: 1px solid var(--border-color);">
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div style="width: 48px; height: 48px; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">🗡️</div>
+          <h3 style="margin-bottom: 12px;">Relicario de Tinta</h3>
+          <p style="color: var(--text-muted);">Magia oscura donde cada técnica desatada exige sacrificar un fragmento de tus propios recuerdos.</p>
+        </div>
+        <div class="card">
+          <div style="width: 48px; height: 48px; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">🏙️</div>
+          <h3 style="margin-bottom: 12px;">Aetheria vs Sector Cero</h3>
+          <p style="color: var(--text-muted);">El contraste entre la despiadada Ciudad Flotante y los barrios bajos habitados por los 'Huecos'.</p>
+        </div>
+        <div class="card">
+          <div style="width: 48px; height: 48px; background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px;">🎨</div>
+          <h3 style="margin-bottom: 12px;">Prompts Incluidos</h3>
+          <p style="color: var(--text-muted);">Incluye los prompts oficiales en inglés para Midjourney/Stable Diffusion de cada escena del tomo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Vista Previa -->
+  <div class="modal" id="previewModal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closePreviewModal()">&times;</button>
+      <h3 style="font-size: 1.8rem; margin-bottom: 10px; color: var(--accent-purple);">Vista Previa Exclusiva</h3>
+      <h4 style="margin-bottom: 20px; font-size: 1.2rem;">Capítulo 1: El Precio del Primer Paso</h4>
+      <div style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+        <p>El frío del metal fundido fue lo primero que sintió. Cuando Kael abrió los ojos, un dolor punzante le atravesó el cráneo. A su alrededor no había más que ruinas de bronce, columnas caídas y una niebla densa que olía a ozono y sangre.</p><br>
+        <p>En su mano derecha apretaba con fuerza el mango de una daga de hierro oscuro... al mirarse en el agua, su ojo derecho brillaba con un grabado rúnico en forma de engranaje blanco.</p><br>
+        <p><i>"Para recordar quién eres, primero debes olvidar lo que más amabas."</i></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Checkout -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-content" style="text-align: center;">
+      <button class="close-modal" onclick="closeCheckoutModal()">&times;</button>
+      <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--accent-purple);">Comprar Kuro no Kineki Vol 1</h3>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">Recibe el eBook ilustrado en formato Word (.docx) y PDF al instante.</p>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <a href="libro.docx" download class="btn-primary" style="justify-content: center; width: 100%;">
+          📥 Descarga Directa del Manuscrito Ilustrado (.docx)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Editorial Nicolás Noguera. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function openPreviewModal() { document.getElementById('previewModal').style.display = 'flex'; }
+    function closePreviewModal() { document.getElementById('previewModal').style.display = 'none'; }
+    function openCheckoutModal() { document.getElementById('checkoutModal').style.display = 'flex'; }
+    function closeCheckoutModal() { document.getElementById('checkoutModal').style.display = 'none'; }
+  </script>
+</body>
+</html>
