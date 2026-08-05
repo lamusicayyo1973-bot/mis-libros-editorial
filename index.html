@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Editorial Nicolás Noguera | Mis Libros Digitales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: rgba(255,255,255,0.08);
+      --accent: #f97316;
+      --accent-cyan: #0ea5e9;
+      --accent-purple: #a855f7;
+      --accent-gold: #eab308;
+      --accent-sky: #38bdf8;
+      --text: #f9fafb;
+      --text-sub: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+    .container { max-width: 1300px; margin: 0 auto; }
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; }
+    .badge-total {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-sky);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .book-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    .book-card:hover { transform: translateY(-4px); }
+    .cover-container { height: 200px; background: #1e293b; overflow: hidden; }
+    .cover-img { width: 100%; height: 100%; object-fit: cover; }
+    .book-details { padding: 16px; flex: 1; display: flex; flex-direction: column; }
+    .book-title { font-size: 1.1rem; font-family: 'Outfit', sans-serif; margin-bottom: 4px; }
+    .book-meta { font-size: 0.8rem; color: var(--text-sub); margin-bottom: 12px; }
+    .price-tag { font-size: 1.3rem; font-weight: 800; color: var(--accent); margin-bottom: 16px; }
+    .actions { margin-top: auto; display: flex; gap: 8px; }
+    .btn { flex: 1; padding: 8px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; font-size: 0.8rem; }
+    .btn-main { background: var(--accent); color: #fff; }
+    .btn-sub { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>📚 Catálogo Editorial Nicolás Noguera</h1>
+        <p style="color: var(--text-sub); margin-top: 4px;">Sistema de Libros Digitales, Mangas y Trilogías con Publicación Express</p>
+      </div>
+      <span class="badge-total">5 Libros Publicados (Trilogía Completa)</span>
+    </header>
+
+    <h2>Catálogo Oficial de Títulos (5 Obras)</h2>
+    
+    <div class="grid">
+      <!-- Libro 1 -->
+      <div class="book-card" style="border-color: rgba(249, 115, 22, 0.3);">
+        <div class="cover-container">
+          <img src="libros/de-cero-a-negocio-con-ia/portada.jpg" alt="De Cero a Negocio con IA" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">De Cero a Negocio con IA</div>
+          <div class="book-meta">Guía Práctica • 90 Días • Nicolás Noguera</div>
+          <div class="price-tag">$20.00 USD</div>
+          <div class="actions">
+            <a href="libros/de-cero-a-negocio-con-ia/index.html" target="_blank" class="btn btn-main">🌐 Landing</a>
+            <a href="libros/de-cero-a-negocio-con-ia/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Libro 2 -->
+      <div class="book-card" style="border-color: rgba(14, 165, 233, 0.3);">
+        <div class="cover-container">
+          <img src="libros/el-algoritmo-personal/portada.jpg" alt="El Algoritmo Personal" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">El Algoritmo Personal</div>
+          <div class="book-meta">Desarrollo Personal • Nicolás Noguera</div>
+          <div class="price-tag" style="color: var(--accent-cyan);">$20.00 USD</div>
+          <div class="actions">
+            <a href="libros/el-algoritmo-personal/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-cyan);">🌐 Landing</a>
+            <a href="libros/el-algoritmo-personal/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Libro 3 -->
+      <div class="book-card" style="border-color: rgba(168, 85, 247, 0.4);">
+        <div class="cover-container">
+          <img src="libros/kuro-no-kineki-volumen-1/portada.jpg" alt="Kuro no Kineki Vol 1" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Kuro no Kineki (Vol 1)</div>
+          <div class="book-meta">Manga • Fantasía Oscura • Nicolás Noguera</div>
+          <div class="price-tag" style="color: var(--accent-purple);">$20.00 USD</div>
+          <div class="actions">
+            <a href="libros/kuro-no-kineki-volumen-1/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-purple);">🌐 Landing</a>
+            <a href="libros/kuro-no-kineki-volumen-1/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Libro 4 -->
+      <div class="book-card" style="border-color: rgba(234, 179, 8, 0.4);">
+        <div class="cover-container">
+          <img src="libros/kuro-no-kineki-volumen-2/portada.jpg" alt="Kuro no Kineki Vol 2" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Kuro no Kineki (Vol 2)</div>
+          <div class="book-meta">Manga • Clímax • Nicolás Noguera</div>
+          <div class="price-tag" style="color: var(--accent-gold);">$20.00 USD</div>
+          <div class="actions">
+            <a href="libros/kuro-no-kineki-volumen-2/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-gold);">🌐 Landing</a>
+            <a href="libros/kuro-no-kineki-volumen-2/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Libro 5 -->
+      <div class="book-card" style="border-color: rgba(56, 189, 248, 0.4);">
+        <div class="cover-container">
+          <img src="libros/kuro-no-kineki-volumen-3/portada.jpg" alt="Kuro no Kineki Vol 3" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Kuro no Kineki (Vol 3)</div>
+          <div class="book-meta">Manga • Gran Final • Nicolás Noguera</div>
+          <div class="price-tag" style="color: var(--accent-sky);">$20.00 USD</div>
+          <div class="actions">
+            <a href="libros/kuro-no-kineki-volumen-3/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-sky);">🌐 Landing</a>
+            <a href="libros/kuro-no-kineki-volumen-3/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
