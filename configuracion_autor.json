@@ -6,7 +6,7 @@
     "pais": "Argentina"
   },
   "datos_bancarios": {
-    "banco": "Banco de la Nación Argentina (BNA+ / Cuenta DNI)",
+    "banco": "Banco de la Provincia de Buenos Aires (Cuenta DNI / Banco Provincia)",
     "codigo_banco": "014",
     "cbu": "0140017503401755100235",
     "tipo_cuenta": "Caja de Ahorro en Pesos / Dólares"
@@ -14,11 +14,11 @@
   "plataformas": {
     "gumroad": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "CBU Registrado - Pendiente de Verificación Automática"
+      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI)"
     },
     "amazon_kdp": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "CBU Registrado - Pendiente de Verificación Automática"
+      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI)"
     }
   }
 }
