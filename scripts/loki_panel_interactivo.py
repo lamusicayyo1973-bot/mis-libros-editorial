@@ -22,7 +22,7 @@ from flask import Flask, render_template_string, request, jsonify
 
 app = Flask(__name__)
 
-BASE_DIR = Path(r"c:\Users\nicol\Downloads\MIS LIBROS")
+BASE_DIR = Path(r"C:\Proyectos\mis-libros-editorial")
 BOOKS_DIR = BASE_DIR / "libros"
 CONFIG_FILE = BASE_DIR / "configuracion_autor.json"
 
