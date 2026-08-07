@@ -1,0 +1,24 @@
+{
+  "autor": {
+    "nombre_completo": "Alberto Nicolás Noguera",
+    "nombre_artistico_portadas": "NICOLÁS NOGUERA",
+    "cuil_dni": "20-23524683-0",
+    "pais": "Argentina"
+  },
+  "datos_bancarios": {
+    "banco": "Banco de la Nación Argentina (BNA+ / Cuenta DNI)",
+    "codigo_banco": "014",
+    "cbu": "0140017503401755100235",
+    "tipo_cuenta": "Caja de Ahorro en Pesos / Dólares"
+  },
+  "plataformas": {
+    "gumroad": {
+      "precio_sugerido_usd": 20.00,
+      "estado_payout": "CBU Registrado - Pendiente de Verificación Automática"
+    },
+    "amazon_kdp": {
+      "precio_sugerido_usd": 20.00,
+      "estado_payout": "CBU Registrado - Pendiente de Verificación Automática"
+    }
+  }
+}
