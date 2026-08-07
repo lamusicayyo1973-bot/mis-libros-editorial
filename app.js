@@ -28,45 +28,6 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
-    id: "oni-no-ketsuryu-volumen-1",
-    titulo: "Oni no Ketsuryū — Vol. 1",
-    subtitulo: "La Noche de las Hojas Rotas",
-    categoria: "tecnologia",
-    categoria_label: "Manga Dark Fantasy",
-    precio_usd: 20.00,
-    precio_ars: 26000,
-    portada: "libros/oni-no-ketsuryu-volumen-1/portada.jpg",
-    resumen: "Ren forja una katana de cristal negro tras la masacre de su aldea. 15 ilustraciones exclusivas en 8k por Nicolás Noguera.",
-    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
-    link_int: "https://payhip.com/NicolasNogueraEditorial"
-  },
-  {
-    id: "oni-no-ketsuryu-volumen-2",
-    titulo: "Oni no Ketsuryū — Vol. 2",
-    subtitulo: "El Examen de la Montaña Sombría",
-    categoria: "tecnologia",
-    categoria_label: "Manga Dark Fantasy",
-    precio_usd: 20.00,
-    precio_ars: 26000,
-    portada: "libros/oni-no-ketsuryu-volumen-2/portada.jpg",
-    resumen: "La prueba final entre la niebla del monte Fujikane. 15 ilustraciones exclusivas en 8k.",
-    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
-    link_int: "https://payhip.com/NicolasNogueraEditorial"
-  },
-  {
-    id: "oni-no-ketsuryu-volumen-3",
-    titulo: "Oni no Ketsuryū — Vol. 3",
-    subtitulo: "El Tren de las Sombras",
-    categoria: "tecnologia",
-    categoria_label: "Manga Dark Fantasy",
-    precio_usd: 20.00,
-    precio_ars: 26000,
-    portada: "libros/oni-no-ketsuryu-volumen-3/portada.jpg",
-    resumen: "La batalla sobre rieles a alta velocidad contra la horda demoníaca. 15 ilustraciones exclusivas en 8k.",
-    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
-    link_int: "https://payhip.com/NicolasNogueraEditorial"
-  },
-  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
@@ -75,33 +36,33 @@ const BOOKS_DATA = [
     precio_usd: 20.00,
     precio_ars: 26000,
     portada: "libros/kuro-no-kineki-volumen-1/portada.jpg",
-    resumen: "Kael despierta en la fosa de bronce con un engranaje rúnico en la pupila. 15 ilustraciones exclusivas en 8k.",
+    resumen: "Para recordar quién eres, primero debes olvidar lo que más amabas. El primer volumen oficial de la serie steampunk por Nicolás Noguera.",
     link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
     id: "kuro-no-kineki-volumen-2",
     titulo: "Kuro no Kineki — Vol. 2",
-    subtitulo: "El Choque de los Tres Soles",
+    subtitulo: "La Trinidad de las Tres Dagas",
     categoria: "tecnologia",
     categoria_label: "Manga Steampunk",
     precio_usd: 20.00,
     precio_ars: 26000,
     portada: "libros/kuro-no-kineki-volumen-2/portada.jpg",
-    resumen: "La caída de la Ciudad Flotante de Aetheria. 15 ilustraciones exclusivas en 8k.",
+    resumen: "El apasionante desenlace de la batalla por Aetheria. La trinidad de las tres dagas y el descenso de la Ciudad Flotante por Nicolás Noguera.",
     link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
     id: "kuro-no-kineki-volumen-3",
     titulo: "Kuro no Kineki — Vol. 3",
-    subtitulo: "El Despertar de los Creadores",
+    subtitulo: "El Continente de Plata",
     categoria: "tecnologia",
     categoria_label: "Manga Steampunk",
     precio_usd: 20.00,
     precio_ars: 26000,
     portada: "libros/kuro-no-kineki-volumen-3/portada.jpg",
-    resumen: "El viaje en el Océano de Tinta Plateada hacia el Continente Sellado. 15 ilustraciones exclusivas en 8k.",
+    resumen: "El desenlace definitivo de la épica trilogía steampunk. El viaje al Continente de Plata y el Lienzo Blanco por Nicolás Noguera.",
     link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   }
@@ -160,20 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
-      const activeFilter = document.querySelector('.filter-btn.active');
-      const category = activeFilter ? activeFilter.dataset.category : 'all';
-      renderBooks(category, e.target.value);
+      renderBooks('all', e.target.value);
     });
   }
 
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const category = btn.dataset.category;
-      const searchVal = searchInput ? searchInput.value : '';
-      renderBooks(category, searchVal);
+  const categoryButtons = document.querySelectorAll('.cat-btn');
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      categoryButtons.forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      const category = e.target.dataset.category || 'all';
+      renderBooks(category, searchInput ? searchInput.value : '');
     });
   });
 });
