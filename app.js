@@ -93,6 +93,19 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-6",
+    titulo: "Oni no Ketsuryū — Vol. 6",
+    subtitulo: "Las Catacumbas del Olvido",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-6/portada.jpg",
+    resumen: "El secreto de la Marca del Sol, la batalla contra el Primer Lunar en las catacumbas y el inicio del Castillo Infinito. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
