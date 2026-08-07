@@ -145,6 +145,19 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-10",
+    titulo: "Oni no Ketsuryū — Vol. 10",
+    subtitulo: "El Amanecer del Acero Santo (Gran Final)",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-10/portada.jpg",
+    resumen: "El epílogo conmovedor tras la victoria, la disolución del Gremio Cuervo y la reencarnación de los hermanos en el Tokio moderno. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
