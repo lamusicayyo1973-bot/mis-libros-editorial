@@ -11,26 +11,21 @@
     "cbu": "0140017503401755100235",
     "tipo_cuenta": "Caja de Ahorro en Pesos / Dólares"
   },
+  "libros_publicados": {
+    "de-cero-a-negocio-con-ia": {
+      "payhip_link": "https://payhip.com/b/DpFWs",
+      "precio_usd": 20.00,
+      "estado": "ENVIVO_Y_DISPONIBLE"
+    }
+  },
   "seguridad_stripe": {
     "stripe_backup_code": "rbup-tuyz-klbq-rntz-yuon",
     "estado_autenticacion": "Autenticación de dos factores configurada y activa"
   },
   "plataformas": {
-    "gumroad": {
-      "precio_sugerido_usd": 20.00,
-      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI) - ACTIVO"
-    },
     "payhip": {
-      "precio_sugerido_usd": 20.00,
-      "estado_payout": "PayPal Vinculado y Activo"
-    },
-    "hotmart": {
-      "precio_sugerido_usd": 20.00,
-      "estado_payout": "Productos Creados - Cobro CBU tras 1º venta"
-    },
-    "amazon_kdp": {
-      "precio_sugerido_usd": 20.00,
-      "estado_payout": "En trámite de verificación DNI (baa-customer-appeal@amazon.com)"
+      "tienda_url": "https://payhip.com/NicolasNogueraEditorial",
+      "estado": "ACTIVA_CON_PRODUCTO_PUBLICADO"
     }
   }
 }
