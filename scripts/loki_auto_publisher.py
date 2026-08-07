@@ -51,9 +51,10 @@ PLATAFORMAS_URLS = {
 }
 
 def procesar_carpeta_ingresada(path_carpeta_origen):
-    path_origen = Path(path_carpeta_origen).resolve()
+    raw_clean = str(path_carpeta_origen).strip().strip('"').strip("'")
+    path_origen = Path(raw_clean).resolve()
     if not path_origen.exists() or not path_origen.is_dir():
-        print(f"[ERROR] La carpeta especificada no existe: {path_carpeta_origen}")
+        print(f"[ERROR] La carpeta especificada no existe: {raw_clean}")
         return None
 
     print(f"\n[LOKI] Escaneando carpeta: {path_origen}")
