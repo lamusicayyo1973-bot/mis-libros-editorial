@@ -18,15 +18,19 @@
   "plataformas": {
     "gumroad": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI)"
+      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI) - ACTIVO"
     },
     "payhip": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "Stripe Vinculado y Activo"
+      "estado_payout": "PayPal Vinculado y Activo"
+    },
+    "hotmart": {
+      "precio_sugerido_usd": 20.00,
+      "estado_payout": "Productos Creados - Cobro CBU tras 1º venta"
     },
     "amazon_kdp": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "En trámite de verificación DNI"
+      "estado_payout": "En trámite de verificación DNI (baa-customer-appeal@amazon.com)"
     }
   }
 }
