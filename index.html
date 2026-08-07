@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Editorial Nicolás Noguera | Mis Libros Digitales</title>
+  <title>Editorial Noguera | Publicaciones Oficiales de Nicolás Noguera</title>
+  <meta name="description" content="Sello editorial e infraestructura digital oficial de Nicolás Noguera. Libros sobre Inteligencia Artificial, Automatización Avanzada, Productividad y Mangas Exclusivos.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
       --accent-cyan: #0ea5e9;
       --accent-purple: #a855f7;
       --accent-gold: #eab308;
-      --accent-sky: #38bdf8;
+      --accent-green: #10b981;
       --text: #f9fafb;
       --text-sub: #9ca3af;
     }
@@ -35,20 +36,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
     }
     h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; }
-    .badge-total {
-      background: rgba(56, 189, 248, 0.15);
-      color: var(--accent-sky);
-      padding: 6px 16px;
+    .badge-live {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-green);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 8px 18px;
       border-radius: 20px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.9rem;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
       margin-top: 30px;
     }
     .book-card {
@@ -58,180 +62,207 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, border-color 0.3s ease;
     }
-    .book-card:hover { transform: translateY(-4px); }
-    .cover-container { height: 200px; background: #1e293b; overflow: hidden; }
+    .book-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); }
+    .cover-container { height: 260px; background: #1e293b; overflow: hidden; position: relative; }
     .cover-img { width: 100%; height: 100%; object-fit: cover; }
-    .book-details { padding: 16px; flex: 1; display: flex; flex-direction: column; }
-    .book-title { font-size: 1.1rem; font-family: 'Outfit', sans-serif; margin-bottom: 4px; }
-    .book-meta { font-size: 0.8rem; color: var(--text-sub); margin-bottom: 12px; }
-    .price-tag { font-size: 1.3rem; font-weight: 800; color: var(--accent); margin-bottom: 16px; }
-    .actions { margin-top: auto; display: flex; gap: 8px; }
-    .btn { flex: 1; padding: 8px; border-radius: 8px; text-align: center; text-decoration: none; font-weight: 600; font-size: 0.8rem; }
-    .btn-main { background: var(--accent); color: #fff; }
-    .btn-sub { background: rgba(255,255,255,0.05); color: var(--text); border: 1px solid var(--border); }
+    .book-details { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .book-title { font-size: 1.2rem; font-family: 'Outfit', sans-serif; margin-bottom: 6px; }
+    .book-meta { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 14px; }
+    .price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .price-tag-usd { font-size: 1.3rem; font-weight: 800; color: #38bdf8; }
+    .price-tag-ars { font-size: 0.95rem; font-weight: 700; color: var(--accent-green); }
+    .actions-grid { display: flex; flex-direction: column; gap: 8px; margin-top: auto; }
+    .btn-buy-arg { background: linear-gradient(135deg, #10b981, #059669); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.85rem; }
+    .btn-buy-int { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.85rem; }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <div>
-        <h1>📚 Catálogo Editorial Nicolás Noguera</h1>
-        <p style="color: var(--text-sub); margin-top: 4px;">Sistema de Libros Digitales, Mangas y Trilogías con Publicación Express</p>
+        <h1>📚 Editorial Noguera — Catálogo Oficial</h1>
+        <p style="color: var(--text-sub); margin-top: 4px;">Publicaciones Digitales Oficiales por Alberto Nicolás Noguera</p>
       </div>
-      <span class="badge-total">9 Libros Publicados (Catálogo Oficial)</span>
+      <span class="badge-live">🌐 Web Oficial Vercel Live: Active</span>
     </header>
 
-    <h2>Catálogo Oficial de Títulos (9 Obras)</h2>
+    <h2>Catálogo Oficial de 9 Libros Publicados</h2>
     
     <div class="grid">
       <!-- Libro 1 -->
-      <div class="book-card" style="border-color: rgba(249, 115, 22, 0.3);">
+      <div class="book-card" style="border-color: rgba(249, 115, 22, 0.4);">
         <div class="cover-container">
           <img src="libros/de-cero-a-negocio-con-ia/portada.jpg" alt="De Cero a Negocio con IA" class="cover-img">
         </div>
         <div class="book-details">
           <div class="book-title">De Cero a Negocio con IA</div>
           <div class="book-meta">Guía Práctica • 90 Días • Nicolás Noguera</div>
-          <div class="price-tag">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/de-cero-a-negocio-con-ia/index.html" target="_blank" class="btn btn-main">🌐 Landing</a>
-            <a href="libros/de-cero-a-negocio-con-ia/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/productos/de-cero-a-negocio-con-ia" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/b/DpFWs" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
           </div>
         </div>
       </div>
 
       <!-- Libro 2 -->
-      <div class="book-card" style="border-color: rgba(14, 165, 233, 0.3);">
+      <div class="book-card" style="border-color: rgba(56, 189, 248, 0.4);">
         <div class="cover-container">
           <img src="libros/el-algoritmo-personal/portada.jpg" alt="El Algoritmo Personal" class="cover-img">
         </div>
         <div class="book-details">
           <div class="book-title">El Algoritmo Personal</div>
-          <div class="book-meta">Desarrollo Personal • Nicolás Noguera</div>
-          <div class="price-tag" style="color: var(--accent-cyan);">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/el-algoritmo-personal/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-cyan);">🌐 Landing</a>
-            <a href="libros/el-algoritmo-personal/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="book-meta">Desarrollo Personal • Hábitos • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
           </div>
         </div>
       </div>
 
-      <!-- Libro 3 -->
+      <!-- Oni Vol 1 -->
       <div class="book-card" style="border-color: rgba(168, 85, 247, 0.4);">
+        <div class="cover-container">
+          <img src="libros/oni-no-ketsuryu-volumen-1/portada.jpg" alt="Oni no Ketsuryū Vol 1" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Oni no Ketsuryū — Vol. 1</div>
+          <div class="book-meta">Manga Dark Fantasy • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oni Vol 2 -->
+      <div class="book-card" style="border-color: rgba(168, 85, 247, 0.4);">
+        <div class="cover-container">
+          <img src="libros/oni-no-ketsuryu-volumen-2/portada.jpg" alt="Oni no Ketsuryū Vol 2" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Oni no Ketsuryū — Vol. 2</div>
+          <div class="book-meta">Manga Dark Fantasy • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oni Vol 3 -->
+      <div class="book-card" style="border-color: rgba(168, 85, 247, 0.4);">
+        <div class="cover-container">
+          <img src="libros/oni-no-ketsuryu-volumen-3/portada.jpg" alt="Oni no Ketsuryū Vol 3" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Oni no Ketsuryū — Vol. 3</div>
+          <div class="book-meta">Manga Dark Fantasy • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oni Vol 4 -->
+      <div class="book-card" style="border-color: rgba(168, 85, 247, 0.4);">
+        <div class="cover-container">
+          <img src="libros/oni-no-ketsuryu-volumen-4/portada.jpg" alt="Oni no Ketsuryū Vol 4" class="cover-img">
+        </div>
+        <div class="book-details">
+          <div class="book-title">Oni no Ketsuryū — Vol. 4</div>
+          <div class="book-meta">Manga Dark Fantasy • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kuro Vol 1 -->
+      <div class="book-card" style="border-color: rgba(234, 179, 8, 0.4);">
         <div class="cover-container">
           <img src="libros/kuro-no-kineki-volumen-1/portada.jpg" alt="Kuro no Kineki Vol 1" class="cover-img">
         </div>
         <div class="book-details">
-          <div class="book-title">Kuro no Kineki (Vol 1)</div>
-          <div class="book-meta">Manga • Fantasía Oscura • Nicolás Noguera</div>
-          <div class="price-tag" style="color: var(--accent-purple);">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/kuro-no-kineki-volumen-1/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-purple);">🌐 Landing</a>
-            <a href="libros/kuro-no-kineki-volumen-1/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="book-title">Kuro no Kineki — Vol. 1</div>
+          <div class="book-meta">Manga Steampunk • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
           </div>
         </div>
       </div>
 
-      <!-- Libro 4 -->
+      <!-- Kuro Vol 2 -->
       <div class="book-card" style="border-color: rgba(234, 179, 8, 0.4);">
         <div class="cover-container">
           <img src="libros/kuro-no-kineki-volumen-2/portada.jpg" alt="Kuro no Kineki Vol 2" class="cover-img">
         </div>
         <div class="book-details">
-          <div class="book-title">Kuro no Kineki (Vol 2)</div>
-          <div class="book-meta">Manga • Clímax • Nicolás Noguera</div>
-          <div class="price-tag" style="color: var(--accent-gold);">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/kuro-no-kineki-volumen-2/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-gold);">🌐 Landing</a>
-            <a href="libros/kuro-no-kineki-volumen-2/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="book-title">Kuro no Kineki — Vol. 2</div>
+          <div class="book-meta">Manga Steampunk • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
+          </div>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
           </div>
         </div>
       </div>
 
-      <!-- Libro 5 -->
-      <div class="book-card" style="border-color: rgba(56, 189, 248, 0.4);">
+      <!-- Kuro Vol 3 -->
+      <div class="book-card" style="border-color: rgba(234, 179, 8, 0.4);">
         <div class="cover-container">
           <img src="libros/kuro-no-kineki-volumen-3/portada.jpg" alt="Kuro no Kineki Vol 3" class="cover-img">
         </div>
         <div class="book-details">
-          <div class="book-title">Kuro no Kineki (Vol 3)</div>
-          <div class="book-meta">Manga • Gran Final • Nicolás Noguera</div>
-          <div class="price-tag" style="color: var(--accent-sky);">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/kuro-no-kineki-volumen-3/index.html" target="_blank" class="btn btn-main" style="background: var(--accent-sky);">🌐 Landing</a>
-            <a href="libros/kuro-no-kineki-volumen-3/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="book-title">Kuro no Kineki — Vol. 3</div>
+          <div class="book-meta">Manga Steampunk • 15 Escenas • Nicolás Noguera</div>
+          <div class="price-row">
+            <div class="price-tag-usd">$20.00 USD</div>
+            <div class="price-tag-ars">$26.000 ARS</div>
           </div>
-        </div>
-      </div>
-
-      <!-- Libro 6 -->
-      <div class="book-card" style="border-color: rgba(220, 38, 38, 0.4);">
-        <div class="cover-container">
-          <img src="libros/oni-no-ketsuryu-volumen-1/portada.jpg" alt="Oni no Ketsuryu Vol 1" class="cover-img">
-        </div>
-        <div class="book-details">
-          <div class="book-title">Oni no Ketsuryū (Vol 1)</div>
-          <div class="book-meta">Manga • Sangre & Acción • Nicolás Noguera</div>
-          <div class="price-tag" style="color: #dc2626;">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/oni-no-ketsuryu-volumen-1/index.html" target="_blank" class="btn btn-main" style="background: #dc2626;">🌐 Landing</a>
-            <a href="libros/oni-no-ketsuryu-volumen-1/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Libro 7 -->
-      <div class="book-card" style="border-color: rgba(185, 28, 28, 0.5);">
-        <div class="cover-container">
-          <img src="libros/oni-no-ketsuryu-volumen-2/portada.jpg" alt="Oni no Ketsuryu Vol 2" class="cover-img">
-        </div>
-        <div class="book-details">
-          <div class="book-title">Oni no Ketsuryū (Vol 2)</div>
-          <div class="book-meta">Manga • Tren Demoníaco • Nicolás Noguera</div>
-          <div class="price-tag" style="color: #b91c1c;">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/oni-no-ketsuryu-volumen-2/index.html" target="_blank" class="btn btn-main" style="background: #b91c1c;">🌐 Landing</a>
-            <a href="libros/oni-no-ketsuryu-volumen-2/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Libro 8 -->
-      <div class="book-card" style="border-color: rgba(153, 27, 27, 0.6);">
-        <div class="cover-container">
-          <img src="libros/oni-no-ketsuryu-volumen-3/portada.jpg" alt="Oni no Ketsuryu Vol 3" class="cover-img">
-        </div>
-        <div class="book-details">
-          <div class="book-title">Oni no Ketsuryū (Vol 3)</div>
-          <div class="book-meta">Manga • La Última Llama • Nicolás Noguera</div>
-          <div class="price-tag" style="color: #991b1b;">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/oni-no-ketsuryu-volumen-3/index.html" target="_blank" class="btn btn-main" style="background: #991b1b;">🌐 Landing</a>
-            <a href="libros/oni-no-ketsuryu-volumen-3/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Libro 9 -->
-      <div class="book-card" style="border-color: rgba(127, 29, 29, 0.7);">
-        <div class="cover-container">
-          <img src="libros/oni-no-ketsuryu-volumen-4/portada.jpg" alt="Oni no Ketsuryu Vol 4" class="cover-img">
-        </div>
-        <div class="book-details">
-          <div class="book-title">Oni no Ketsuryū (Vol 4)</div>
-          <div class="book-meta">Manga • Danza del Sol • Nicolás Noguera</div>
-          <div class="price-tag" style="color: #7f1d1d;">$20.00 USD</div>
-          <div class="actions">
-            <a href="libros/oni-no-ketsuryu-volumen-4/index.html" target="_blank" class="btn btn-main" style="background: #7f1d1d;">🌐 Landing</a>
-            <a href="libros/oni-no-ketsuryu-volumen-4/ficha_producto.json" target="_blank" class="btn btn-sub">📋 Ficha</a>
+          <div class="actions-grid">
+            <a href="https://nicolasnogueraeditorial.mitiendanube.com/" target="_blank" class="btn-buy-arg">🇦🇷 Comprar en Argentina (Cuenta DNI)</a>
+            <a href="https://payhip.com/NicolasNogueraEditorial" target="_blank" class="btn-buy-int">🌎 Comprar Internacional ($20 USD)</a>
           </div>
         </div>
       </div>
 
     </div>
-
   </div>
 </body>
 </html>
