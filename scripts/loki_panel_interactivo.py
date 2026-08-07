@@ -5,11 +5,11 @@ LOKI DASHBOARD & PUBLISHER INTERACTIVO: PANEL CONTROL DE LIBROS & GPU
 ===============================================================================
 Autor: Alberto Nicolás Noguera
 Funcionalidad:
-  1. Panel Web/GUI interactivo para Loki.
-  2. Botón 'Importar Carpeta de Libro' para cargar manuscrito + imágenes + copy.
-  3. Botón 'Publicar este Libro' para abrir y auto-completar las 5 plataformas:
-     (Payhip, Tiendanube Argentina, Gumroad, Hotmart, Amazon KDP).
-  4. Monitoreo y aviso de Cuota de Nube con conmutación a RTX 3060 Pinokio.
+  1. Panel Web/GUI interactivo para Loki (Port 5000).
+  2. Selector Nativo de Carpetas HTML5 (webkitdirectory) + Carga Manual.
+  3. API Endpoints completos: /api/ebooks/catalog, /api/ebooks/upload-folder,
+     /api/ebooks/import, /api/ebooks/publish.
+  4. Publicación simultánea en las 5 plataformas.
 ===============================================================================
 """
 
@@ -20,15 +20,13 @@ import subprocess
 from pathlib import Path
 from flask import Flask, render_template_string, request, jsonify
 
-# Configuración de Flask
 app = Flask(__name__)
 
 BASE_DIR = Path(r"c:\Users\nicol\Downloads\MIS LIBROS")
 BOOKS_DIR = BASE_DIR / "libros"
 CONFIG_FILE = BASE_DIR / "configuracion_autor.json"
-PINOKIO_PYTHON = Path(r"C:\pinokio\api\fooocus.git\app\env\Scripts\python.exe")
 
-HTML_TEMPLATE = """
+HTML_TEMPLATE = r"""
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,8 +36,10 @@ HTML_TEMPLATE = """
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .card-custom { background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; border-radius: 12px; }
-        .badge-active { background-color: #10b981; color: #fff; font-size: 0.9rem; }
+        .card-custom { background: rgba(30, 41, 59, 0.85); border: 1px solid #334155; border-radius: 14px; }
+        .badge-active { background-color: #10b981; color: #fff; font-size: 0.9rem; font-weight: bold; }
+        .btn-gold { background: linear-gradient(135deg, #f59e0b, #d97706); border: none; font-weight: 800; color: #000; }
+        .btn-gold:hover { background: linear-gradient(135deg, #d97706, #b45309); color: #000; }
         .btn-publish { background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; font-weight: bold; color: white; }
         .btn-publish:hover { background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; }
     </style>
@@ -48,59 +48,160 @@ HTML_TEMPLATE = """
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom border-secondary">
             <div>
-                <h1 class="fw-bold text-primary">🤖 Panel de Control de Loki</h1>
-                <p class="text-muted mb-0">Sistema de Publicación Automática y Control de GPU Local (RTX 3060)</p>
+                <h1 class="fw-bold text-warning">🤖 Panel de Control de Loki</h1>
+                <p class="text-muted mb-0">Sistema de Publicación Automática y Control de GPU Local (NVIDIA RTX 3060 Pinokio)</p>
             </div>
             <div>
-                <span class="badge badge-active p-2">RTX 3060 Pinokio: LISTA ⚡</span>
+                <span class="badge badge-active p-2">⚡ RTX 3060 Pinokio: LISTA</span>
             </div>
         </div>
 
-        <!-- Alerta de Cuota y Motor -->
-        <div class="alert alert-info border-0 shadow-sm mb-4">
-            📌 <strong>Monitoreo de GPU:</strong> Si la cuota de la nube se agota, Loki conmuta automáticamente la generación de portadas al motor local en tu <strong>NVIDIA GeForce RTX 3060 (Pinokio)</strong> a costo $0.
+        <!-- Alerta de Monitoreo -->
+        <div class="alert alert-dark border-secondary shadow-sm mb-4">
+            📌 <strong>Monitoreo Inteligente:</strong> Si se agota la cuota en la nube, Loki conmuta automáticamente al motor local en tu <strong>RTX 3060 Pinokio</strong> a costo $0.
         </div>
 
-        <!-- Sección de Importar Carpeta -->
-        <div class="card card-custom p-4 mb-4 shadow">
-            <h4 class="text-warning mb-3">📁 Importar Nueva Carpeta de Libro</h4>
-            <form action="/importar" method="POST" class="row g-3">
-                <div class="col-md-9">
-                    <input type="text" name="folder_path" class="form-control bg-dark text-light border-secondary" placeholder="Pegá el camino de la carpeta (ej: C:\Users\nicol\Downloads\mi-nuevo-libro)" required>
-                </div>
-                <div class="col-md-3">
-                    <button type="submit" class="btn btn-warning w-100 fw-bold">📥 Importar Carpeta</button>
-                </div>
-            </form>
+        <!-- Card de Importar Carpeta -->
+        <div class="card card-custom p-4 mb-4 shadow border-warning">
+            <h4 class="text-warning mb-2">📁 Importar Carpeta de Libro (.docx + imágenes)</h4>
+            <p class="text-muted small mb-3">Hacé clic en el botón dorado para seleccionar la carpeta desde tu Explorador de Windows:</p>
+
+            <input type="file" id="native-browser-folder-picker" webkitdirectory directory style="display:none;" onchange="handleBrowserFolderPicked(event)">
+
+            <div class="d-flex gap-2 mb-3">
+                <button type="button" class="btn btn-gold btn-lg px-4 shadow-sm" onclick="document.getElementById('native-browser-folder-picker').click()">
+                    📁 BUSCAR CARPETA EN MI PC (EXPLORADOR WINDOWS)
+                </button>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="manual-folder-input" class="form-control bg-dark text-light border-secondary" placeholder="O pegá la ruta manual ej. C:\Users\nicol\Downloads\mi-nuevo-libro">
+                <button class="btn btn-outline-light" type="button" onclick="importManualFolder()">📥 Cargar Ruta Tipeada</button>
+            </div>
         </div>
 
         <!-- Catálogo de Libros Registrados -->
-        <h3 class="mb-3 text-light">📚 Catálogo de Libros Listos para Publicar</h3>
-        <div class="row g-4">
-            {% for libro in libros %}
-            <div class="col-md-6">
-                <div class="card card-custom h-100 p-3 shadow">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h5>{{ libro.titulo }}</h5>
-                        <span class="badge bg-success">${{ libro.precio_usd }} USD / ${{ libro.precio_ars }} ARS</span>
-                    </div>
-                    <p class="text-muted small my-2">{{ libro.resumen }}</p>
-                    <div class="mb-3">
-                        <span class="badge bg-secondary">Docx: {{ '✅' if libro.has_docx else '❌' }}</span>
-                        <span class="badge bg-secondary">Portada: {{ '✅' if libro.has_portada else '❌' }}</span>
-                        <span class="badge bg-secondary">Ficha SEO: {{ '✅' if libro.has_ficha else '❌' }}</span>
-                    </div>
-                    <form action="/publicar" method="POST" target="_blank">
-                        <input type="hidden" name="folder_id" value="{{ libro.id }}">
-                        <button type="submit" class="btn btn-publish w-100 py-2">
-                            🚀 PUBLICAR ESTE LIBRO EN LAS 5 PLATAFORMAS
-                        </button>
-                    </form>
-                </div>
-            </div>
-            {% endfor %}
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 class="mb-0 text-light">📚 Catálogo de Libros Registrados</h3>
+            <button class="btn btn-sm btn-outline-secondary" onclick="loadCatalogUI()">↺ Refrescar Catálogo</button>
+        </div>
+
+        <div class="row g-4" id="books-grid-container">
+            <!-- Cargado dinámicamente -->
         </div>
     </div>
+
+    <script>
+        async function loadCatalogUI() {
+            const container = document.getElementById('books-grid-container');
+            container.innerHTML = '<div class="text-muted">Cargando libros del catálogo...</div>';
+            try {
+                const res = await fetch('/api/ebooks/catalog');
+                const data = await res.json();
+                if (data.libros && data.libros.length > 0) {
+                    container.innerHTML = data.libros.map(l => `
+                        <div class="col-md-6">
+                            <div class="card card-custom h-100 p-3 shadow">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="fw-bold mb-0 text-light">${l.titulo}</h5>
+                                    <span class="badge bg-success">$${l.precio_usd} USD / $${l.precio_ars} ARS</span>
+                                </div>
+                                <p class="text-muted small mb-3">${l.resumen}</p>
+                                <div class="mb-3">
+                                    <span class="badge bg-secondary">Docx: ${l.has_docx ? '✅' : '❌'}</span>
+                                    <span class="badge bg-secondary">Portada: ${l.has_portada ? '✅' : '❌'}</span>
+                                    <span class="badge bg-secondary">Ficha SEO: ${l.has_ficha ? '✅' : '❌'}</span>
+                                </div>
+                                <button onclick="publishEbook('${l.id}')" class="btn btn-publish w-100 py-2">
+                                    🚀 PUBLICAR ESTE LIBRO EN LAS 5 PLATAFORMAS
+                                </button>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    container.innerHTML = '<div class="text-muted">No hay libros registrados aún. Hacé clic en el botón dorado arriba para empezar.</div>';
+                }
+            } catch(e) {
+                container.innerHTML = '<div class="text-danger">Error cargando el catálogo de libros.</div>';
+            }
+        }
+
+        async function handleBrowserFolderPicked(event) {
+            const files = event.target.files;
+            if (!files || files.length === 0) return;
+            
+            const relativePath = files[0].webkitRelativePath || '';
+            const folderName = relativePath ? relativePath.split('/')[0] : 'libro-importado';
+            
+            const formData = new FormData();
+            formData.append('folder_name', folderName);
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            try {
+                const res = await fetch('/api/ebooks/upload-folder', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    alert('✅ Carpeta "' + folderName + '" importada exitosamente al catálogo.');
+                    loadCatalogUI();
+                } else {
+                    alert('⚠️ Error al procesar carpeta: ' + (data.message || 'Ocurrió un problema'));
+                }
+            } catch(e) {
+                alert('❌ Error al subir carpeta: ' + e.message);
+            }
+        }
+
+        async function importManualFolder() {
+            const input = document.getElementById('manual-folder-input');
+            const path = input ? input.value.trim() : '';
+            if (!path) {
+                alert('Por favor pegá una ruta de tu computadora.');
+                return;
+            }
+            try {
+                const res = await fetch('/api/ebooks/import', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ folder_path: path })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    alert('✅ Carpeta importada exitosamente al catálogo.');
+                    input.value = '';
+                    loadCatalogUI();
+                } else {
+                    alert('⚠️ Error: ' + (data.message || 'Ruta no válida'));
+                }
+            } catch(e) {
+                alert('❌ Error de conexión.');
+            }
+        }
+
+        async function publishEbook(folderId) {
+            try {
+                const res = await fetch('/api/ebooks/publish', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ folder_id: folderId })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    alert('🚀 Loki ha iniciado la apertura automática de las 5 plataformas (Payhip, Tiendanube, Gumroad, Hotmart, Amazon KDP).');
+                } else {
+                    alert('⚠️ Error al publicar: ' + data.message);
+                }
+            } catch(e) {
+                alert('❌ Error de conexión al publicar.');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadCatalogUI);
+    </script>
 </body>
 </html>
 """
@@ -144,27 +245,85 @@ def cargar_libros():
 
 @app.route("/")
 def home():
-    libros = cargar_libros()
-    return render_template_string(HTML_TEMPLATE, libros=libros)
+    return render_template_string(HTML_TEMPLATE)
 
-@app.route("/importar", methods=["POST"])
-def importar():
-    folder_path = request.form.get("folder_path", "").strip('"')
-    if folder_path:
-        script = BASE_DIR / "scripts" / "loki_auto_publisher.py"
-        subprocess.run([sys.executable, str(script), folder_path])
-    return home()
+@app.route('/api/ebooks/catalog', methods=['GET'])
+def api_get_catalog():
+    return jsonify({"libros": cargar_libros()})
 
-@app.route("/publicar", methods=["POST"])
-def publicar():
-    folder_id = request.form.get("folder_id", "")
+@app.route('/api/ebooks/import', methods=['POST'])
+def api_import_folder():
+    data = request.get_json(silent=True) or request.form or {}
+    folder_raw = data.get("folder_path", "").strip().strip('"').strip("'")
+    if not folder_raw:
+        return jsonify({"status": "error", "message": "Ruta vacía"}), 400
+    
+    target_path = Path(folder_raw).resolve()
+    if not target_path.exists():
+        return jsonify({"status": "error", "message": f"La ruta no existe en la PC: '{target_path}'"}), 400
+    
+    if target_path.is_file():
+        target_path = target_path.parent
+        
+    script = BASE_DIR / "scripts" / "loki_auto_publisher.py"
+    try:
+        subprocess.run([sys.executable, str(script), str(target_path)], check=True)
+        return jsonify({"status": "ok"})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+@app.route('/api/ebooks/upload-folder', methods=['POST'])
+def api_upload_folder():
+    try:
+        folder_name = request.form.get("folder_name", "nuevo-libro").strip()
+        folder_slug = "".join(c if c.isalnum() else "-" for c in folder_name.lower()).strip("-")
+        if not folder_slug:
+            folder_slug = "nuevo-libro"
+            
+        target_dir = BOOKS_DIR / folder_slug
+        target_dir.mkdir(parents=True, exist_ok=True)
+        
+        uploaded_files = request.files.getlist("files")
+        for file_obj in uploaded_files:
+            filename = Path(file_obj.filename).name
+            if filename:
+                file_obj.save(target_dir / filename)
+                
+        ficha_path = target_dir / "ficha_producto.json"
+        if not ficha_path.exists():
+            nombre_limpio = folder_name.replace("_", " ").replace("-", " ").title()
+            ficha_data = {
+                "id": folder_slug,
+                "titulo": nombre_limpio,
+                "subtitulo": f"Obra oficial por Nicolás Noguera",
+                "precio_usd": 20.00,
+                "precio_ars": 26000,
+                "resumen_corto": f"Edición digital oficial de {nombre_limpio} por Nicolás Noguera."
+            }
+            with open(ficha_path, "w", encoding="utf-8") as f:
+                json.dump(ficha_data, f, indent=4, ensure_ascii=False)
+                
+        return jsonify({"status": "ok", "folder": folder_slug})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+@app.route('/api/ebooks/publish', methods=['POST'])
+def api_publish_platforms():
+    data = request.get_json(silent=True) or request.form or {}
+    folder_id = data.get("folder_id", "")
     folder_path = BOOKS_DIR / folder_id
-    if folder_path.exists():
-        script = BASE_DIR / "scripts" / "loki_auto_publisher.py"
+    if not folder_path.exists():
+        return jsonify({"status": "error", "message": "Carpeta de libro no encontrada"}), 404
+    
+    script = BASE_DIR / "scripts" / "loki_auto_publisher.py"
+    try:
         subprocess.Popen([sys.executable, str(script), str(folder_path)])
-    return "<h1>🚀 Loki ha iniciado la apertura automática de las 5 plataformas (Payhip, Tiendanube, Gumroad, Hotmart, Amazon KDP). Podés volver al panel.</h1>"
+        return jsonify({"status": "ok"})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
 
 if __name__ == "__main__":
-    print("🤖 Iniciando Panel de Control de Loki en: http://localhost:5000")
-    subprocess.Popen('powershell -Command "Start-Process \'http://localhost:5000\'"', shell=True)
+    if sys.platform.startswith('win'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    print("[LOKI] Iniciando Panel de Control de Loki en: http://localhost:5000")
     app.run(host="0.0.0.0", port=5000, debug=False)
