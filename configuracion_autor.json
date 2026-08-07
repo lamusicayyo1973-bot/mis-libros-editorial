@@ -11,14 +11,22 @@
     "cbu": "0140017503401755100235",
     "tipo_cuenta": "Caja de Ahorro en Pesos / Dólares"
   },
+  "seguridad_stripe": {
+    "stripe_backup_code": "rbup-tuyz-klbq-rntz-yuon",
+    "estado_autenticacion": "Autenticación de dos factores configurada y activa"
+  },
   "plataformas": {
     "gumroad": {
       "precio_sugerido_usd": 20.00,
       "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI)"
     },
+    "payhip": {
+      "precio_sugerido_usd": 20.00,
+      "estado_payout": "Stripe Vinculado y Activo"
+    },
     "amazon_kdp": {
       "precio_sugerido_usd": 20.00,
-      "estado_payout": "CBU Registrado - Banco Provincia (Cuenta DNI)"
+      "estado_payout": "En trámite de verificación DNI"
     }
   }
 }
