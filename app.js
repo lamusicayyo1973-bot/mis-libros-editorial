@@ -132,6 +132,19 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-9",
+    titulo: "Oni no Ketsuryū — Vol. 9",
+    subtitulo: "La Noche de los Noventa Minutos",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-9/portada.jpg",
+    resumen: "La emergencia a la superficie, los noventa minutos de la cuenta regresiva y la estocada definitiva bajo los rayos del sol. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
