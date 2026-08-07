@@ -28,6 +28,58 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-1",
+    titulo: "Oni no Ketsuryū — Vol. 1",
+    subtitulo: "La Noche de las Hojas Rotas",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-1/portada.jpg",
+    resumen: "Ren forja una katana de cristal negro tras la masacre de su aldea. 15 ilustraciones exclusivas en 8k por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
+    id: "oni-no-ketsuryu-volumen-2",
+    titulo: "Oni no Ketsuryū — Vol. 2",
+    subtitulo: "El Examen de la Montaña Sombría",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-2/portada.jpg",
+    resumen: "La prueba final entre la niebla del monte Fujikane. 15 ilustraciones exclusivas en 8k por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
+    id: "oni-no-ketsuryu-volumen-3",
+    titulo: "Oni no Ketsuryū — Vol. 3",
+    subtitulo: "El Tren de las Sombras",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-3/portada.jpg",
+    resumen: "La batalla sobre rieles a alta velocidad contra la horda demoníaca. 15 ilustraciones exclusivas en 8k por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
+    id: "oni-no-ketsuryu-volumen-4",
+    titulo: "Oni no Ketsuryū — Vol. 4",
+    subtitulo: "El Distrito de los Espejos y la Mariposa de la Sombra",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-4/portada.jpg",
+    resumen: "La infiltración en el Distrito de las Luces y la batalla contra el Quinto Lunar Rojo. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
