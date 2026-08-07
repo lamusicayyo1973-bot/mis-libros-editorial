@@ -1,0 +1,3 @@
+﻿2026-04-23 11:32:22, Error                        0x80070002 in PushButtonReset::RegKey::HasValue (base\reset\util\src\registry.cpp:187): Failed to load subkey at [Microsoft\Windows\Signature][gle=0x00000012]
+2026-04-23 11:32:22, Error                        0x80070002 in PbrGetRestoreToBaselineVal (base\reset\engine\scenario\src\sensetargetos.cpp:67): Does not find registry key of PushButtonReset[gle=0x00000012]
+2026-04-23 11:32:22, Error                        0x80070002 in PbrGetEnablePreviewBuilds (base\reset\engine\scenario\src\sensetargetos.cpp:894): Unable to get the EnablePreviewBuilds value from the registry[gle=0x00000012]

@@ -80,6 +80,19 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-5",
+    titulo: "Oni no Ketsuryū — Vol. 5",
+    subtitulo: "La Aldea de los Herreros Olvidados",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-5/portada.jpg",
+    resumen: "La forja de la Katana del Sol de la era Sengoku y el milagro histórico bajo la luz del sol. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
