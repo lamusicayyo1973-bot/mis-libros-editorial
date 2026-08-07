@@ -106,6 +106,32 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
+    id: "oni-no-ketsuryu-volumen-7",
+    titulo: "Oni no Ketsuryū — Vol. 7",
+    subtitulo: "El Asedio al Castillo Infinito",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-7/portada.jpg",
+    resumen: "La infiltración en la fortaleza dimensional, la batalla de venenos de Kanae contra Doma y el inicio del clímax. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
+    id: "oni-no-ketsuryu-volumen-8",
+    titulo: "Oni no Ketsuryū — Vol. 8",
+    subtitulo: "El Juicio de los Tres Lunares Superiores",
+    categoria: "tecnologia",
+    categoria_label: "Manga Dark Fantasy",
+    precio_usd: 20.00,
+    precio_ars: 26000,
+    portada: "libros/oni-no-ketsuryu-volumen-8/portada.jpg",
+    resumen: "La redención de Akaza, el choque de las Hojas Rojas contra Kokushibo y el ascenso del castillo hacia la superficie. 15 ilustraciones exclusivas por Nicolás Noguera.",
+    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
+    link_int: "https://payhip.com/NicolasNogueraEditorial"
+  },
+  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
