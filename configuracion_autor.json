@@ -6,7 +6,7 @@
     "pais": "Argentina"
   },
   "portal_oficial": {
-    "url_web_global": "https://editorialnoguera.vercel.app/",
+    "url_web_global": "https://mis-libros-editorial.vercel.app/",
     "infraestructura": "Vercel Live Infrastructure",
     "estado": "EN_VIVO_Y_ACTIVO"
   },
