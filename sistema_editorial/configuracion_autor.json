@@ -5,6 +5,11 @@
     "cuil_dni": "20-23524683-0",
     "pais": "Argentina"
   },
+  "portal_oficial": {
+    "url_web_global": "https://editorialnoguera.vercel.app/",
+    "infraestructura": "Vercel Live Infrastructure",
+    "estado": "EN_VIVO_Y_ACTIVO"
+  },
   "datos_bancarios": {
     "banco": "Banco de la Provincia de Buenos Aires (Cuenta DNI / Banco Provincia)",
     "codigo_banco": "014",
