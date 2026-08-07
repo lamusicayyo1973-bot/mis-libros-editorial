@@ -67,19 +67,6 @@ const BOOKS_DATA = [
     link_int: "https://payhip.com/NicolasNogueraEditorial"
   },
   {
-    id: "oni-no-ketsuryu-volumen-4",
-    titulo: "Oni no Ketsuryū — Vol. 4",
-    subtitulo: "El Distrito de los Espejos",
-    categoria: "tecnologia",
-    categoria_label: "Manga Dark Fantasy",
-    precio_usd: 20.00,
-    precio_ars: 26000,
-    portada: "libros/oni-no-ketsuryu-volumen-4/portada.jpg",
-    resumen: "El enfrentamiento definitivo en la metrópolis nocturna. 15 ilustraciones exclusivas en 8k.",
-    link_arg: "https://nicolasnogueraeditorial.mitiendanube.com/",
-    link_int: "https://payhip.com/NicolasNogueraEditorial"
-  },
-  {
     id: "kuro-no-kineki-volumen-1",
     titulo: "Kuro no Kineki — Vol. 1",
     subtitulo: "El Precio del Primer Paso",
@@ -156,7 +143,7 @@ function renderBooks(filterCategory = 'all', searchQuery = '') {
 
         <div style="display: flex; flex-direction: column; gap: 8px;">
           <a href="${book.link_arg}" target="_blank" style="background: linear-gradient(135deg, #10b981, #059669); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.85rem;">
-            🇦🇷 Comprar en Argentina (Cuenta DNI)
+            🇦🇷 Comprar en Argentina (Pesos ARS)
           </a>
           <a href="${book.link_int}" target="_blank" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; text-align: center; font-size: 0.85rem;">
             🌎 Comprar Internacional ($20 USD)
