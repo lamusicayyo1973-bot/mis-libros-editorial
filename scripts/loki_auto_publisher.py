@@ -130,17 +130,20 @@ def procesar_carpeta_ingresada(path_carpeta_origen):
 
 def ejecutar_publicacion_loki_5_plataformas(libro_info):
     print("\n" + "=" * 80)
-    print(f" LOKI INICIANDO PUBLICACION AUTOMATICA EN LAS 5 PLATAFORMAS")
+    print(f" LOKI INICIANDO PUBLICACION AUTOMATICA INVISIBLE EN LAS 5 PLATAFORMAS")
     print(f" LIBRO: '{libro_info['titulo']}'")
     print("=" * 80)
     
-    for key, (url, desc) in PLATAFORMAS_URLS.items():
-        print(f"\n[LOKI -> {desc}] Abriendo {url}...")
-        try:
-            subprocess.Popen(f'powershell -Command "Start-Process \'{url}\'"', shell=True)
-            print(f"  [OK] Ventana de {key.upper()} abierta correctamente.")
-        except Exception as e:
-            print(f"  [ERROR] Error abriendo {key}: {e}")
+    script_auto = BASE_DIR / "scripts" / "loki_automated_5_platforms.py"
+    cmd = f'python "{script_auto}" "{Path(libro_info["folder_path"]).name}"'
+    
+    print(f"[*] Ejecutando robot de carga Playwright en segundo plano...")
+    try:
+        res = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        print(res.stdout)
+        print("\n[OK] Carga 100% completada sin abrir ventanas molestas.")
+    except Exception as e:
+        print(f"[ERROR] Error durante la carga automatizada: {e}")
 
 def main():
     print("=" * 80)
