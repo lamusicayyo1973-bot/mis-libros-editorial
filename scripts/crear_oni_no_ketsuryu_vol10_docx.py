@@ -76,7 +76,7 @@ capitulos = [
         "escenas": [
             {
                 "sub": "Escena 1: El Campo de Cenizas",
-                "text": "La brisa de la mañana dispersó los últimos residuos de ceniza negra de Muzan sobre las ruinas de la capital imperial. El sol de agosto se elevó radiante sobre el horizonte, bañando las piedras del cráter con una luz cálida y limpia.\n\nEl rugido de los combates, el chispazo de las espadas y el aire cargado de azufre cesaron por completo. Por primera vez en mil años, la atmósfera se sintió libre de cualquier rastro de energía demoníaca.\n\nEn medio de la plaza, Ren yacía inmóvil sobre el suelo agrietado. Su brazo derecho permanecía rígido junto a la empuñadura de la Katana del Sol, cuya hoja de tono rojo rubí comenzaba a enfriarse gradualmente, volviendo a su color oscuro original.\n\n—Ren... —susurró Miyuki, cayendo de rodillas al lado de su hermano.",
+                "text": "La brisa de la mañana dispersó los últimos residuos de ceniza negra de Kageyama sobre las ruinas de la capital imperial. El sol de agosto se elevó radiante sobre el horizonte, bañando las piedras del cráter con una luz cálida y limpia.\n\nEl rugido de los combates, el chispazo de las espadas y el aire cargado de azufre cesaron por completo. Por primera vez en mil años, la atmósfera se sintió libre de cualquier rastro de energía demoníaca.\n\nEn medio de la plaza, Ren yacía inmóvil sobre el suelo agrietado. Su brazo derecho permanecía rígido junto a la empuñadura de la Katana del Sol, cuya hoja de tono rojo rubí comenzaba a enfriarse gradualmente, volviendo a su color oscuro original.\n\n—Ren... —susurró Miyuki, cayendo de rodillas al lado de su hermano.",
                 "img": "escena_c1_e1.jpg"
             },
             {
@@ -96,7 +96,7 @@ capitulos = [
         "escenas": [
             {
                 "sub": "Escena 1: El Descanso de los Pilares",
-                "text": "En los días posteriores a la derrota del Rey Oni, la Sede Temporal del Gremio Cuervo se transformó en un refugio de sanación.\n\nGyomei (el Pilar de la Piedra) fue sepultado con honores en el templo de las glicinas, rodeado por las oraciones de todos los miembros del gremio. Sanemi y Giyuu, los Pilares sobrevivientes, permanecieron en reposo recuperándose de sus heridas, sabiendo que su deber de mil años había sido finalmente completado.\n\nRen caminó por el jardín de flores de glicina llevando una bandeja con té caliente para los heridos.\n\n—Tu hermano Kenshin estaría orgulloso de ti, Ren —dijo Sanemi desde su pórtico, ajustándose el vendaje de su brazo.",
+                "text": "En los días posteriores a la derrota del Rey Oni, la Sede Temporal del Gremio Cuervo se transformó en un refugio de sanación.\n\nGyomei (el Pilar de la Piedra) fue sepultado con honores en el templo de las glicinas, rodeado por las oraciones de todos los miembros del gremio. Kazuma y Giyuu, los Pilares sobrevivientes, permanecieron en reposo recuperándose de sus heridas, sabiendo que su deber de mil años había sido finalmente completado.\n\nRen caminó por el jardín de flores de glicina llevando una bandeja con té caliente para los heridos.\n\n—Tu hermano Kenshin estaría orgulloso de ti, Ren —dijo Kazuma desde su pórtico, ajustándose el vendaje de su brazo.",
                 "img": "escena_c2_e1.jpg"
             },
             {
@@ -136,7 +136,7 @@ capitulos = [
         "escenas": [
             {
                 "sub": "Escena 1: El Cuaderno de la Estirpe",
-                "text": "Durante los años siguientes, Ren se dedicó a escribir e ilustrar a mano un registro completo de los acontecimientos vividos por el Gremio Cuervo.\n\nEn un cuaderno de papel arroz encuadernado en cuero, dibujó los rostros de Kenshin, Gyomei, Kanae, Muichiro y todos los cazadores que habían sacrificado sus vidas durante la noche de los miles de años.\n\n—Para que las generaciones futuras no olviden que la paz no fue un regalo —dijo Ren a Miyuki—, sino el resultado del amor y la valentía de personas comunes.\n\nMiyuki colocó una flor de glicina seca entre las páginas del cuaderno antes de cerrarlo y guardarlo en el cofre del altar.",
+                "text": "Durante los años siguientes, Ren se dedicó a escribir e ilustrar a mano un registro completo de los acontecimientos vividos por el Gremio Cuervo.\n\nEn un cuaderno de papel arroz encuadernado en cuero, dibujó los rostros de Kenshin, Genba, Aoi, Kiri y todos los cazadores que habían sacrificado sus vidas durante la noche de los miles de años.\n\n—Para que las generaciones futuras no olviden que la paz no fue un regalo —dijo Ren a Miyuki—, sino el resultado del amor y la valentía de personas comunes.\n\nMiyuki colocó una flor de glicina seca entre las páginas del cuaderno antes de cerrarlo y guardarlo en el cofre del altar.",
                 "img": "escena_c4_e1.jpg"
             },
             {

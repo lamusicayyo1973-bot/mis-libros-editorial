@@ -227,7 +227,7 @@ La criatura emitió un alarido sónico antes de disolverse en cenizas de fuego r
 
 Vio la visión de un anciano fabricante de velas de la era Edo, abandonado por su familia en la pobreza y tentado por un hombre elegante que vestía un sombrero blanco de época y trajo la maldición sobre su cuerpo.
 
-—Muzan... —murmuró Ren, escuchando el nombre del Rey Oni por primera vez en la mente de la víctima.
+—Kageyama... —murmuró Ren, escuchando el nombre del Rey Oni por primera vez en la mente de la víctima.
 
 Miyuki se acercó despacio a las cenizas y colocó su mano sobre el lugar donde cayó el demonio, demostrando compasión por el alma que alguna vez fue humana.
 

@@ -221,7 +221,7 @@ Su sola presencia emitía un aura de presión física que aplastaba la hierba a 
 
 —Soy Kenshin, Pilar del Fuego del Gremio Cuervo —dijo con voz serena.
 
-—Soy Akaza —respondió el demonio, ajustando sus puños en una posición de artes marciales ancestrales—. Tienes un espíritu de combate supremo, Kenshin. Tu cuerpo humano alcanzará su límite en unos años; te volverás viejo, débil y morirás. Conviértete en un demonio. Con el poder de la sangre de nuestro Señor, podrás entrenar tu técnica por toda la eternidad.
+—Soy Rikudo —respondió el demonio, ajustando sus puños en una posición de artes marciales ancestrales—. Tienes un espíritu de combate supremo, Kenshin. Tu cuerpo humano alcanzará su límite en unos años; te volverás viejo, débil y morirás. Conviértete en un demonio. Con el poder de la sangre de nuestro Señor, podrás entrenar tu técnica por toda la eternidad.
 
 Kenshin no dudó ni un segundo. Sonrió con amabilidad y negó con la cabeza.
 
@@ -230,11 +230,11 @@ Kenshin no dudó ni un segundo. Sonrió con amabilidad y negó con la cabeza.
                 },
                 {
                     "nombre": "Escena 3: El Choque de los Titanes",
-                    "texto": """Sin decir una palabra más, Akaza se lanzó al ataque.
+                    "texto": """Sin decir una palabra más, Rikudo se lanzó al ataque.
 
 El choque entre los puños de energía del demonio y la katana de fuego de Kenshin levantó una onda de choque que destruyó los restos del primer vagón de tren. La velocidad del combate era tan absurda que Ren solo podía ver destellos de luz dorada y azul cruzando el campo.
 
-—¡Arte Demoníaco: Aguja de la Muerte! —gritó Akaza, desatando una ráfaga de cientos de golpes invisibles.
+—¡Arte Demoníaco: Aguja de la Muerte! —gritó Rikudo, desatando una ráfaga de cientos de golpes invisibles.
 
 —¡Respiración del Fuego: Quinta Postura: Tigre de las Llamas! —respondió Kenshin, creando un felino gigante de fuego dorado que devoró la ráfaga del enemigo.
 
@@ -254,7 +254,7 @@ El suelo tembló mientras la batalla alcanzaba un nivel de destrucción destruct
 
 El Pilar del Fuego sangraba por la frente y tenía dos costillas rotas, pero su mirada dorada no mostraba una sola gota de miedo.
 
-Ren intentó levantarse para ayudarlo, agarrando su katana negra, pero Akaza ni siquiera se giró; usó la presión de su aura para lanzar a Ren contra el suelo.
+Ren intentó levantarse para ayudarlo, agarrando su katana negra, pero Rikudo ni siquiera se giró; usó la presión de su aura para lanzar a Ren contra el suelo.
 
 —¡No te metas, chico! —gritó Kenshin sin perder la sonrisa—. ¡Mantén la posición y protege a tu hermana! ¡Este es el deber de un Pilar!
 
@@ -265,26 +265,26 @@ Kenshin inhaló una cantidad monumental de aire, haciendo crujir sus pulmones mi
                     "nombre": "Escena 2: La Novena Postura",
                     "texto": """—Respiración del Fuego... Novena Postura: Purgatorio.
 
-Kenshin se convirtió en un meteoro de fuego blanco que arrasó la hierba del campo. Se lanzó directo al pecho de Akaza en una estocada definitiva.
+Kenshin se convirtió en un meteoro de fuego blanco que arrasó la hierba del campo. Se lanzó directo al pecho de Rikudo en una estocada definitiva.
 
-El impacto fue ensordecedor. Akaza clavó su puño derecho en el torso de Kenshin, pero al mismo tiempo, la katana de fuego de Kenshin atravesó el cuello del Tercer Lunar hasta la mitad.
+El impacto fue ensordecedor. Rikudo clavó su puño derecho en el torso de Kenshin, pero al mismo tiempo, la katana de fuego de Kenshin atravesó el cuello del Tercer Lunar hasta la mitad.
 
-Akaza intentó retirar el puño para decapitar al Pilar, pero Kenshin usó sus propios músculos abdominales y su fuerza física sobrehumana para atrapar el brazo del demonio dentro de su cuerpo.
+Rikudo intentó retirar el puño para decapitar al Pilar, pero Kenshin usó sus propios músculos abdominales y su fuerza física sobrehumana para atrapar el brazo del demonio dentro de su cuerpo.
 
-—¡No te moverás de aquí hasta que el sol aparezca! —gritó Kenshin, apretando el cuello de Akaza con la mano izquierda desnuda.
+—¡No te moverás de aquí hasta que el sol aparezca! —gritó Kenshin, apretando el cuello de Rikudo con la mano izquierda desnuda.
 
 En el horizonte, los primeros rayos del sol matutino comenzaron a asomar sobre la cumbre de las montañas.""",
                     "img": "escena_climax.jpg"
                 },
                 {
                     "nombre": "Escena 3: La Huida de la Sombra",
-                    "texto": """Al sentir el calor del primer rayo de sol sobre su piel, Akaza entró en pánico absoluto. La piel de sus hombros comenzó a quemarse y desintegrarse en cenizas.
+                    "texto": """Al sentir el calor del primer rayo de sol sobre su piel, Rikudo entró en pánico absoluto. La piel de sus hombros comenzó a quemarse y desintegrarse en cenizas.
 
 Con un alarido de desesperación, el Tercer Lunar usó una fuerza bruta desmedida para arrancarse sus propios brazos, liberándose del agarre de Kenshin. Se arrojó de cabeza hacia las sombras del bosque espeso antes de que la luz solar lo alcanzara por completo.
 
 Ren, lleno de una ira ciega, tomó su katana negra y se la arrojó con todas sus fuerzas por la espalda.
 
-La hoja de Ren atravesó el pecho de Akaza justo cuando el demonio desaparecía en la penumbra del bosque.
+La hoja de Ren atravesó el pecho de Rikudo justo cuando el demonio desaparecía en la penumbra del bosque.
 
 —¡Cobarde! —gritó Ren con lágrimas en los ojos, corriendo hacia el bosque—. ¡No huyas! ¡El señor Kenshin no huyó! ¡Él ganó esta batalla porque protegía a los demás! ¡Tú solo eres una bestia miedosa que le teme al sol!""",
                     "img": "banner.jpg"
@@ -336,7 +336,7 @@ Ren caminaba por el sendero hacia la Finca del Fuego, llevando la guarda de la k
 
 Las venas de su rostro habían cambiado: ya no eran líneas desordenadas, sino que habían tomado la forma de una llama carmesí sobre su mejilla derecha.
 
-—No dejaré que tu sacrificio sea en vano, Kenshin —dijo Ren mirando al cielo azul—. Voy a dominar la Respiración del Sol y voy a cortar la cabeza de Muzan con mis propias manos.
+—No dejaré que tu sacrificio sea en vano, Kenshin —dijo Ren mirando al cielo azul—. Voy a dominar la Respiración del Sol y voy a cortar la cabeza de Kageyama con mis propias manos.
 
 [ CONTINUARÁ EN EL VOLUMEN 4 ]""",
                     "img": "banner.jpg"

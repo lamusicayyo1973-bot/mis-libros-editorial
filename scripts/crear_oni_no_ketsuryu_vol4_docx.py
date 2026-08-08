@@ -132,9 +132,9 @@ Al ejecutar el primer movimiento dentro del dojo, una ola de calor puro envolvi�
                 {
                     "num": "Escena 3: La Petición de la Mariposa",
                     "img": "escena_1.jpg",
-                    "text": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Kanae, la nueva discípula del Pilar del Ingesta y Veneno.
+                    "text": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Aoi, la nueva discípula del Pilar del Ingesta y Veneno.
 
-—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Kanae con voz suave pero firme—. Un demonio de nivel Quinto Lunar Rojo ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
+—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Aoi con voz suave pero firme—. Un demonio de nivel Quinto Lunar Rojo ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
 
 Ren miró la caja de madera en su espalda, donde Miyuki descansaba.
 
@@ -151,11 +151,11 @@ Ren miró la caja de madera en su espalda, donde Miyuki descansaba.
                     "num": "Escena 1: El Lujo de las Sombras",
                     "text": """El Distrito de las Luces era una metrópolis nocturna deslumbrante. Gigantescas linternas de seda roja, casas de te con cortinas de bambú y puentes de madera sobre canales de agua iluminaban la noche. Cientos de personas caminaban festejando con música de samisen.
 
-Pero para los ojos rúnicos de Ren y el olfato desarrollado de Kanae, la ciudad olía a un veneno dulce y denso.
+Pero para los ojos rúnicos de Ren y el olfato desarrollado de Aoi, la ciudad olía a un veneno dulce y denso.
 
-—El demonio no ataca en los callejones —explicó Kanae, ajustando las agujas de veneno de glicina en sus mangas—. Vive dentro de una de las casas de entretenimientos más prestigiosas como una matrona de alta sociedad.
+—El demonio no ataca en los callejones —explicó Aoi, ajustando las agujas de veneno de glicina en sus mangas—. Vive dentro de una de las casas de entretenimientos más prestigiosas como una matrona de alta sociedad.
 
-Para infiltrarse sin llamar la atención de los guardias, Ren, Kanae y el muchacho del haori amarillo (que los alcanzó en el camino) tuvieron que disfrazarse con kimonos tradicionales para ingresar a la casa principal."""
+Para infiltrarse sin llamar la atención de los guardias, Ren, Aoi y el muchacho del haori amarillo (que los alcanzó en el camino) tuvieron que disfrazarse con kimonos tradicionales para ingresar a la casa principal."""
                 },
                 {
                     "num": "Escena 2: La Matrona del Espejo",
@@ -171,9 +171,9 @@ Con un movimiento de sus dedos, la faja obi de seda cobró vida propia, transfor
                     "num": "Escena 3: La Trampa de la Seda",
                     "text": """La faja obi se dividió en seis cintas independientes que atacaron desde todos los ángulos.
 
-Kanae se desplazó con una agilidad impresionante, utilizando el Estilo del Veneno para cortar las cintas con sus dagas cortas llenas de veneno de glicina. Sin embargo, al cortar la seda, las cintas no sangraban: liberaban a las personas que Daki había atrapado y almacenado vivas dentro del tejido.
+Aoi se desplazó con una agilidad impresionante, utilizando el Estilo del Veneno para cortar las cintas con sus dagas cortas llenas de veneno de glicina. Sin embargo, al cortar la seda, las cintas no sangraban: liberaban a las personas que Daki había atrapado y almacenado vivas dentro del tejido.
 
-—¡Están atrapadas dentro de la tela! —gritó Kanae—. ¡Si cortamos a ciegas, mataremos a los rehenes!
+—¡Están atrapadas dentro de la tela! —gritó Aoi—. ¡Si cortamos a ciegas, mataremos a los rehenes!
 
 Ren reaccionó al instante. Usó la guarda de llama de Kenshin para desviar los cortes de seda sin usar el filo de su katana, mientras protegía a las mujeres liberadas.
 
@@ -214,9 +214,9 @@ Gyutaro cruzó sus hoces de hueso, desatando una ráfaga de hoces de sangre vene
                 },
                 {
                     "num": "Escena 3: La Regla de las Dos Cabezas",
-                    "text": """Kanae y el muchacho del haori amarillo llegaron al tejado para reunirse con Ren.
+                    "text": """Aoi y el muchacho del haori amarillo llegaron al tejado para reunirse con Ren.
 
-—¡Tienen que cortar la cabeza de los dos hermanos al mismo tiempo! —advirtió Kanae, analizando la estructura del arte demoníaco—. Si solo decapitan a uno, ninguno morirá.
+—¡Tienen que cortar la cabeza de los dos hermanos al mismo tiempo! —advirtió Aoi, analizando la estructura del arte demoníaco—. Si solo decapitan a uno, ninguno morirá.
 
 Gyutaro se movió a una velocidad que superaba la percepción humana. Clavó una de sus hoces en el hombro de Ren, inyectando un veneno letal que comenzó a volver negras las venas de su cuello.
 
@@ -241,7 +241,7 @@ La joven agarró la hoja de hueso con las manos desnudas. Su propia sangre demon
 
 El chico del haori amarillo, dormido en su estado de trance del trueno, se encargó de mantener a Daki aislada en los tejados vecinos, evitando que los dos hermanos demonio pudieran reunirse.
 
-Kanae aplicó su veneno de glicina en las hoces de Gyutaro para ralentizar su regeneración.
+Aoi aplicó su veneno de glicina en las hoces de Gyutaro para ralentizar su regeneración.
 
 El contraataque de los cazadores había comenzado."""
                 },
@@ -303,15 +303,15 @@ Gyutaro la cargó en su espalda, tal como lo hacía cuando eran humanos, y ambos
 Miyuki observó la escena desde la sombra, tomando la mano de Ren con ternura."""
                 },
                 {
-                    "num": "Escena 3: La Ira de Muzan (Cierre del Tomo 4)",
+                    "num": "Escena 3: La Ira de Kageyama (Cierre del Tomo 4)",
                     "img": "escena_climax.jpg",
                     "text": """En las profundidades del Castillo Infinito —un palacio flotante fuera de la dimensión humana—, la noticia de la caída del Quinto Lunar Rojo sacudió la corte demoníaca.
 
-Muzan, el Rey Oni, en su forma de hombre elegante con ojos de gato carmesí, destruyó su laboratorio de alquimia de un solo golpe de rabia.
+Kageyama, el Rey Oni, en su forma de hombre elegante con ojos de gato carmesí, destruyó su laboratorio de alquimia de un solo golpe de rabia.
 
 Alrededor de su trono, los restantes cuatro Lunares Rojos Superiores se arrodillaron en pánico.
 
-—Los cazadores han despertado la Marca del Sol... —dijo Muzan con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Lunares Superiores. Destruyan la Aldea de los Herreros y maten al chico de la marca.
+—Los cazadores han despertado la Marca del Sol... —dijo Kageyama con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Lunares Superiores. Destruyan la Aldea de los Herreros y maten al chico de la marca.
 
 [ CONTINUARÁ EN EL VOLUMEN 5 ]"""
                 }
@@ -377,7 +377,7 @@ ficha_data = {
     "moneda": "USD",
     "genero": "Manga / Light Novel / Fantasía Oscura / Acción Sengoku",
     "headline": "El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Lunar Rojo.",
-    "descripcion": "En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Kanae al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro, los hermanos que componen el Quinto Lunar Rojo. Una batalla en los tejados a doble decapitamiento simultáneo que provocará la ira desmedida del Rey Oni Muzan en el Castillo Infinito.",
+    "descripcion": "En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro, los hermanos que componen el Quinto Lunar Rojo. Una batalla en los tejados a doble decapitamiento simultáneo que provocará la ira desmedida del Rey Oni Kageyama en el Castillo Infinito.",
     "beneficios": [
         "Manuscrito oficial ilustrado completo en formato .docx listo para eReaders y Amazon KDP.",
         "Ilustraciones de alta definición en estética anime/manga dark fantasy.",
@@ -525,7 +525,7 @@ html_content = """<!DOCTYPE html>
                 <h1>Oni no Ketsuryū (鬼の血流 - La Estirpe de la Sangre)</h1>
                 <div class="author">Volumen 4: El Distrito de los Espejos • Por Nicolás Noguera</div>
                 <p>El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Lunar Rojo.</p>
-                <p>En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Kanae al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro en una batalla a doble decapitamiento simultáneo.</p>
+                <p>En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro en una batalla a doble decapitamiento simultáneo.</p>
                 
                 <div class="price-tag">$20.00 <span>USD</span></div>
                 <a href="#" class="buy-btn">COMPRAR AHORA ($20 USD)</a>
@@ -546,7 +546,7 @@ html_content = """<!DOCTYPE html>
         <h2 class="section-title">Ilustraciones Interiores Destacadas</h2>
         <div class="gallery-grid">
             <img src="escena_1.jpg" alt="La Danza del Sol">
-            <img src="escena_climax.jpg" alt="La Ira de Muzan en el Castillo Infinito">
+            <img src="escena_climax.jpg" alt="La Ira de Kageyama en el Castillo Infinito">
         </div>
     </div>
 </body>
