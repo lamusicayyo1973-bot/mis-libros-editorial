@@ -95,13 +95,13 @@ capitulos = [
         "titulo": "Capítulo 2: Las Lágrimas y la Paz",
         "escenas": [
             {
-                "sub": "Escena 1: El Descanso de los Pilares",
-                "text": "En los días posteriores a la derrota del Rey Oni, la Sede Temporal del Gremio Cuervo se transformó en un refugio de sanación.\n\nGyomei (el Pilar de la Piedra) fue sepultado con honores en el templo de las glicinas, rodeado por las oraciones de todos los miembros del gremio. Kazuma y Giyuu, los Pilares sobrevivientes, permanecieron en reposo recuperándose de sus heridas, sabiendo que su deber de mil años había sido finalmente completado.\n\nRen caminó por el jardín de flores de glicina llevando una bandeja con té caliente para los heridos.\n\n—Tu hermano Kenshin estaría orgulloso de ti, Ren —dijo Kazuma desde su pórtico, ajustándose el vendaje de su brazo.",
+                "sub": "Escena 1: El Descanso de los Maestros Celestiales",
+                "text": "En los días posteriores a la derrota del Rey Oni, la Sede Temporal del Gremio Cuervo se transformó en un refugio de sanación.\n\nGyomei (el Maestro Celestial de la Piedra) fue sepultado con honores en el templo de las glicinas, rodeado por las oraciones de todos los miembros del gremio. Kazuma y Giyuu, los Maestros Celestiales sobrevivientes, permanecieron en reposo recuperándose de sus heridas, sabiendo que su deber de mil años había sido finalmente completado.\n\nRen caminó por el jardín de flores de glicina llevando una bandeja con té caliente para los heridos.\n\n—Tu hermano Kenshin estaría orgulloso de ti, Ren —dijo Kazuma desde su pórtico, ajustándose el vendaje de su brazo.",
                 "img": "escena_c2_e1.jpg"
             },
             {
                 "sub": "Escena 2: La Despedida del Gremio",
-                "text": "Tres semanas después de la batalla, se celebró la última asamblea general del Gremio Cuervo de Cazadores de Demonios.\n\nEl joven heredero de la familia Ubuyashiki se presentó ante los sobrevivientes vistiendo un kimono blanco de ceremonia. Frente a él, sobre un altar de madera, descansaban las katanas de todos los cazadores que habían caído en combate.\n\n—Durante un siglo y diez generaciones, nuestra familia y el gremio han perseguido la sombra que azotaba a la humanidad —habló el joven líder con una reverencia profunda—. Hoy, la sombra ha desaparecido. Declaro la disolución oficial del Gremio Cuervo. Dejen sus espaldas y vivan vidas plenas como hombres y mujeres libres.\n\nLos cazadores se quitaron sus haoris de combate y los colocaron sobre el altar, llorando y sonriendo en un abrazo colectivo.",
+                "text": "Tres semanas después de la batalla, se celebró la última asamblea general del Gremio Cuervo de Hermandad del Sol.\n\nEl joven heredero de la familia Ubuyashiki se presentó ante los sobrevivientes vistiendo un kimono blanco de ceremonia. Frente a él, sobre un altar de madera, descansaban las katanas de todos los cazadores que habían caído en combate.\n\n—Durante un siglo y diez generaciones, nuestra familia y el gremio han perseguido la sombra que azotaba a la humanidad —habló el joven líder con una reverencia profunda—. Hoy, la sombra ha desaparecido. Declaro la disolución oficial del Gremio Cuervo. Dejen sus espaldas y vivan vidas plenas como hombres y mujeres libres.\n\nLos cazadores se quitaron sus haoris de combate y los colocaron sobre el altar, llorando y sonriendo en un abrazo colectivo.",
                 "img": "escena_c2_e2.jpg"
             },
             {
@@ -141,7 +141,7 @@ capitulos = [
             },
             {
                 "sub": "Escena 2: La Bendición de los Años",
-                "text": "Los años transcurrieron con tranquilidad en el valle. Ren y Miyuki envejecieron rodeados por el respeto de su comunidad, dejando una descendencia que heredó el amor por la herrería y la vida sencilla de las montañas.\n\nLa leyenda de los Cazadores de Demonios se disolvió gradualmente con el paso de las décadas, convirtiéndose en un cuento popular que los ancianos contaban a los niños junto al fuego durante las noches de invierno.\n\nPero el valor del acero y el significado de la Respiración del Sol quedaron grabados en la tierra misma.",
+                "text": "Los años transcurrieron con tranquilidad en el valle. Ren y Miyuki envejecieron rodeados por el respeto de su comunidad, dejando una descendencia que heredó el amor por la herrería y la vida sencilla de las montañas.\n\nLa leyenda de los Hermandad del Sol se disolvió gradualmente con el paso de las décadas, convirtiéndose en un cuento popular que los ancianos contaban a los niños junto al fuego durante las noches de invierno.\n\nPero el valor del acero y el significado de la Estilo de Dominio Solar quedaron grabados en la tierra misma.",
                 "img": "escena_c4_e2.jpg"
             },
             {

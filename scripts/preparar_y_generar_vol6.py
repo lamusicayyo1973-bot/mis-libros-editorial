@@ -82,7 +82,7 @@ prompts_vol6 = {
         1152, 648
     ),
     "escena_c1_e1.jpg": (
-        "anime dark fantasy illustration, group of elite Hashira pillars in colorful haori coats assembled in a tatami room, "
+        "anime dark fantasy illustration, group of elite Sables de Elite pillars in colorful haori coats assembled in a tatami room, "
         "serious warrior meeting under wisteria decorations, feudal japan setting",
         1152, 648
     ),

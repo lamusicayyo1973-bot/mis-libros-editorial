@@ -81,7 +81,7 @@ def create_oni_vol3_manuscript():
     capitulos_info = [
         ("Capítulo 1: La Carne del Tren", "cap_1"),
         ("Capítulo 2: El Cuello de Hierro", "cap_2"),
-        ("Capítulo 3: La Llegada del Tercer Lunar", "cap_3"),
+        ("Capítulo 3: La Llegada del Tercer Estirpe", "cap_3"),
         ("Capítulo 4: La Última Llama", "cap_4"),
         ("Capítulo 5: La Herencia del Fuego (Clímax del Volumen 3)", "cap_5"),
     ]
@@ -104,12 +104,12 @@ def create_oni_vol3_manuscript():
             "bm_name": "cap_1",
             "escenas": [
                 {
-                    "nombre": "Escena 1: El Despertar del Pilar",
+                    "nombre": "Escena 1: El Despertar del Maestro Celestial",
                     "texto": """El calor dentro del vagón se volvió sofocante. Las venas de carne demoníaca que cubrían los asientos se retorcían con violencia, intentando envolver a los pasajeros dormidos.
 
 De pronto, un estallido de fuego dorado rasgó la niebla.
 
-Kenshin, el Pilar del Fuego, rompió la ilusión del sueño. Su haori con patrones de llamas se agitó mientras desenvainaba su katana de tono anaranjado brillante. La temperatura del aire subió diez grados en un segundo.
+Kenshin, el Maestro Celestial del Fuego, rompió la ilusión del sueño. Su haori con patrones de llamas se agitó mientras desenvainaba su katana de tono anaranjado brillante. La temperatura del aire subió diez grados en un segundo.
 
 —¡Joven Hagane! —retumbó la voz de Kenshin con un entusiasmo contagioso—. ¡Excelente trabajo al cortar tu propio cuello en el sueño para despertar! Tu resolución es digna de un verdadero cazador.
 
@@ -126,7 +126,7 @@ Mientras tanto, en la parte trasera del tren, cientos de bocas humanas brotaron 
 
 La caja de madera de Ren se abrió de golpe. Miyuki saltó al pasillo con los ojos encendidos en una luz violeta. Con una agilidad pasmosa, la joven usó sus garras para cortar la masa de carne, mientras su sangre ardía en llamas púrpuras que sellaban las heridas del metal para que no volvieran a crecer.
 
-Ren luchaba espalda con espalda junto a su hermana. Cada tajo de su katana negra, impulsado por la Respiración de Sangre, trazaba arcos de fuego rojo que mantenían a salvo a los pasajeros.
+Ren luchaba espalda con espalda junto a su hermana. Cada tajo de su katana negra, impulsado por la Estilo de Esgrima de Sangre, trazaba arcos de fuego rojo que mantenían a salvo a los pasajeros.
 
 —¡No dejaré que nadie más pierda a su familia esta noche! —gritó Ren, aumentando el ritmo de su corazón.""",
                     "img": "escena_c1_e2.jpg"
@@ -137,11 +137,11 @@ Ren luchaba espalda con espalda junto a su hermana. Cada tajo de su katana negra
 
 Al llegar al primer vagón, se encontró con el joven asustadizo de la Selección Final —el muchacho de la doble katana corta que llevaba un haori amarillo con bordados de rayos—. Estaba paralizado de terror sobre la caldera, temblando mientras el vapor hirviente salía por las tuberías.
 
-—¡No puedo hacerlo! ¡Voy a morir! ¡Es un Lunar Rojo! —gritaba el joven del haori amarillo entre lágrimas.
+—¡No puedo hacerlo! ¡Voy a morir! ¡Es un Estirpe de Sangre! —gritaba el joven del haori amarillo entre lágrimas.
 
 De pronto, un rayo de luz blanca atravesó el aire. El muchacho se quedó dormido de pie por el pánico absoluto. En ese estado de trance, su postura cambió por completo: adoptó una posición de esgrima perfecta y una corriente de aire electrificado comenzó a sonar alrededor de sus espaldas.
 
-Era la Respiración del Trueno Inverso.""",
+Era la Estilo de Esgrima del Trueno Inverso.""",
                     "img": "escena_c1_e3.jpg"
                 }
             ]
@@ -155,17 +155,17 @@ Era la Respiración del Trueno Inverso.""",
                     "nombre": "Escena 1: Velocidad del Rayo",
                     "texto": """El chico del haori amarillo se desplazó en un milisegundo.
 
-—Respiración del Trueno... Primera Postura: Chispazo del Destello.
+—Estilo de Esgrima del Trueno... Primera Postura: Chispazo del Destello.
 
 Un destello de luz amarilla cortó la noche. Las decenas de brazos de carne que intentaban sujetar a Ren fueron rebanadas instantáneamente por las dos katanas cortas del joven dormido.
 
-Ren aprovechó la brecha abierta por su compañero. Saltó hacia la escotilla de la caldera de carbón, donde la masa de carne demoníaca se concentraba en un núcleo espeso que latía con el pulso del Sexto Lunar Rojo.
+Ren aprovechó la brecha abierta por su compañero. Saltó hacia la escotilla de la caldera de carbón, donde la masa de carne demoníaca se concentraba en un núcleo espeso que latía con el pulso del Sexto Estirpe de Sangre.
 
 —¡Ahí está el cuello! —gritó Ren.
 
 Desde la masa de carne, la cara del demonio pálido emergió, mostrando las bocas en sus palmas de las manos.
 
-—¡Es inútil, cazadores de poca monta! —siseó el Sexto Lunar—. ¡Incluso si cortan este punto, mi masa corporal regenerará la caldera en un segundo!""",
+—¡Es inútil, cazadores de poca monta! —siseó el Sexto Estirpe—. ¡Incluso si cortan este punto, mi masa corporal regenerará la caldera en un segundo!""",
                     "img": "escena_c2_e1.jpg"
                 },
                 {
@@ -176,21 +176,21 @@ Desde la masa de carne, la cara del demonio pálido emergió, mostrando las boca
 
 El joven del haori amarillo, aun dormido, se posicionó al lado izquierdo de la caldera, cargando sus katanas con electricidad blanca. Ren se colocó a la derecha, envolviendo su katana negra en llamas rojas de fuego de herrería.
 
-—¡Respiración del Trueno: Destello Doble!
-—¡Respiración de Sangre: Tajo del Horno Encendido!
+—¡Estilo de Esgrima del Trueno: Destello Doble!
+—¡Estilo de Esgrima de Sangre: Tajo del Horno Encendido!
 
 Los dos ataques impactaron el núcleo de carne de la caldera exactamente al mismo tiempo. La combinación del calor del fuego y la velocidad de la electricidad destrozó la estructura de masa demoníaca sin darle tiempo a regenerarse.""",
                     "img": "banner.jpg"
                 },
                 {
                     "nombre": "Escena 3: El Descarrilamiento",
-                    "texto": """El grito agudo del Sexto Lunar Rojo resonó en toda la montaña mientras la masa orgánica del tren comenzaba a disolverse en cenizas.
+                    "texto": """El grito agudo del Sexto Estirpe de Sangre resonó en toda la montaña mientras la masa orgánica del tren comenzaba a disolverse en cenizas.
 
 Sin la carne demoníaca para sostener la estructura, los frenos de la locomotora colapsaron. El tren de vapor de miles de toneladas comenzó a salirse de las vías a más de ochenta kilómetros por hora, volcando sobre el campo abierto.
 
 Ren usó su cuerpo como escudo para proteger al muchacho del haori amarillo y a la caja de Miyuki mientras el metal se retorcía sobre la hierba.
 
-Kenshin, desde el interior, usó su Respiración del Fuego para crear una burbuja de aire caliente que amortiguó el impacto de todos los vagones de pasajeros, salvando la vida de los doscientos civiles a bordo.
+Kenshin, desde el interior, usó su Estilo del Fuego Carmesí para crear una burbuja de aire caliente que amortiguó el impacto de todos los vagones de pasajeros, salvando la vida de los doscientos civiles a bordo.
 
 El vapor se dispersó sobre el campo bajo la luz del amanecer. El peligro parecía haber pasado.""",
                     "img": "escena_1.jpg"
@@ -198,7 +198,7 @@ El vapor se dispersó sobre el campo bajo la luz del amanecer. El peligro parec�
             ]
         },
         {
-            "titulo": "Capítulo 3: La Llegada del Tercer Lunar",
+            "titulo": "Capítulo 3: La Llegada del Tercer Estirpe",
             "bm_id": 30,
             "bm_name": "cap_3",
             "escenas": [
@@ -208,18 +208,18 @@ El vapor se dispersó sobre el campo bajo la luz del amanecer. El peligro parec�
 
 El aire sobre el campo de hierba se volvió tan denso y pesado que Ren cayó sobre sus rodillas, incapaz de respirar. El suelo bajo sus pies comenzó a agrietarse sin razón aparente.
 
-Desde las sombras de los árboles de la linde del bosque, un hombre de torso desnudo caminó despacio hacia el lugar del accidente. Su piel era pálida como la nieve, estaba cubierta por tatuajes rúnicos de color azul marino y sus ojos brillaban con un tono dorado donde se leía claramente la marca del Tercer Lunar Rojo.
+Desde las sombras de los árboles de la linde del bosque, un hombre de torso desnudo caminó despacio hacia el lugar del accidente. Su piel era pálida como la nieve, estaba cubierta por tatuajes rúnicos de color azul marino y sus ojos brillaban con un tono dorado donde se leía claramente la marca del Tercer Estirpe de Sangre.
 
 Su sola presencia emitía un aura de presión física que aplastaba la hierba a su alrededor.
 
-—Una técnica de fuego bastante pulida... —dijo el Tercer Lunar, mirando a Kenshin con una sonrisa llena de anticipación—. Hacía más de cincuenta años que no encontraba a un Pilar de la Respiración del Fuego.""",
+—Una técnica de fuego bastante pulida... —dijo el Tercer Estirpe, mirando a Kenshin con una sonrisa llena de anticipación—. Hacía más de cincuenta años que no encontraba a un Maestro Celestial de la Estilo del Fuego Carmesí.""",
                     "img": "escena_climax.jpg"
                 },
                 {
                     "nombre": "Escena 2: La Propuesta del Demonio",
-                    "texto": """Kenshin dio un paso al frente, interponiéndose entre el Tercer Lunar y los jóvenes heridos. Aunque estaba agotado por mantener a salvo a los pasajeros, su postura con la katana de fuego era impecable.
+                    "texto": """Kenshin dio un paso al frente, interponiéndose entre el Tercer Estirpe y los jóvenes heridos. Aunque estaba agotado por mantener a salvo a los pasajeros, su postura con la katana de fuego era impecable.
 
-—Soy Kenshin, Pilar del Fuego del Gremio Cuervo —dijo con voz serena.
+—Soy Kenshin, Maestro Celestial del Fuego del Gremio Cuervo —dijo con voz serena.
 
 —Soy Rikudo —respondió el demonio, ajustando sus puños en una posición de artes marciales ancestrales—. Tienes un espíritu de combate supremo, Kenshin. Tu cuerpo humano alcanzará su límite en unos años; te volverás viejo, débil y morirás. Conviértete en un demonio. Con el poder de la sangre de nuestro Señor, podrás entrenar tu técnica por toda la eternidad.
 
@@ -236,7 +236,7 @@ El choque entre los puños de energía del demonio y la katana de fuego de Kensh
 
 —¡Arte Demoníaco: Aguja de la Muerte! —gritó Rikudo, desatando una ráfaga de cientos de golpes invisibles.
 
-—¡Respiración del Fuego: Quinta Postura: Tigre de las Llamas! —respondió Kenshin, creando un felino gigante de fuego dorado que devoró la ráfaga del enemigo.
+—¡Estilo del Fuego Carmesí: Quinta Postura: Tigre de las Llamas! —respondió Kenshin, creando un felino gigante de fuego dorado que devoró la ráfaga del enemigo.
 
 El suelo tembló mientras la batalla alcanzaba un nivel de destrucción destructivo.""",
                     "img": "escena_climax.jpg"
@@ -250,26 +250,26 @@ El suelo tembló mientras la batalla alcanzaba un nivel de destrucción destruct
             "escenas": [
                 {
                     "nombre": "Escena 1: El Límite del Cuerpo Humano",
-                    "texto": """A pesar de la maestría de Kenshin, la regeneración del Tercer Lunar era instantánea. Cada corte hecho por la katana de fuego se cerraba en milisegundos, mientras que las heridas en el cuerpo de Kenshin comenzaban a acumularse.
+                    "texto": """A pesar de la maestría de Kenshin, la regeneración del Tercer Estirpe era instantánea. Cada corte hecho por la katana de fuego se cerraba en milisegundos, mientras que las heridas en el cuerpo de Kenshin comenzaban a acumularse.
 
-El Pilar del Fuego sangraba por la frente y tenía dos costillas rotas, pero su mirada dorada no mostraba una sola gota de miedo.
+El Maestro Celestial del Fuego sangraba por la frente y tenía dos costillas rotas, pero su mirada dorada no mostraba una sola gota de miedo.
 
 Ren intentó levantarse para ayudarlo, agarrando su katana negra, pero Rikudo ni siquiera se giró; usó la presión de su aura para lanzar a Ren contra el suelo.
 
-—¡No te metas, chico! —gritó Kenshin sin perder la sonrisa—. ¡Mantén la posición y protege a tu hermana! ¡Este es el deber de un Pilar!
+—¡No te metas, chico! —gritó Kenshin sin perder la sonrisa—. ¡Mantén la posición y protege a tu hermana! ¡Este es el deber de un Maestro Celestial!
 
 Kenshin inhaló una cantidad monumental de aire, haciendo crujir sus pulmones mientras el fuego de su espada se volvía de un color blanco incandescente.""",
                     "img": "escena_1.jpg"
                 },
                 {
                     "nombre": "Escena 2: La Novena Postura",
-                    "texto": """—Respiración del Fuego... Novena Postura: Purgatorio.
+                    "texto": """—Estilo del Fuego Carmesí... Novena Postura: Purgatorio.
 
 Kenshin se convirtió en un meteoro de fuego blanco que arrasó la hierba del campo. Se lanzó directo al pecho de Rikudo en una estocada definitiva.
 
-El impacto fue ensordecedor. Rikudo clavó su puño derecho en el torso de Kenshin, pero al mismo tiempo, la katana de fuego de Kenshin atravesó el cuello del Tercer Lunar hasta la mitad.
+El impacto fue ensordecedor. Rikudo clavó su puño derecho en el torso de Kenshin, pero al mismo tiempo, la katana de fuego de Kenshin atravesó el cuello del Tercer Estirpe hasta la mitad.
 
-Rikudo intentó retirar el puño para decapitar al Pilar, pero Kenshin usó sus propios músculos abdominales y su fuerza física sobrehumana para atrapar el brazo del demonio dentro de su cuerpo.
+Rikudo intentó retirar el puño para decapitar al Maestro Celestial, pero Kenshin usó sus propios músculos abdominales y su fuerza física sobrehumana para atrapar el brazo del demonio dentro de su cuerpo.
 
 —¡No te moverás de aquí hasta que el sol aparezca! —gritó Kenshin, apretando el cuello de Rikudo con la mano izquierda desnuda.
 
@@ -280,7 +280,7 @@ En el horizonte, los primeros rayos del sol matutino comenzaron a asomar sobre l
                     "nombre": "Escena 3: La Huida de la Sombra",
                     "texto": """Al sentir el calor del primer rayo de sol sobre su piel, Rikudo entró en pánico absoluto. La piel de sus hombros comenzó a quemarse y desintegrarse en cenizas.
 
-Con un alarido de desesperación, el Tercer Lunar usó una fuerza bruta desmedida para arrancarse sus propios brazos, liberándose del agarre de Kenshin. Se arrojó de cabeza hacia las sombras del bosque espeso antes de que la luz solar lo alcanzara por completo.
+Con un alarido de desesperación, el Tercer Estirpe usó una fuerza bruta desmedida para arrancarse sus propios brazos, liberándose del agarre de Kenshin. Se arrojó de cabeza hacia las sombras del bosque espeso antes de que la luz solar lo alcanzara por completo.
 
 Ren, lleno de una ira ciega, tomó su katana negra y se la arrojó con todas sus fuerzas por la espalda.
 
@@ -297,18 +297,18 @@ La hoja de Ren atravesó el pecho de Rikudo justo cuando el demonio desaparecía
             "bm_name": "cap_5",
             "escenas": [
                 {
-                    "nombre": "Escena 1: Las Últimas Palabras del Pilar",
+                    "nombre": "Escena 1: Las Últimas Palabras del Maestro Celestial",
                     "texto": """El sol matutino bañó el campo de hierba.
 
 Kenshin permanecía de pie, apoyado en la empuñadura de su katana de fuego clavada en la tierra. Su figura erguida proyectaba una sombra larga sobre el suelo.
 
-Ren y Miyuki corrieron a su lado, cayendo de rodillas. Ren intentaba presionar las heridas del Pilar con sus manos sangrantes, pero Kenshin le colocó suavemente la mano sobre la cabeza para detenerlo.
+Ren y Miyuki corrieron a su lado, cayendo de rodillas. Ren intentaba presionar las heridas del Maestro Celestial con sus manos sangrantes, pero Kenshin le colocó suavemente la mano sobre la cabeza para detenerlo.
 
 —Ya es suficiente, joven Hagane... —dijo Kenshin con voz débil pero cálida—. Mi tiempo ha llegado.
 
 —Señor Kenshin... lo siento... no pude ayudarlo... —sollozó Ren, apoyando la frente en la hierba.
 
-—No te disculpes —sonrió Kenshin, mirando al cielo—. Salvaste a los pasajeros de los vagones. Tu hermana luchó con corazón humano. Confío en ustedes dos. Vayan a la finca de mi familia... lean los escritos antiguos de los anteriores Pilares del Fuego... ahí encontrarán la pista sobre la Respiración del Sol.""",
+—No te disculpes —sonrió Kenshin, mirando al cielo—. Salvaste a los pasajeros de los vagones. Tu hermana luchó con corazón humano. Confío en ustedes dos. Vayan a la finca de mi familia... lean los escritos antiguos de los anteriores Maestros Celestiales del Fuego... ahí encontrarán la pista sobre la Estilo de Dominio Solar.""",
                     "img": "escena_1.jpg"
                 },
                 {
@@ -330,13 +330,13 @@ Ren y Miyuki inclinaron la cabeza en un silencio profundo, honrando al hombre qu
                     "nombre": "Escena 3: La Decisión del Guerrero (Cierre del Tomo 3)",
                     "texto": """Tres días después.
 
-En el cementerio del Gremio Cuervo, los cuervos mensajeros llevaron la noticia de la caída del Pilar del Fuego a todos los rincones del país. Los restantes ocho Pilares recibieron el mensaje en silencio, apretando sus armas con una nueva determinación.
+En el cementerio del Gremio Cuervo, los cuervos mensajeros llevaron la noticia de la caída del Maestro Celestial del Fuego a todos los rincones del país. Los restantes ocho Maestros Celestiales recibieron el mensaje en silencio, apretando sus armas con una nueva determinación.
 
 Ren caminaba por el sendero hacia la Finca del Fuego, llevando la guarda de la katana con forma de llama de Kenshin enganchada en su propia espada negra.
 
 Las venas de su rostro habían cambiado: ya no eran líneas desordenadas, sino que habían tomado la forma de una llama carmesí sobre su mejilla derecha.
 
-—No dejaré que tu sacrificio sea en vano, Kenshin —dijo Ren mirando al cielo azul—. Voy a dominar la Respiración del Sol y voy a cortar la cabeza de Kageyama con mis propias manos.
+—No dejaré que tu sacrificio sea en vano, Kenshin —dijo Ren mirando al cielo azul—. Voy a dominar la Estilo de Dominio Solar y voy a cortar la cabeza de Kageyama con mis propias manos.
 
 [ CONTINUARÁ EN EL VOLUMEN 4 ]""",
                     "img": "banner.jpg"

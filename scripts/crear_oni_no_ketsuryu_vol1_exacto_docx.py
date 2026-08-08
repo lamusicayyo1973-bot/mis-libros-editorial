@@ -74,7 +74,7 @@ def create_oni_vol1_manuscript():
     capitulos_info = [
         ("Capítulo 1: El Olor a Nieve y Sangre", "cap_1"),
         ("Capítulo 2: La Hermana de las Sombras", "cap_2"),
-        ("Capítulo 3: La Prueba del Cazador", "cap_3"),
+        ("Capítulo 3: La Prueba del Guerrero de la Hermandad", "cap_3"),
         ("Capítulo 4: El Arte de la Hoja Maldita", "cap_4"),
         ("Capítulo 5: La Selección Final", "cap_5"),
     ]
@@ -169,7 +169,7 @@ Ren desenvainó su espada negra rota y se colocó frente a su hermana en posici�
             ]
         },
         {
-            "titulo": "Capítulo 3: La Prueba del Cazador",
+            "titulo": "Capítulo 3: La Prueba del Guerrero de la Hermandad",
             "bm_id": 30,
             "bm_name": "cap_3",
             "escenas": [
@@ -269,9 +269,9 @@ Un demonio grotesco y gigantesco, cubierto por decenas de brazos deformes que br
                 },
                 {
                     "nombre": "Escena 3: La Postura Suprema",
-                    "texto": """Ren esquivó las decenas de brazos con agilidad felina. Enfiló su katana negra y concentró toda la Respiración de Sangre en un solo punto.
+                    "texto": """Ren esquivó las decenas de brazos con agilidad felina. Enfiló su katana negra y concentró toda la Estilo de Esgrima de Sangre en un solo punto.
 
-—Respiración de Sangre: Primera Postura: Tajo del Horno Encendido.
+—Estilo de Esgrima de Sangre: Primera Postura: Tajo del Horno Encendido.
 
 Ren giró en un tornado de fuego rojo brillante que amputó los brazos del monstruo y le cercenó el cuello de un solo golpe magistral.
 

@@ -77,7 +77,7 @@ def build_vol8_docx():
     p_syn = doc.add_paragraph()
     p_syn.paragraph_format.line_spacing = 1.15
     p_syn.paragraph_format.space_after = Pt(10)
-    p_syn.add_run("En las profundidades del Castillo Infinito, los cazadores enfrentan las pruebas más sangrientas contra los Tres Lunares Rojos. Ren descubre el Estado de Anulación de Intención contra el compás marcial de Rikudo; Aoi desata la estrategia del veneno de glicina contra Kagura; y los cazadores unen sus Hojas Rojas en la heroica caída de Kurogane. Al romper la fortaleza, Kageyama emerge en los tejados e inicia la cuenta regresiva final de noventa minutos hasta el amanecer.")
+    p_syn.add_run("En las profundidades del Castillo Infinito, los cazadores enfrentan las pruebas más sangrientas contra los Tres Estirpes de Sangre. Ren descubre el Estado de Anulación de Intención contra el compás marcial de Rikudo; Aoi desata la estrategia del veneno de glicina contra Kagura; y los cazadores unen sus Hojas Rojas en la heroica caída de Kurogane. Al romper la fortaleza, Kageyama emerge en los tejados e inicia la cuenta regresiva final de noventa minutos hasta el amanecer.")
 
     add_image_safe(doc, vol8_dir / "banner.jpg", 6.0)
 
@@ -128,7 +128,7 @@ def build_vol8_docx():
     add_heading_styled(doc, "CAPÍTULO 5: La Noche de los Noventa Minutos", 1)
     add_image_safe(doc, vol8_dir / "escena_c5_e1.jpg", 6.0)
     p_c5 = doc.add_paragraph()
-    p_c5.add_run("El capullo de carne estalló en la plaza pública. Kageyama emergió con latigazos de materia oscura. Los Pilares supervivientes formaron línea en la calle: comenzaba la batalla final de 90 minutos hasta el amanecer...")
+    p_c5.add_run("El capullo de carne estalló en la plaza pública. Kageyama emergió con latigazos de materia oscura. Los Maestros Celestiales supervivientes formaron línea en la calle: comenzaba la batalla final de 90 minutos hasta el amanecer...")
     add_image_safe(doc, vol8_dir / "escena_c5_e2.jpg", 6.0)
     add_image_safe(doc, vol8_dir / "escena_c5_e3.jpg", 6.0)
     add_image_safe(doc, vol8_dir / "escena_climax.jpg", 6.0)

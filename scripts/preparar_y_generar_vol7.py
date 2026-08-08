@@ -82,7 +82,7 @@ prompts_vol7 = {
         1152, 648
     ),
     "escena_c1_e1.jpg": (
-        "anime dark fantasy illustration, female insect Hashira in butterfly haori coat landing on upside down wooden beam inside infinite castle, "
+        "anime dark fantasy illustration, female insect Sables de Elite in butterfly haori coat landing on upside down wooden beam inside infinite castle, "
         "holding stinger thin katana, dark purple lighting",
         1152, 648
     ),
@@ -92,7 +92,7 @@ prompts_vol7 = {
         1152, 648
     ),
     "escena_c1_e3.jpg": (
-        "anime dark fantasy illustration, butterfly female Hashira lunging forward with lightning speed thrusting her poisonous blade, "
+        "anime dark fantasy illustration, butterfly female Sables de Elite lunging forward with lightning speed thrusting her poisonous blade, "
         "purple butterfly aura around her, high action pose",
         1152, 648
     ),

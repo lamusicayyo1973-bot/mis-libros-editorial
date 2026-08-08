@@ -97,7 +97,7 @@ def create_oni_vol1_docx():
     chapters_toc = [
         ("Capítulo 1", "El Olor a Nieve y Sangre", "chap1"),
         ("Capítulo 2", "La Hermana de las Sombras", "chap2"),
-        ("Capítulo 3", "La Prueba del Cazador", "chap3"),
+        ("Capítulo 3", "La Prueba del Guerrero de la Hermandad", "chap3"),
         ("Capítulo 4", "El Arte de la Hoja Maldita", "chap4"),
         ("Capítulo 5", "La Selección Final (Clímax del Volumen 1)", "chap5")
     ]
@@ -203,7 +203,7 @@ En ese momento, el crujido de pasos sobre la nieve resonó fuera de la casa."""
                     "num": "Escena 3: El Filo del Cuervo",
                     "text": """De la niebla de la tormenta emergió un hombre alto con una haori azul oscuro decorada con patrones de olas de tormenta. Llevaba una katana de hoja carmesí desenvainada y una máscara de cuervo (Tengu) que cubría su rostro.
 
-Era Kaito, un espadachín de alto rango del Gremio Cuervo de Cazadores de Demonios.
+Era Kaito, un espadachín de alto rango del Gremio Cuervo de Hermandad del Sol.
 
 —Apártate del chico —dijo Kaito con una voz fría y calmada—. Esa niña ya no es tu hermana. Es una bestia hambrienta. Si no la ejecuto ahora, mañana devorará a los habitantes de la aldea del valle.
 
@@ -218,7 +218,7 @@ Kaito abrió los ojos con sorpresa detrás de la máscara al ver que un simple c
         {
             "id": "chap3",
             "number": "Capítulo 3",
-            "title": "La Prueba del Cazador",
+            "title": "La Prueba del Guerrero de la Hermandad",
             "scenes": [
                 {
                     "num": "Escena 1: La Apuesta sobre la Nieve",
@@ -242,7 +242,7 @@ Miyuki caminaba a su lado, demostrando una fuerza física sobrehumana pero neces
 
 —Los demonios no pueden tocar la luz del sol... —comprendió Ren, llevando a Miyuki sobre su espalda dentro de un cesto de mimbre especial cubierto con mantas gruesas para protegerla de los rayos solares.
 
-Ren no se detuvo a descansar. Usó la técnica de respiración de la herrería que su padre le enseñó —la Respiración del Fuego del Horno— para mantener la temperatura de sus músculos y evitar colapsar por la falta de oxígeno."""
+Ren no se detuvo a descansar. Usó la técnica de respiración de la herrería que su padre le enseñó —la Estilo del Fuego Carmesí del Horno— para mantener la temperatura de sus músculos y evitar colapsar por la falta de oxígeno."""
                 },
                 {
                     "num": "Escena 3: La Cabaña del Maestro",
@@ -254,7 +254,7 @@ Kaito los esperaba sentado en el porche, tomando una taza de té caliente sin la
 
 Ren dejó la cesta con cuidado en la sombra del porche.
 
-—Enséñame a luchar —exigió Ren, inclinándose profundamente sobre la madera—. Enséñame el arte de la esgrima para destruir a los Seis Lunares Rojos.
+—Enséñame a luchar —exigió Ren, inclinándose profundamente sobre la madera—. Enséñame el arte de la esgrima para destruir a los Seis Estirpes de Sangre.
 
 Kaito miró la katana rota de cristal negro que Ren llevaba en la cintura.
 
@@ -271,7 +271,7 @@ Kaito miró la katana rota de cristal negro que Ren llevaba en la cintura.
                     "num": "Escena 1: El Entrenamiento del Acero",
                     "text": """Pasaron dos años de entrenamiento infernal en la Montaña Sombría.
 
-Cada día, Ren debía esquivar cientos de trampas con los ojos vendados, aprender a cortar bloques de piedra maciza con katanas de madera y dominar el flujo de la Respiración de Sangre.
+Cada día, Ren debía esquivar cientos de trampas con los ojos vendados, aprender a cortar bloques de piedra maciza con katanas de madera y dominar el flujo de la Estilo de Esgrima de Sangre.
 
 La técnica consistía en acelerar el ritmo cardíaco para bombear más oxígeno a los músculos, imitando la fuerza física de los demonios sin perder el control humano. Pero el costo era alto: cada vez que Ren usaba la respiración al máximo, las venas negras de su rostro se extendían unos milímetros más.
 
@@ -285,7 +285,7 @@ Mientras tanto, Miyuki permanecía dentro de la cabaña rodeada de flores de gli
 
 Ren desenvainó su katana. En estos dos años, la hoja de cristal negro había sido reforzada por él mismo en el horno de la cabaña, adquiriendo un filo tan afilado que cortaba las hojas que caían del aire sin tocarlas.
 
-Ren cerró los ojos. Concentró toda la Respiración de Sangre en sus piernas y brazos. Su corazón latió como el golpe de un martillo de herrería: ¡BOOM! ¡BOOM!
+Ren cerró los ojos. Concentró toda la Estilo de Esgrima de Sangre en sus piernas y brazos. Su corazón latió como el golpe de un martillo de herrería: ¡BOOM! ¡BOOM!
 
 —Estilo de la Sangre Negra... Primera Postura: Tajo del Horno Olvidado.
 
@@ -297,7 +297,7 @@ Ren se desplazó como una sombra roja. Un destello de luz carmesí cruzó la noc
 
 Kaito sonrió levemente detrás de su máscara. Se acercó a Ren y le entregó un haori tradicional de color negro con bordados de venas rojas en las mangas, además de una nueva funda para su katana reforzada.
 
-—Estás listo —dijo Kaito—. En la montaña Fujikane te enfrentarás a docenas de demonios capturados por el Gremio durante la prueba de siete días. Si sobrevivís, te convertirás oficialmente en un Cazador de Demonios.
+—Estás listo —dijo Kaito—. En la montaña Fujikane te enfrentarás a docenas de demonios capturados por el Gremio durante la prueba de siete días. Si sobrevivís, te convertirás oficialmente en un Guerrero de la Hermandad de Demonios.
 
 Miyuki salió de la cabaña, ajustándose el bambú de la boca. Se acercó a Ren y le sujetó la manga del haori con fuerza, demostrando que quería acompañarlo en la travesía.
 
@@ -341,7 +341,7 @@ Ren sintió un frío helado en la espalda al comprender la verdad: este demonio 
 
 Ren esquivó las estocadas por milímetros, usando los árboles como apoyo para ganar altura. Las venas negras de su rostro se encendieron en un brillo carmesí brillante mientras inhalaba todo el aire de sus lungs.
 
-—Respiración de Sangre... Segunda Postura: Corte del Horno de la Memoria.
+—Estilo de Esgrima de Sangre... Segunda Postura: Corte del Horno de la Memoria.
 
 Ren concentró toda su humanidad y su dolor por su familia caída en el filo de su katana de cristal negro. La hoja se envolvió en una espiral de fuego rojo y sombras oscuras que cortaron los brazos del monstruo como si fueran ramas secas.
 
@@ -426,7 +426,7 @@ ficha_data = {
     "capitulos": [
         "Capítulo 1: El Olor a Nieve y Sangre",
         "Capítulo 2: La Hermana de las Sombras",
-        "Capítulo 3: La Prueba del Cazador",
+        "Capítulo 3: La Prueba del Guerrero de la Hermandad",
         "Capítulo 4: El Arte de la Hoja Maldita",
         "Capítulo 5: La Selección Final"
     ]
@@ -577,7 +577,7 @@ html_content = """<!DOCTYPE html>
             <ul>
                 <li><strong>Capítulo 1:</strong> El Olor a Nieve y Sangre (Escenas 1-3)</li>
                 <li><strong>Capítulo 2:</strong> La Hermana de las Sombras (Escenas 1-3)</li>
-                <li><strong>Capítulo 3:</strong> La Prueba del Cazador (Escenas 1-3)</li>
+                <li><strong>Capítulo 3:</strong> La Prueba del Guerrero de la Hermandad (Escenas 1-3)</li>
                 <li><strong>Capítulo 4:</strong> El Arte de la Hoja Maldita (Escenas 1-3)</li>
                 <li><strong>Capítulo 5:</strong> La Selección Final (Clímax del Volumen 1 - Escenas 1-3)</li>
             </ul>

@@ -78,7 +78,7 @@ def build_vol6_docx():
     p_syn = doc.add_paragraph()
     p_syn.paragraph_format.line_spacing = 1.15
     p_syn.paragraph_format.space_after = Pt(10)
-    p_syn.add_run("Tras el milagro inesperado del amanecer, la hermana de Ren demuestra inmunidad a la luz solar, desatando una cacería desesperada por parte del Rey Demonio Kageyama. Para prepararse ante el choque inevitable, el Gremio Cuervo traslada a los jóvenes guerreros al Santuario Principal de Flores de Glicina, donde iniciarán el brutal Entrenamiento de los Pilares.\n\nSin embargo, la clave para derrotar a las Lunas Demoníacas yace en las profundidades de la tierra: en las antiguas Catacumbas del Olvido, donde aguarda la Piedra de Afilado Solar y la presencia imponente del Primer Lunar Rojo: Kurogane, el Demonio de los Seis Ojos.")
+    p_syn.add_run("Tras el milagro inesperado del amanecer, la hermana de Ren demuestra inmunidad a la luz solar, desatando una cacería desesperada por parte del Rey Demonio Kageyama. Para prepararse ante el choque inevitable, el Gremio Cuervo traslada a los jóvenes guerreros al Santuario Principal de Flores de Glicina, donde iniciarán el brutal Entrenamiento de los Maestros Celestiales.\n\nSin embargo, la clave para derrotar a las Lunas Demoníacas yace en las profundidades de la tierra: en las antiguas Catacumbas del Olvido, donde aguarda la Piedra de Afilado Solar y la presencia imponente del Primer Estirpe de Sangre: Kurogane, el Demonio de los Seis Ojos.")
 
     add_image_safe(doc, vol6_dir / "banner.jpg", 6.0)
 
@@ -91,7 +91,7 @@ def build_vol6_docx():
     p_c1.add_run("El aroma dulce y denso de las flores de glicina inundaba el valle nocturno. Protegido por barreras naturales y sellos ancestrales, el Santuario de las Glicinas era el último bastión de paz en un mundo devorado por la oscuridad...")
     add_image_safe(doc, vol6_dir / "escena_c1_e1.jpg", 6.0)
     p_c1_2 = doc.add_paragraph()
-    p_c1_2.add_run("En la sala central de tatami, los Pilares Hashira debatían con severidad las decisiones tácticas mientras Ren se sometía a pruebas de fuerza extrema contra rocas gigantescas y cascadas congeladas...")
+    p_c1_2.add_run("En la sala central de tatami, los Maestros Celestiales Sables de Elite debatían con severidad las decisiones tácticas mientras Ren se sometía a pruebas de fuerza extrema contra rocas gigantescas y cascadas congeladas...")
     add_image_safe(doc, vol6_dir / "escena_c1_e2.jpg", 6.0)
     add_image_safe(doc, vol6_dir / "escena_c1_e3.jpg", 6.0)
 

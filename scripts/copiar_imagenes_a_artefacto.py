@@ -18,7 +18,7 @@ images = [
     ("escena_c1_e2.jpg", "Capítulo 1 - Escena 2: El anciano jefe muestra el muñeco de entrenamiento"),
     ("escena_c1_e3.jpg", "Capítulo 1 - Escena 3: Katana mítica revelada en el dojo"),
     ("escena_c2_e1.jpg", "Capítulo 2 - Escena 1: Invasión de demonios superiores con cielo de sangre"),
-    ("escena_c2_e2.jpg", "Capítulo 2 - Escena 2: El Pilar de la Niebla desatando su poder helado"),
+    ("escena_c2_e2.jpg", "Capítulo 2 - Escena 2: El Maestro Celestial de la Niebla desatando su poder helado"),
     ("escena_c2_e3.jpg", "Capítulo 2 - Escena 3: Ataque de demonios alados en la aldea"),
     ("escena_c3_e1.jpg", "Capítulo 3 - Escena 1: Enfrentamiento contra estatuas de buda heladas"),
     ("escena_c3_e2.jpg", "Capítulo 3 - Escena 2: Dragones de madera gigante emergiendo"),

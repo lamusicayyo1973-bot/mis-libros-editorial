@@ -87,7 +87,7 @@ def create_oni_vol4_docx():
     chapters_toc = [
         ("Capítulo 1", "La Finca del Fuego", "chap1"),
         ("Capítulo 2", "La Ciudad que Nunca Duerme", "chap2"),
-        ("Capítulo 3", "El Doble Lunar", "chap3"),
+        ("Capítulo 3", "El Doble Estirpe", "chap3"),
         ("Capítulo 4", "La Purificación de la Sangre", "chap4"),
         ("Capítulo 5", "Las Cenizas de la Misericordia (Clímax del Volumen 4)", "chap5")
     ]
@@ -110,8 +110,8 @@ def create_oni_vol4_docx():
             "title": "La Finca del Fuego",
             "scenes": [
                 {
-                    "num": "Escena 1: Las Memorias del Primer Cazador",
-                    "text": """Ren llegó a la Finca del Fuego al atardecer. La residencia, antes llena de vida, permanecía en un silencio sepulcral. El padre de Kenshin, un antiguo Pilar retirado y consumido por la bebida, lo recibió en el patio central.
+                    "num": "Escena 1: Las Memorias del Primer Guerrero de la Hermandad",
+                    "text": """Ren llegó a la Finca del Fuego al atardecer. La residencia, antes llena de vida, permanecía en un silencio sepulcral. El padre de Kenshin, un antiguo Maestro Celestial retirado y consumido por la bebida, lo recibió en el patio central.
 
 Al ver la guarda con forma de llama en la katana negra de Ren y la marca carmesí en su mejilla, el anciano dejó caer su copa de sake.
 
@@ -125,16 +125,16 @@ El anciano lo guio hasta la biblioteca secreta de la finca y le entregó un volu
 
 Al cerrar los ojos, Ren recordó a su propio padre ejecutando esa misma danza frente al horno de la herrería cada año nuevo.
 
-—No era solo un ritual... —comprendió Ren, poniéndose de pie con la katana en la mano—. La Respiración del Fuego de Herrería que me enseñó mi padre era la versión disfrazada de la Danza del Sol.
+—No era solo un ritual... —comprendió Ren, poniéndose de pie con la katana en la mano—. La Estilo del Fuego Carmesí de Herrería que me enseñó mi padre era la versión disfrazada de la Danza del Sol.
 
 Al ejecutar el primer movimiento dentro del dojo, una ola de calor puro envolvió la habitación, volviendo la hoja negra de su katana de un color dorado incandescente."""
                 },
                 {
                     "num": "Escena 3: La Petición de la Mariposa",
                     "img": "escena_1.jpg",
-                    "text": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Aoi, la nueva discípula del Pilar del Ingesta y Veneno.
+                    "text": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Aoi, la nueva discípula del Maestro Celestial del Ingesta y Veneno.
 
-—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Aoi con voz suave pero firme—. Un demonio de nivel Quinto Lunar Rojo ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
+—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Aoi con voz suave pero firme—. Un demonio de nivel Quinto Estirpe de Sangre ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
 
 Ren miró la caja de madera en su espalda, donde Miyuki descansaba.
 
@@ -161,9 +161,9 @@ Para infiltrarse sin llamar la atención de los guardias, Ren, Aoi y el muchacho
                     "num": "Escena 2: La Matrona del Espejo",
                     "text": """Dentro de la casa Yoshiwara, la matrona principal —una mujer de belleza deslumbrante llamada Daki— descansaba sobre un diván de seda. Llevaba una faja obi de seda de diez metros de largo decorada con patrones de flores de cerezo.
 
-Sin embargo, detrás de su reflejo en los espejos de bronce de la habitación, su verdadera forma se revelaba: una criatura de piel pálida con venas verdes y la marca del Quinto Lunar Rojo en ambos ojos.
+Sin embargo, detrás de su reflejo en los espejos de bronce de la habitación, su verdadera forma se revelaba: una criatura de piel pálida con venas verdes y la marca del Quinto Estirpe de Sangre en ambos ojos.
 
-—Cazadores disfrazados... qué falta de respeto al arte —siseó Daki con voz melodiosa.
+—Guerreros de la Hermandad disfrazados... qué falta de respeto al arte —siseó Daki con voz melodiosa.
 
 Con un movimiento de sus dedos, la faja obi de seda cobró vida propia, transformándose en láminas de acero flexible que atravesaron las paredes de madera del dojo."""
                 },
@@ -184,7 +184,7 @@ De pronto, la pared trasera del edificio colapsó cuando la caja de madera de Mi
         {
             "id": "chap3",
             "number": "Capítulo 3",
-            "title": "El Doble Lunar",
+            "title": "El Doble Estirpe",
             "scenes": [
                 {
                     "num": "Escena 1: La Fuerza de Miyuki",
@@ -206,7 +206,7 @@ La cabeza de la matrona rodó por las tejas de madera."""
 
 —¡Hermano! ¡Me cortaron la cabeza! ¡Ayúdame! —gritó Daki hacia la sombra de su propio cuerpo decapitado.
 
-De la espalda del cuerpo de Daki emergió una figura esquelética y aterradora: un hombre encorvado de piel verdosa que sostenía dos hoces de hueso negro bañadas en veneno mortal. Era Gyutaro, el verdadero núcleo del Quinto Lunar Rojo.
+De la espalda del cuerpo de Daki emergió una figura esquelética y aterradora: un hombre encorvado de piel verdosa que sostenía dos hoces de hueso negro bañadas en veneno mortal. Era Gyutaro, el verdadero núcleo del Quinto Estirpe de Sangre.
 
 —Nadie hace llorar a mi hermana pequeña... —gruñó Gyutaro con una voz profunda y rasposa—. ¿Crees que por tener esa marca en la cara eres especial, cazador?
 
@@ -267,7 +267,7 @@ Las cabezas de los dos hermanos demonio rodaron juntas sobre la calle de piedra.
 
 Esta vez, sus cuerpos comenzaron a desintegrarse en cenizas rojas que el viento de la noche dispersó sobre los canales de agua.
 
-Por primera vez en más de cien años, un Lunar Rojo de los seis superiores había sido destruido por el Gremio Cuervo."""
+Por primera vez en más de cien años, un Estirpe de Sangre de los seis superiores había sido destruido por el Gremio Cuervo."""
                 }
             ]
         },
@@ -305,13 +305,13 @@ Miyuki observó la escena desde la sombra, tomando la mano de Ren con ternura.""
                 {
                     "num": "Escena 3: La Ira de Kageyama (Cierre del Tomo 4)",
                     "img": "escena_climax.jpg",
-                    "text": """En las profundidades del Castillo Infinito —un palacio flotante fuera de la dimensión humana—, la noticia de la caída del Quinto Lunar Rojo sacudió la corte demoníaca.
+                    "text": """En las profundidades del Castillo Infinito —un palacio flotante fuera de la dimensión humana—, la noticia de la caída del Quinto Estirpe de Sangre sacudió la corte demoníaca.
 
 Kageyama, el Rey Oni, en su forma de hombre elegante con ojos de gato carmesí, destruyó su laboratorio de alquimia de un solo golpe de rabia.
 
-Alrededor de su trono, los restantes cuatro Lunares Rojos Superiores se arrodillaron en pánico.
+Alrededor de su trono, los restantes cuatro Estirpes de Sangre Superiores se arrodillaron en pánico.
 
-—Los cazadores han despertado la Marca del Sol... —dijo Kageyama con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Lunares Superiores. Destruyan la Aldea de los Herreros y maten al chico de la marca.
+—Los cazadores han despertado la Marca del Sol... —dijo Kageyama con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Demonios del Abismo. Destruyan la Aldea de los Herreros y maten al chico de la marca.
 
 [ CONTINUARÁ EN EL VOLUMEN 5 ]"""
                 }
@@ -376,8 +376,8 @@ ficha_data = {
     "precio": 20.00,
     "moneda": "USD",
     "genero": "Manga / Light Novel / Fantasía Oscura / Acción Sengoku",
-    "headline": "El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Lunar Rojo.",
-    "descripcion": "En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro, los hermanos que componen el Quinto Lunar Rojo. Una batalla en los tejados a doble decapitamiento simultáneo que provocará la ira desmedida del Rey Oni Kageyama en el Castillo Infinito.",
+    "headline": "El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Estirpe de Sangre.",
+    "descripcion": "En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Estilo de Esgrima de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro, los hermanos que componen el Quinto Estirpe de Sangre. Una batalla en los tejados a doble decapitamiento simultáneo que provocará la ira desmedida del Rey Oni Kageyama en el Castillo Infinito.",
     "beneficios": [
         "Manuscrito oficial ilustrado completo en formato .docx listo para eReaders y Amazon KDP.",
         "Ilustraciones de alta definición en estética anime/manga dark fantasy.",
@@ -386,7 +386,7 @@ ficha_data = {
     "capitulos": [
         "Capítulo 1: La Finca del Fuego",
         "Capítulo 2: La Ciudad que Nunca Duerme",
-        "Capítulo 3: El Doble Lunar",
+        "Capítulo 3: El Doble Estirpe",
         "Capítulo 4: La Purificación de la Sangre",
         "Capítulo 5: Las Cenizas de la Misericordia"
     ]
@@ -524,8 +524,8 @@ html_content = """<!DOCTYPE html>
                 <span class="badge">MANGA / LIGHT NOVEL</span>
                 <h1>Oni no Ketsuryū (鬼の血流 - La Estirpe de la Sangre)</h1>
                 <div class="author">Volumen 4: El Distrito de los Espejos • Por Nicolás Noguera</div>
-                <p>El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Lunar Rojo.</p>
-                <p>En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Respiración de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro en una batalla a doble decapitamiento simultáneo.</p>
+                <p>El descubrimiento de Los Diarios del Sol. La infiltración en el Distrito de las Luces. Y la histórica victoria contra el Quinto Estirpe de Sangre.</p>
+                <p>En la biblioteca secreta de la Finca del Fuego, Ren descubre la verdad tras la Estilo de Esgrima de su padre: la legendaria Danza del Sol. Enviado junto a Aoi al deslumbrante Distrito de las Luces, los cazadores enfrentan a Daki y Gyutaro en una batalla a doble decapitamiento simultáneo.</p>
                 
                 <div class="price-tag">$20.00 <span>USD</span></div>
                 <a href="#" class="buy-btn">COMPRAR AHORA ($20 USD)</a>
@@ -537,7 +537,7 @@ html_content = """<!DOCTYPE html>
             <ul>
                 <li><strong>Capítulo 1:</strong> La Finca del Fuego (Escenas 1-3)</li>
                 <li><strong>Capítulo 2:</strong> La Ciudad que Nunca Duerme (Escenas 1-3)</li>
-                <li><strong>Capítulo 3:</strong> El Doble Lunar (Escenas 1-3)</li>
+                <li><strong>Capítulo 3:</strong> El Doble Estirpe (Escenas 1-3)</li>
                 <li><strong>Capítulo 4:</strong> La Purificación de la Sangre (Escenas 1-3)</li>
                 <li><strong>Capítulo 5:</strong> Las Cenizas de la Misericordia (Clímax del Volumen 4 - Escenas 1-3)</li>
             </ul>

@@ -84,7 +84,7 @@ capitulos = [
             },
             {
                 "sub": "Escena 3: La Primera Envestida",
-                "text": "Genba (el Pilar de la Piedra) fue el primero en saltar, lanzando su hacha y bola de picos contra el torso de Kageyama. Sin embargo, la velocidad de reacción del Rey Oni superaba todo lo visto hasta ahora.\n\nUn solo latigazo de carne cortó la cadena de Genba y le infligió un corte profundo en la pierna izquierda, inyectando la propia sangre venenosa de Kageyama en su sistema vascular.\n\nSanemi y Giyuu atacaron por los flancos, pero sus katanas fueron desviadas por la masa de tentáculos antes de tocar la piel del enemigo.\n\n—¡Es demasiado rápido! —advirtió Giyuu—. ¡Ni siquiera con el Mundo Transparente podemos predecir la trayectoria de los ocho látigos al mismo tiempo!\n\nRen apretó los dientes. Las venas de su cuello comenzaron a volverse negras por el veneno de la primera ráfaga.",
+                "text": "Genba (el Maestro Celestial de la Piedra) fue el primero en saltar, lanzando su hacha y bola de picos contra el torso de Kageyama. Sin embargo, la velocidad de reacción del Rey Oni superaba todo lo visto hasta ahora.\n\nUn solo latigazo de carne cortó la cadena de Genba y le infligió un corte profundo en la pierna izquierda, inyectando la propia sangre venenosa de Kageyama en su sistema vascular.\n\nSanemi y Giyuu atacaron por los flancos, pero sus katanas fueron desviadas por la masa de tentáculos antes de tocar la piel del enemigo.\n\n—¡Es demasiado rápido! —advirtió Giyuu—. ¡Ni siquiera con el Mundo Transparente podemos predecir la trayectoria de los ocho látigos al mismo tiempo!\n\nRen apretó los dientes. Las venas de su cuello comenzaron a volverse negras por el veneno de la primera ráfaga.",
                 "img": "escena_c1_e3.jpg"
             }
         ]
@@ -104,7 +104,7 @@ capitulos = [
             },
             {
                 "sub": "Escena 3: El Sacrificio de las Tropas",
-                "text": "Sabiendo que Kageyama estaba debilitado, los cazadores de rango inferior del Gremio Cuervo —jóvenes que no poseían respiraciones especiales ni marcas— tomaron una decisión heroica.\n\nSe lanzaron en masa frente a los látigos de Kageyama, usando sus propios cuerpos, carruajes de madera y escudos de metal para amortiguar los golpes y proteger a los Pilares heridos.\n\n—¡Protejan al chico de la marca del sol! —gritaban los soldados mientras caían—. ¡Él es nuestra única esperanza para llegar al amanecer!\n\nRen miró el sacrificio de sus compañeros con lágrimas de sangre rodando por sus mejillas.\n\n—No dejaré... que la muerte de ninguno de ustedes sea en vano —susurró Ren, poniéndose de pie con la katana roja ardiendo en su mano.",
+                "text": "Sabiendo que Kageyama estaba debilitado, los cazadores de rango inferior del Gremio Cuervo —jóvenes que no poseían respiraciones especiales ni marcas— tomaron una decisión heroica.\n\nSe lanzaron en masa frente a los látigos de Kageyama, usando sus propios cuerpos, carruajes de madera y escudos de metal para amortiguar los golpes y proteger a los Maestros Celestiales heridos.\n\n—¡Protejan al chico de la marca del sol! —gritaban los soldados mientras caían—. ¡Él es nuestra única esperanza para llegar al amanecer!\n\nRen miró el sacrificio de sus compañeros con lágrimas de sangre rodando por sus mejillas.\n\n—No dejaré... que la muerte de ninguno de ustedes sea en vano —susurró Ren, poniéndose de pie con la katana roja ardiendo en su mano.",
                 "img": "escena_c2_e3.jpg"
             }
         ]
@@ -134,7 +134,7 @@ capitulos = [
         "escenas": [
             {
                 "sub": "Escena 1: El Cambio en el Cielo",
-                "text": "Faltaban exactamente quince minutos para el amanecer.\n\nEl cielo nocturno sobre la capital imperial comenzó a cambiar de tono, pasando del negro azabache a un azul marino profundo en el horizonte oriental. Las estrellas comenzaron a apagarse una por una.\n\nMuzan sintió el cambio de temperatura en el aire y entró en un estado de histeria ciega.\n\nSu cuerpo comenzó a expandirse de forma grotesca, creando una masa de carne gigante de diez metros de altura con forma de bebé deforme. Esta armadura orgánica le permitía proteger su verdadero cuerpo de los rayos solares y excavar en la tierra para enterrarse.\n\n—¡No dejen que se entierre! —gritó el Pilar del Viento, reincorporándose con el brazo izquierdo roto.",
+                "text": "Faltaban exactamente quince minutos para el amanecer.\n\nEl cielo nocturno sobre la capital imperial comenzó a cambiar de tono, pasando del negro azabache a un azul marino profundo en el horizonte oriental. Las estrellas comenzaron a apagarse una por una.\n\nMuzan sintió el cambio de temperatura en el aire y entró en un estado de histeria ciega.\n\nSu cuerpo comenzó a expandirse de forma grotesca, creando una masa de carne gigante de diez metros de altura con forma de bebé deforme. Esta armadura orgánica le permitía proteger su verdadero cuerpo de los rayos solares y excavar en la tierra para enterrarse.\n\n—¡No dejen que se entierre! —gritó el Maestro Celestial del Viento, reincorporándose con el brazo izquierdo roto.",
                 "img": "escena_c4_e1.jpg"
             },
             {
@@ -143,7 +143,7 @@ capitulos = [
                 "img": "escena_c4_e2.jpg"
             },
             {
-                "sub": "Escena 3: El Regreso del Cazador",
+                "sub": "Escena 3: El Regreso del Guerrero de la Hermandad",
                 "text": "Desde lo alto de un carruaje destruido, Ren emergió nuevamente.\n\nHabía perdido la visión de su ojo derecho y la mitad de su haori negro estaba quemado, pero la Katana del Sol en sus manos emitía un brillo rojo tan intenso que parecía fundirse con el aire.\n\nInhaló aire hasta el fondo de sus alvéolos, activando la Decimotercera Postura por última vez.\n\n—Danza del Sol... Decimotercera Postura Definitiva.\n\nRen se lanzó como un meteoro de luz dorada directo al corazón del gigante de carne.",
                 "img": "escena_c4_e3.jpg"
             }

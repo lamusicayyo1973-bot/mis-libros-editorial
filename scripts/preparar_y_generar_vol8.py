@@ -54,7 +54,7 @@ pipe = StableDiffusionXLPipeline.from_single_file(
 )
 pipe.to("cuda")
 
-# 3. Dedicated custom prompts for Volume 8: El Juicio de los Tres Lunares Superiores
+# 3. Dedicated custom prompts for Volume 8: El Juicio de los Tres Demonios del Abismo
 prompts_vol8 = {
     "portada.jpg": (
         "anime dark fantasy manga cover art, martial artist demon with blue tattoos and pink hair standing inside a giant blue glowing snowflake compass, "
@@ -152,7 +152,7 @@ prompts_vol8 = {
         1152, 648
     ),
     "escena_c5_e3.jpg": (
-        "anime dark fantasy illustration, surviving Hashira pillars assembling on city street under full moon, "
+        "anime dark fantasy illustration, surviving Sables de Elite pillars assembling on city street under full moon, "
         "drawing katanas for final 90-minute battle against Demon King",
         1152, 648
     )

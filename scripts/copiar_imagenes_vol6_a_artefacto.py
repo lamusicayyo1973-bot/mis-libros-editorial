@@ -14,7 +14,7 @@ images = [
     ("thumbnail.jpg", "Miniatura Cuadrada - Samurai con marca del sol bajo flores de glicina"),
     ("banner.jpg", "Banner Horizontal - Santuario de flores de glicina de noche"),
     ("escena_1.jpg", "Escena 1 - Llegada al santuario sagrado de glicinas"),
-    ("escena_c1_e1.jpg", "Capítulo 1 - Escena 1: Reunión de los Pilares Hashira en sala de tatami"),
+    ("escena_c1_e1.jpg", "Capítulo 1 - Escena 1: Reunión de los Maestros Celestiales Sables de Elite en sala de tatami"),
     ("escena_c1_e2.jpg", "Capítulo 1 - Escena 2: Entrenamiento esquivando rocas gigantes"),
     ("escena_c1_e3.jpg", "Capítulo 1 - Escena 3: Meditación bajo cascada helada"),
     ("escena_c2_e1.jpg", "Capítulo 2 - Escena 1: Descenso a las catacumbas subterráneas"),

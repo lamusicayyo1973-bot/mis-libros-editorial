@@ -22,13 +22,13 @@ images = [
     ("escena_c2_e3.jpg", "Capítulo 3 - Escena 1: Kagura el Demonio de Hielo consumido por veneno de glicina"),
     ("escena_c3_e1.jpg", "Capítulo 3 - Escena 2: Corte final mariposa cortando el cuello de hielo"),
     ("escena_c3_e2.jpg", "Capítulo 3 - Escena 3: Guerrero jabalí sosteniendo sus katanas dobles"),
-    ("escena_c3_e3.jpg", "Capítulo 4 - Escena 1: Pilares de Piedra y Viento enfrentando a Kurogane"),
+    ("escena_c3_e3.jpg", "Capítulo 4 - Escena 1: Maestros Celestiales de Piedra y Viento enfrentando a Kurogane"),
     ("escena_c4_e1.jpg", "Capítulo 4 - Escena 2: Ráfagas de luna creciente cortando columnas"),
     ("escena_c4_e2.jpg", "Capítulo 4 - Escena 3: Hojas incandescentes al rojo vivo unidas"),
     ("escena_c4_e3.jpg", "Capítulo 4 - Escena 4: Cuatro katanas solares atravesando a Kurogane"),
     ("escena_c5_e1.jpg", "Capítulo 5 - Escena 1: Flauta de madera dejada atrás en la ceniza"),
     ("escena_c5_e2.jpg", "Capítulo 5 - Escena 2: Erupción de Kageyama desde el capullo en los tejados"),
-    ("escena_c5_e3.jpg", "Capítulo 5 - Escena 3: Pilares reunidos para la batalla de 90 minutos"),
+    ("escena_c5_e3.jpg", "Capítulo 5 - Escena 3: Maestros Celestiales reunidos para la batalla de 90 minutos"),
     ("escena_climax.jpg", "Clímax del Volumen 8 - Erupción del Rey Demonio bajo la luna llena")
 ]
 

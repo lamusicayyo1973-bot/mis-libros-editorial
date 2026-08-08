@@ -19,7 +19,7 @@ PROMPTS = [
     {
         "book": "oni-no-ketsuryu-volumen-3",
         "filename": "escena_1.jpg",
-        "prompt": "Anime style, dark fantasy scene inside a demon train carriage, fleshy demonic tendrils writhing on seats, fiery golden aura surrounding a Flame Hashira warrior with a flame haori desheathing bright orange katana"
+        "prompt": "Anime style, dark fantasy scene inside a demon train carriage, fleshy demonic tendrils writhing on seats, fiery golden aura surrounding a Flame Sables de Elite warrior with a flame haori desheathing bright orange katana"
     },
     {
         "book": "oni-no-ketsuryu-volumen-3",
@@ -29,12 +29,12 @@ PROMPTS = [
     {
         "book": "oni-no-ketsuryu-volumen-4",
         "filename": "escena_1.jpg",
-        "prompt": "Anime style, dark fantasy courtyard at sunset, ancient retired Flame Hashira dropping a sake cup in shock seeing a black katana with a flame guard and crimson Sun Mark on young warrior's cheek"
+        "prompt": "Anime style, dark fantasy courtyard at sunset, ancient retired Flame Sables de Elite dropping a sake cup in shock seeing a black katana with a flame guard and crimson Sun Mark on young warrior's cheek"
     },
     {
         "book": "oni-no-ketsuryu-volumen-4",
         "filename": "escena_climax.jpg",
-        "prompt": "Anime style, mirror district battle at night, dual demon siblings fighting young warrior and butterfly Hashira, glowing purple poison butterflies swirling, high contrast dark fantasy art"
+        "prompt": "Anime style, mirror district battle at night, dual demon siblings fighting young warrior and butterfly Sables de Elite, glowing purple poison butterflies swirling, high contrast dark fantasy art"
     }
 ]
 

@@ -77,7 +77,7 @@ def build_vol7_docx():
     p_syn = doc.add_paragraph()
     p_syn.paragraph_format.line_spacing = 1.15
     p_syn.paragraph_format.space_after = Pt(10)
-    p_syn.add_run("Atrapados en el laberinto distorsionado del Castillo Infinito, los cazadores son divididos para ser destruidos individualmente. Aoi enfrenta al Segundo Lunar Rojo (Kagura) en una batalla de venenos concentrados, mientras Ren, Genba, Kiri y Kazuma encaran la prueba más extrema ante Kurogane, el Primer Lunar Rojo de seis ojos. El colapso del palacio llevará el conflicto directo al amanecer.")
+    p_syn.add_run("Atrapados en el laberinto distorsionado del Castillo Infinito, los cazadores son divididos para ser destruidos individualmente. Aoi enfrenta al Segundo Estirpe de Sangre (Kagura) en una batalla de venenos concentrados, mientras Ren, Genba, Kiri y Kazuma encaran la prueba más extrema ante Kurogane, el Primer Estirpe de Sangre de seis ojos. El colapso del palacio llevará el conflicto directo al amanecer.")
 
     add_image_safe(doc, vol7_dir / "banner.jpg", 6.0)
 
@@ -108,7 +108,7 @@ def build_vol7_docx():
     add_heading_styled(doc, "CAPÍTULO 3: El Hielo Descompuesto", 1)
     add_image_safe(doc, vol7_dir / "escena_c3_e1.jpg", 6.0)
     p_c3 = doc.add_paragraph()
-    p_c3.add_run("Genba y Kazuma unieron fuerzas frente a la cámara del Primer Lunar. Kurogane desenfundó su espada de carne viva, liberando un mar de ráfagas en forma de luna creciente...")
+    p_c3.add_run("Genba y Kazuma unieron fuerzas frente a la cámara del Primer Estirpe. Kurogane desenfundó su espada de carne viva, liberando un mar de ráfagas en forma de luna creciente...")
     add_image_safe(doc, vol7_dir / "escena_c3_e2.jpg", 6.0)
     add_image_safe(doc, vol7_dir / "escena_c3_e3.jpg", 6.0)
 
@@ -128,7 +128,7 @@ def build_vol7_docx():
     add_heading_styled(doc, "CAPÍTULO 5: La Caída del Primer Samurai", 1)
     add_image_safe(doc, vol7_dir / "escena_c5_e1.jpg", 6.0)
     p_c5 = doc.add_paragraph()
-    p_c5.add_run("Con tres katanas al rojo vivo atravesando su torso, el Primer Lunar vio desintegrar su cuerpo. Toda la fortaleza comenzó a elevarse hacia la superficie mientras aparecía la primera luz del amanecer...")
+    p_c5.add_run("Con tres katanas al rojo vivo atravesando su torso, el Primer Estirpe vio desintegrar su cuerpo. Toda la fortaleza comenzó a elevarse hacia la superficie mientras aparecía la primera luz del amanecer...")
     add_image_safe(doc, vol7_dir / "escena_c5_e2.jpg", 6.0)
     add_image_safe(doc, vol7_dir / "escena_c5_e3.jpg", 6.0)
     add_image_safe(doc, vol7_dir / "escena_climax.jpg", 6.0)

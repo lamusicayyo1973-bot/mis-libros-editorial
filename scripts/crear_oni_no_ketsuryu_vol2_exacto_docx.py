@@ -101,7 +101,7 @@ def create_oni_vol2_manuscript():
 
 Las dos niñas con rostros de porcelana los recibieron con una reverencia formal.
 
-—Felicitaciones a los sobrevivientes —dijeron al unísono—. Ahora son oficialmente Cazadores de Rango Mizunoto, el escalafón inicial del Gremio Cuervo.
+—Felicitaciones a los sobrevivientes —dijeron al unísono—. Ahora son oficialmente Guerreros de la Hermandad de Rango Mizunoto, el escalafón inicial del Gremio Cuervo.
 
 Dos asistentes del gremio se acercaron portando una mesa de madera. Sobre ella descansaban varios bloques de mineral Tamahagane-Sombra, el metal especial que absorbe la luz del sol.
 
@@ -156,7 +156,7 @@ De pronto, la caja de madera en su espalda comenzó a golpear suavemente. Miyuki
 
 —¡Un nuevo cazador de carne tierna! —siseó el demonio, mientras su rostro sin ojos se abría revelando hileras de dientes de cristal.
 
-Ren no dudó. Desenvainó su katana negra y se lanzó al ataque. La cera del demonio intentó envolver su hoja, pero al contacto con la Respiración de Sangre, el calor de la katana evaporó la sustancia al instante.
+Ren no dudó. Desenvainó su katana negra y se lanzó al ataque. La cera del demonio intentó envolver su hoja, pero al contacto con la Estilo de Esgrima de Sangre, el calor de la katana evaporó la sustancia al instante.
 
 Sin embargo, la criatura se regeneraba a una velocidad pasmosa: cada corte hecho por Ren se cerraba en una fracción de segundo.
 
@@ -198,7 +198,7 @@ La criatura emitió un alarido sónico antes de disolverse en cenizas de fuego r
                 },
                 {
                     "nombre": "Escena 2: Los Recuerdos de la Cera",
-                    "texto": """Antes de que las cenizas del demonio desaparecieran por completo, la Respiración de Sangre de Ren le permitió percibir los últimos pensamientos de la criatura.
+                    "texto": """Antes de que las cenizas del demonio desaparecieran por completo, la Estilo de Esgrima de Sangre de Ren le permitió percibir los últimos pensamientos de la criatura.
 
 Vio la visión de un anciano fabricante de velas de la era Edo, abandonado por su familia en la pobreza y tentado por un hombre elegante que vestía un sombrero blanco de época y trajo la maldición sobre su cuerpo.
 
@@ -213,7 +213,7 @@ Ren guardó su katana en la funda. La primera misión había concluido, pero la 
                     "nombre": "Escena 3: La Sombra en la Niebla",
                     "texto": """Desde lo alto de la torre del reloj del pueblo, una figura envuelta en una túnica oscura con bordados de telaraña observaba la escena.
 
-Llevaba un biwa (instrumento musical japonés) en sus manos y la pupila de su ojo izquierdo estaba marcada con el número del Sexto Lunar Rojo.
+Llevaba un biwa (instrumento musical japonés) en sus manos y la pupila de su ojo izquierdo estaba marcada con el número del Sexto Estirpe de Sangre.
 
 —El chico de las venas negras y la niña que no consume carne... —susurró la entidad, tocando una cuerda del biwa—. El señor Estará muy complacido de saber que la estirpe sobrevivió.
 
@@ -231,11 +231,11 @@ Con un sonido seco de cuerda (¡TONG!), la figura desapareció en el aire, dejan
                     "nombre": "Escena 1: El Cuervo de la Segunda Misión",
                     "texto": """Al amanecer del día siguiente, el cuervo mensajero de Ren descendió agitado sobre la barandilla de la posada.
 
-—¡Nuevas órdenes! ¡Nuevas órdenes! —gritó la ave—. ¡Abordar el Tren de la Noche en la estación central! ¡Más de cuarenta pasajeros han desaparecido dentro de los vagones! ¡Un Pilar del Gremio ya está a bordo!
+—¡Nuevas órdenes! ¡Nuevas órdenes! —gritó la ave—. ¡Abordar el Tren de la Noche en la estación central! ¡Más de cuarenta pasajeros han desaparecido dentro de los vagones! ¡Un Maestro Celestial del Gremio ya está a bordo!
 
 Ren miró a Miyuki, quien descansaba dentro de la caja de madera.
 
-—Un Pilar... —dijo Ren—. Los guerreros más poderosos del Gremio Cuervo. Esta es nuestra oportunidad de aprender cómo derrotar a los Seis Lunares.""",
+—Un Maestro Celestial... —dijo Ren—. Los guerreros más poderosos del Gremio Cuervo. Esta es nuestra oportunidad de aprender cómo derrotar a los Seis Lunares.""",
                     "img": "escena_c4_e1.jpg"
                 },
                 {
@@ -246,14 +246,14 @@ Ren caminaba por el andén entre la multitud, impresionado por la tecnología de
 
 En el asiento central del vagón de primera clase, un hombre de hombros anchos vestía un haori con patrones de llamas doradas. Comía bento de carne a una velocidad pasmosa, gritando "¡Sabroso!" con cada bocado.
 
-Era Kenshin, el Pilar del Fuego.""",
+Era Kenshin, el Maestro Celestial del Fuego.""",
                     "img": "escena_c4_e2.jpg"
                 },
                 {
-                    "nombre": "Escena 3: La Bienvenida del Pilar",
+                    "nombre": "Escena 3: La Bienvenida del Maestro Celestial",
                     "texto": """Ren se acercó con cautela al asiento de Kenshin.
 
-—Disculpe... ¿es usted el Pilar del Fuego? —preguntó Ren inclinándose levemente.
+—Disculpe... ¿es usted el Maestro Celestial del Fuego? —preguntó Ren inclinándose levemente.
 
 Kenshin se detuvo en seco, clavando sus ojos dorados y brillantes sobre Ren. En un instante, su mirada se volvió seria al notar la caja de madera en la espalda del joven y las marcas de venas en su rostro.
 
@@ -299,9 +299,9 @@ A su lado, Kenshin luchaba contra su propia ilusión mientras su cuerpo emitía 
 
 El demonio no estaba escondido dentro del tren: el demonio se había fusionado con la locomotora entera.
 
-Desde el techo del primer vagón, el Sexto Lunar Rojo —un demonio de piel pálida con bocas en las palmas de las manos— reía con locura mientras el tren avanzaba a toda velocidad hacia un barranco destruido.
+Desde el techo del primer vagón, el Sexto Estirpe de Sangre —un demonio de piel pálida con bocas en las palmas de las manos— reía con locura mientras el tren avanzaba a toda velocidad hacia un barranco destruido.
 
-—¡Despierta, Pilar del Fuego! —gritó Ren, desenvainando su katana negra envuelta en llamas rojas—. ¡Si el tren se cae, nadie sobrevivirá!
+—¡Despierta, Maestro Celestial del Fuego! —gritó Ren, desenvainando su katana negra envuelta en llamas rojas—. ¡Si el tren se cae, nadie sobrevivirá!
 
 [ CONTINUARÁ EN EL VOLUMEN 3 ]""",
                     "img": "escena_c5_e3.jpg"

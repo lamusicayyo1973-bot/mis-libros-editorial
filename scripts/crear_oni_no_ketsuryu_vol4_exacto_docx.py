@@ -75,7 +75,7 @@ def create_oni_vol4_manuscript():
     capitulos_info = [
         ("Capítulo 1: La Finca del Fuego", "cap_1"),
         ("Capítulo 2: La Ciudad que Nunca Duerme", "cap_2"),
-        ("Capítulo 3: El Doble Lunar", "cap_3"),
+        ("Capítulo 3: El Doble Estirpe", "cap_3"),
         ("Capítulo 4: La Purificación de la Sangre", "cap_4"),
         ("Capítulo 5: Las Cenizas de la Misericordia (Clímax del Volumen 4)", "cap_5"),
     ]
@@ -97,8 +97,8 @@ def create_oni_vol4_manuscript():
             "bm_name": "cap_1",
             "escenas": [
                 {
-                    "nombre": "Escena 1: Las Memorias del Primer Cazador",
-                    "texto": """Ren llegó a la Finca del Fuego al atardecer. La residencia, antes llena de vida, permanecía en un silencio sepulcral. El padre de Kenshin, un antiguo Pilar retirado y consumido por la bebida, lo recibió en el patio central.
+                    "nombre": "Escena 1: Las Memorias del Primer Guerrero de la Hermandad",
+                    "texto": """Ren llegó a la Finca del Fuego al atardecer. La residencia, antes llena de vida, permanecía en un silencio sepulcral. El padre de Kenshin, un antiguo Maestro Celestial retirado y consumido por la bebida, lo recibió en el patio central.
 
 Al ver la guarda con forma de llama en la katana negra de Ren y la marca carmesí en su mejilla, el anciano dejó caer su copa de sake.
 
@@ -113,16 +113,16 @@ El anciano lo guio hasta la biblioteca secreta de la finca y le entregó un volu
 
 Al cerrar los ojos, Ren recordó a su propio padre ejecutando esa misma danza frente al horno de la herrería cada año nuevo.
 
-—No era solo un ritual... —comprendió Ren, poniéndose de pie con la katana en la mano—. La Respiración del Fuego de Herrería que me enseñó mi padre era la versión disfrazada de la Danza del Sol.
+—No era solo un ritual... —comprendió Ren, poniéndose de pie con la katana en la mano—. La Estilo del Fuego Carmesí de Herrería que me enseñó mi padre era la versión disfrazada de la Danza del Sol.
 
 Al ejecutar el primer movimiento dentro del dojo, una ola de calor puro envolvió la habitación, volviendo la hoja negra de su katana de un color dorado incandescente.""",
                     "img": "escena_c1_e2.jpg"
                 },
                 {
                     "nombre": "Escena 3: La Petición de la Mariposa",
-                    "texto": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Aoi, la nueva discípula del Pilar del Ingesta y Veneno.
+                    "texto": """Al salir de la finca, una mariposa de luz morada revoloteó sobre la cabeza de Ren. Detrás de él reapareció la chica silenciosa de la Selección Final —la joven de la máscara de zorro, cuyo nombre era Aoi, la nueva discípula del Maestro Celestial del Ingesta y Veneno.
 
-—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Aoi con voz suave pero firme—. Un demonio de nivel Quinto Lunar Rojo ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
+—El Gremio requiere tu presencia en el Distrito de las Luces —dijo Aoi con voz suave pero firme—. Un demonio de nivel Quinto Estirpe de Sangre ha convertido el distrito de entretenimientos en su terreno de cacería. Los cazadores enviados anteriormente han desaparecido sin dejar rastro.
 
 Ren miró la caja de madera en su espalda, donde Miyuki descansaba.
 
@@ -151,9 +151,9 @@ Para infiltrarse sin llamar la atención de los guardias, Ren, Aoi y el muchacho
                     "nombre": "Escena 2: La Matrona del Espejo",
                     "texto": """Dentro de la casa Yoshiwara, la matrona principal —una mujer de belleza deslumbrante llamada Daki— descansaba sobre un diván de seda. Llevaba una faja obi de seda de diez metros de largo decorada con patrones de flores de cerezo.
 
-Sin embargo, detrás de su reflejo en los espejos de bronce de la habitación, su verdadera forma se revelaba: una criatura de piel pálida con venas verdes y la marca del Quinto Lunar Rojo en ambos ojos.
+Sin embargo, detrás de su reflejo en los espejos de bronce de la habitación, su verdadera forma se revelaba: una criatura de piel pálida con venas verdes y la marca del Quinto Estirpe de Sangre en ambos ojos.
 
-—Cazadores disfrazados... qué falta de respeto al arte —siseó Daki con voz melodiosa.
+—Guerreros de la Hermandad disfrazados... qué falta de respeto al arte —siseó Daki con voz melodiosa.
 
 Con un movimiento de sus dedos, la faja obi de seda cobró vida propia, transformándose en láminas de acero flexible que atravesaron las paredes de madera del dojo.""",
                     "img": "escena_c2_e2.jpg"
@@ -174,7 +174,7 @@ De pronto, la pared trasera del edificio colapsó cuando la caja de madera de Mi
             ]
         },
         {
-            "titulo": "Capítulo 3: El Doble Lunar",
+            "titulo": "Capítulo 3: El Doble Estirpe",
             "bm_id": 30,
             "bm_name": "cap_3",
             "escenas": [
@@ -199,7 +199,7 @@ La cabeza de la matrona rodó por las tejas de madera.""",
 
 —¡Hermano! ¡Me cortaron la cabeza! ¡Ayúdame! —gritó Daki hacia la sombra de su propio cuerpo decapitado.
 
-De la espalda del cuerpo de Daki emergió una figura esquelética y aterradora: un hombre encorvado de piel verdosa que sostenía dos hoces de hueso negro bañadas en veneno mortal. Era Gyutaro, el verdadero núcleo del Quinto Lunar Rojo.
+De la espalda del cuerpo de Daki emergió una figura esquelética y aterradora: un hombre encorvado de piel verdosa que sostenía dos hoces de hueso negro bañadas en veneno mortal. Era Gyutaro, el verdadero núcleo del Quinto Estirpe de Sangre.
 
 —Nadie hace llorar a mi hermana pequeña... —gruñó Gyutaro con una voz profunda y rasposa—. ¿Crees que por tener esa marca en la cara eres especial, cazador?
 
@@ -264,7 +264,7 @@ Las cabezas de los dos hermanos demonio rodaron juntas sobre la calle de piedra.
 
 Esta vez, sus cuerpos comenzaron a desintegrarse en cenizas rojas que el viento de la noche dispersó sobre los canales de agua.
 
-Por primera vez en más de cien años, un Lunar Rojo de los seis superiores había sido destruido por el Gremio Cuervo.""",
+Por primera vez en más de cien años, un Estirpe de Sangre de los seis superiores había sido destruido por el Gremio Cuervo.""",
                     "img": "escena_c4_e3.jpg"
                 }
             ]
@@ -304,13 +304,13 @@ Miyuki observó la escena desde la sombra, tomando la mano de Ren con ternura.""
                 },
                 {
                     "nombre": "Escena 3: La Ira de Kageyama (Cierre del Tomo 4)",
-                    "texto": """En las profundidades del Castillo Infinito —un palacio flotante fuera de la dimensión humana—, la noticia de la caída del Quinto Lunar Rojo sacudió la corte demoníaca.
+                    "texto": """En las profundidades del Castillo Infinito —un palacio flotante fuera de la dimensión humana—, la noticia de la caída del Quinto Estirpe de Sangre sacudió la corte demoníaca.
 
 Kageyama, el Rey Oni, en su forma de hombre elegante con ojos de gato carmesí, destruyó su laboratorio de alquimia de un solo golpe de rabia.
 
-Alrededor de su trono, los restantes cuatro Lunares Rojos Superiores se arrodillaron en pánico.
+Alrededor de su trono, los restantes cuatro Estirpes de Sangre Superiores se arrodillaron en pánico.
 
-—Los cazadores han despertado la Marca del Sol... —dijo Kageyama con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Lunares Superiores. Destruyan la Aldea de los Herreros y maten al chico de la marca.
+—Los cazadores han despertado la Marca del Sol... —dijo Kageyama con una voz helada que hizo temblar la dimensión del castillo—. No habrá más cacerías individuales. Desplieguen a los tres Demonios del Abismo. Destruyan la Aldea de los Herreros y maten al chico de la marca.
 
 [ CONTINUARÁ EN EL VOLUMEN 5 ]""",
                     "img": "escena_c5_e3.jpg"
