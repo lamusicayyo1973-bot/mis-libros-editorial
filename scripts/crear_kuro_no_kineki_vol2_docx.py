@@ -118,18 +118,18 @@ En la parte superior de la escalinata, el tercer hermano —el Ejecutor con la a
 
 Sora dio un paso al frente, fijando sus ojos grises en él.
 
-—¡Nosotros no elegimos este destino, Ren! —exclamó ella, llamándolo por su verdadero nombre por primera vez—. Tú te quedaste arriba jugando a ser el héroe de una reina tirana mientras Kael y yo nos desangrábamos en el abismo. Si realmente eres nuestro hermano, ¡hazte a un lado!
+—¡Nosotros no elegimos este destino, Kael! —exclamó ella, llamándolo por su verdadero nombre por primera vez—. Tú te quedaste arriba jugando a ser el héroe de una reina tirana mientras Kael y yo nos desangrábamos en el abismo. Si realmente eres nuestro hermano, ¡hazte a un lado!
 
-Ren miró a la Emperatriz y luego a sus dos hermanos. Por un instante, el brillo dorado de su ojo derecho titiló, revelando por un segundo la misma pupila rúnica en forma de engranaje que poseía Kael.
+Kael miró a la Emperatriz y luego a sus dos hermanos. Por un instante, el brillo dorado de su ojo derecho titiló, revelando por un segundo la misma pupila rúnica en forma de engranaje que poseía Kael.
 """),
             ("Escena 3: El Despertar de la Tercera Daga", """
 —Un prototipo defectuoso siempre debe ser desechado —sentenció la Emperatriz sin emoción.
 
-Antes de que Ren pudiera reaccionar, la Emperatriz extendió su mano hacia la espalda del Ejecutor. Un hilo de energía dorada brotó de la gema del Gran Núcleo y se clavó directamente en la nuca del joven. Ren soltó un alarido de dolor desgarrador mientras su armadura de oro comenzó a fundirse y reabsorberse dentro de su piel.
+Antes de que Kael pudiera reaccionar, la Emperatriz extendió su mano hacia la espalda del Ejecutor. Un hilo de energía dorada brotó de la gema del Gran Núcleo y se clavó directamente en la nuca del joven. Kael soltó un alarido de dolor desgarrador mientras su armadura de oro comenzó a fundirse y reabsorberse dentro de su piel.
 
 De su pecho emergió una tercera daga: la Daga Solar, hecha de un metal dorado pulido que ardía con una llama blanca abrasadora.
 
-—Si no van a servir como mis comandantes —dijo la Emperatriz mientras el cuerpo de Ren caía controlado como una marioneta—, usaré el lazo de sangre que los une para quemar sus tres almas de una sola vez y alimentar el Núcleo por los próximos cien años.
+—Si no van a servir como mis comandantes —dijo la Emperatriz mientras el cuerpo de Kael caía controlado como una marioneta—, usaré el lazo de sangre que los une para quemar sus tres almas de una sola vez y alimentar el Núcleo por los próximos cien años.
 
 Kael apretó los dientes. El engranaje de su ojo derecho comenzó a girar a una velocidad frenética, absorbiendo no solo los residuos de la atmósfera, sino también el dolor del lazo familiar que sentía al ver a su hermano poseído.
 
@@ -138,30 +138,30 @@ Kael apretó los dientes. El engranaje de su ojo derecho comenzó a girar a una 
         ]),
         ("Capítulo 2: La Danza de las Tres Hojas", [
             ("Escena 1: Choque Trino", """
-El aire en la plaza del palacio se volvió insoportable. Ren, movido por la energía de la Emperatriz, se desplazó a una velocidad que superaba la barrera del sonido. La Daga Solar cortó el aire dejando un rastro de fuego blanco que derritió las columnas de mármol a su paso.
+El aire en la plaza del palacio se volvió insoportable. Kael, movido por la energía de la Emperatriz, se desplazó a una velocidad que superaba la barrera del sonido. La Daga Solar cortó el aire dejando un rastro de fuego blanco que derritió las columnas de mármol a su paso.
 
-Kael interceptó la estocada a milímetros de su rostro. La colisión entre la tinta negra de Kael y la luz dorada de Ren provocó una explosión de chispas que agrietó el suelo bajo sus pies.
+Kael interceptó la estocada a milímetros de su rostro. La colisión entre la tinta negra de Kael y la luz dorada de Kael provocó una explosión de chispas que agrietó el suelo bajo sus pies.
 
-—¡Ren, escúchame! —gritó Kael, sosteniendo el choque de hojas—. ¡Sé lo que se siente perder la mente! ¡Sé lo que es despertar sin saber quién eres! ¡Lucha contra esa magia!
+—¡Kael, escúchame! —gritó Kael, sosteniendo el choque de hojas—. ¡Sé lo que se siente perder la mente! ¡Sé lo que es despertar sin saber quién eres! ¡Lucha contra esa magia!
 
-Las llamas doradas de Ren no respondieron con palabras, sino con un tajo ascendente que obligó a Kael a dar una pirueta hacia atrás.
+Las llamas doradas de Kael no respondieron con palabras, sino con un tajo ascendente que obligó a Kael a dar una pirueta hacia atrás.
 
-Sora apareció desde la sombra de una columna destruida, lanzando tres agujas de tinta congelada directo a las articulaciones de Ren para inmovilizarlo sin matarlo.
+Sora apareció desde la sombra de una columna destruida, lanzando tres agujas de tinta congelada directo a las articulaciones de Kael para inmovilizarlo sin matarlo.
 """),
             ("Escena 2: El Sacrificio Voluntario", """
-Ren bloqueó las agujas de Sora con el lomo de su hoja dorada, pero el movimiento lo dejó expuesto por una fracción de segundo. Kael aprovechó la brecha para cerrar la distancia, pero en lugar de atacar con el filo de su arma, cerró la daga y golpeó el pecho de Ren con la mano izquierda abierta.
+Kael bloqueó las agujas de Sora con el lomo de su hoja dorada, pero el movimiento lo dejó expuesto por una fracción de segundo. Kael aprovechó la brecha para cerrar la distancia, pero en lugar de atacar con el filo de su arma, cerró la daga y golpeó el pecho de Kael con la mano izquierda abierta.
 
 «Absorción de Ecos», pensó Kael.
 
-Al tocar el tórax de su hermano, la runa de su ojo derecho no absorbió la memoria de un desconocido, sino el torrente directo de dolor y manipulación que la Emperatriz había inyectado en la mente de Ren.
+Al tocar el tórax de su hermano, la runa de su ojo derecho no absorbió la memoria de un desconocido, sino el torrente directo de dolor y manipulación que la Emperatriz había inyectado en la mente de Kael.
 
-Kael sintió cómo miles de agujas de energía le perforaban el cerebro. Vio los recuerdos de Ren: años de entrenamiento tortuoso bajo el palacio, la soledad de ser el único hermano que no pudo escapar y la orden secreta que Ren había guardado en su corazón: proteger a Kael y a Sora aun si eso significaba convertirse en el enemigo.
+Kael sintió cómo miles de agujas de energía le perforaban el cerebro. Vio los recuerdos de Kael: años de entrenamiento tortuoso bajo el palacio, la soledad de ser el único hermano que no pudo escapar y la orden secreta que Kael había guardado en su corazón: proteger a Kael y a Sora aun si eso significaba convertirse en el enemigo.
 
 —Tú... nunca nos traicionaste —susurró Kael, escupiendo un hilo de sangre mientras caía de rodillas, sosteniendo la carga mental.
 
-Ren recuperó el control de sus ojos por un instante. La llama dorada de su daga se atenuó.
+Kael recuperó el control de sus ojos por un instante. La llama dorada de su daga se atenuó.
 
-—Kael... tómala —dijo Ren con la voz quebrada, clavando la empuñadura de la Daga Solar en la mano libre de Kael—. La tercera daga no es para gobernar... es la llave para apagar la máquina.
+—Kael... tómala —dijo Kael con la voz quebrada, clavando la empuñadura de la Daga Solar en la mano libre de Kael—. La tercera daga no es para gobernar... es la llave para apagar la máquina.
 """),
             ("Escena 3: La Trinidad de la Tinta", """
 Al tomar la Daga Solar con la mano izquierda mientras mantenía la Daga de Tinta Negra en la derecha, el cuerpo de Kael sufrió una transformación radical.
@@ -209,9 +209,9 @@ La Emperatriz del trono soltó una carcajada distorsionada que dejó de sonar hu
             ("Escena 3: La Carga Imposible", """
 La entidad de cristal se abalanzó sobre ellos con una furia desmedida, lanzando ráfagas de espinas que perforaron las columnas restantes del templo.
 
-Ren, recuperando apenas la conciencia, usó sus últimas fuerzas para crear un escudo de luz que desvió el ataque principal, protegiendo a Sora.
+Kael, recuperando apenas la conciencia, usó sus últimas fuerzas para crear un escudo de luz que desvió el ataque principal, protegiendo a Sora.
 
-—¡Kael, hazlo ahora! —gritó Ren desde el suelo—. ¡Usa la Tinta de Anulación directamente sobre el corazón del Núcleo! ¡Nosotros sostendremos el peso de la caída!
+—¡Kael, hazlo ahora! —gritó Kael desde el suelo—. ¡Usa la Tinta de Anulación directamente sobre el corazón del Núcleo! ¡Nosotros sostendremos el peso de la caída!
 
 Kael sabía lo que eso significaba. Para neutralizar el Núcleo sin destruir la ciudad de golpe, debía canalizar toda la energía de las tres dagas hacia su propio cuerpo y actuar como un pararrayos biológico, absorbiendo toda la energía acumulada del Núcleo dentro de su propia mente.
 
@@ -243,24 +243,24 @@ Con el flujo de energía cortado, la falsa Emperatriz de cristal emitió un chil
 
 —Si apagas el sistema... ellos volverán a ser humanos vulnerables... sufrirían... morirán... —alcanzó a decir la voz sintética antes de convertirse en polvo.
 
-—Ser vulnerable es lo que nos hace humanos —respondió Ren desde la distancia, apoyándose en Sora mientras ambos observaban la disolución del tirano.
+—Ser vulnerable es lo que nos hace humanos —respondió Kael desde la distancia, apoyándose en Sora mientras ambos observaban la disolución del tirano.
 
 El Gran Núcleo se abrió como una flor de loto de piedra. El cuerpo de la verdadera madre fue liberado del trance y cayó suavemente sobre los brazos de Sora, mientras la gema negra que sostenía el sistema se convertía en arena fina que el viento se llevó hacia el horizonte.
 
 Pero en el centro de la plataforma, el lugar donde estaba Kael quedó sumido en un silencio sepulcral.
 """),
             ("Escena 3: El Huérfano de la Tinta", """
-Sora y Ren corrieron hacia el centro de la plaza destruida.
+Sora y Kael corrieron hacia el centro de la plaza destruida.
 
 Kael permanecía de pie, pero su figura ya no parecía sólida. Su cuerpo estaba envuelto en una bruma de tinta negra y dorada que se disipaba lentamente con la brisa del atardecer. Las tres dagas habían desaparecido, dejando solo tres marcas rúnicas grabadas en las palmas de sus manos.
 
 —¿Kael...? —llamó Sora, acercándose con miedo a tocarlo.
 
-Kael se giró despacio. Sus dos ojos eran ahora completamente blancos, sin pupilas ni engranajes. Miró hacia Sora y Ren con una expresión de absoluta paz, pero sus ojos estaban vacíos.
+Kael se giró despacio. Sus dos ojos eran ahora completamente blancos, sin pupilas ni engranajes. Miró hacia Sora y Kael con una expresión de absoluta paz, pero sus ojos estaban vacíos.
 
 —La ciudad aterrizó a salvo... —dijo Kael con una voz que apenas era un susurro—. La gente del abismo y los de arriba... ahora comparten el mismo suelo.
 
-—Kael... ¿sabes quiénes somos? —preguntó Ren, dándole un paso al frente con el corazón en la garganta.
+—Kael... ¿sabes quiénes somos? —preguntó Kael, dándole un paso al frente con el corazón en la garganta.
 
 Kael ladeó la cabeza, tratando de buscar en el abismo de su mente. Una lágrima de tinta negra rodó por su mejilla.
 
@@ -275,11 +275,11 @@ La Ciudad de Aetheria reposaba ahora en el centro del valle, unida físicamente 
 
 En la plaza central, los habitantes de la superficie y los antiguos "Huecos" trabajaban juntos en la reconstrucción.
 
-Ren, vistiendo una túnica sencilla sin adornos militares, supervisaba la distribución de víveres junto a su madre, quien se recuperaba lentamente de su largo letargo.
+Kael, vistiendo una túnica sencilla sin adornos militares, supervisaba la distribución de víveres junto a su madre, quien se recuperaba lentamente de su largo letargo.
 
 —Aún no ha regresado, ¿verdad? —preguntó la madre mirando hacia las colinas.
 
-—No —respondió Ren con una leve sonrisa—. Pero él no pertenece a las paredes de una ciudad.
+—No —respondió Kael con una leve sonrisa—. Pero él no pertenece a las paredes de una ciudad.
 """),
             ("Escena 2: El Caminante de los Ecos", """
 En lo alto de la colina que dominaba el nuevo valle, Sora caminaba entre los árboles. Llevaba en su espalda la funda de la antigua daga de Kael, ahora vacía.

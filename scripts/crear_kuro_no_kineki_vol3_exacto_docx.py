@@ -101,9 +101,9 @@ def create_kuro_vol3_manuscript():
 
 En la proa del barco, Kael observaba el horizonte con su abrigo viajero movido por el viento marino. Su ojo derecho brillaba con un patrón rúnico más complejo, capaz de leer las corrientes de memoria que fluían en el mar.
 
-A su lado, Sora afinaba las cuerdas de un instrumento antiguo mientras Ren revisaba los mapas de navegación sobre una mesa de cubierta.
+A su lado, Sora afinaba las cuerdas de un instrumento antiguo mientras Kael revisaba los mapas de navegación sobre una mesa de cubierta.
 
-—El mapa antiguo dice que este continente fue sellado hace mil años —dijo Ren, señalando una masa de tierra rodeada de tormentas—. Nadie que haya cruzado la bruma plateada ha regresado para contarlo.
+—El mapa antiguo dice que este continente fue sellado hace mil años —dijo Kael, señalando una masa de tierra rodeada de tormentas—. Nadie que haya cruzado la bruma plateada ha regresado para contarlo.
 
 —No necesitamos un mapa completo —respondió Kael, tocando la cicatriz de su mano izquierda, que latía en dirección al centro del continente—. La energía que despertó en la torre nos está llamando. Si los "Creadores" fueron los que diseñaron las tres dagas originales, este es el lugar donde empezó nuestra maldición.""",
                     "img": "escena_c1_e1.jpg"
@@ -114,13 +114,13 @@ A su lado, Sora afinaba las cuerdas de un instrumento antiguo mientras Ren revis
 
 —¡Es un Guardián de la Niebla! —gritó Sora, desenvainando la daga que había restaurado con su propio poder.
 
-Ren reaccionó al instante, invocando un escudo de luz dorada desde sus palmas para proteger el mástil principal del barco.
+Kael reaccionó al instante, invocando un escudo de luz dorada desde sus palmas para proteger el mástil principal del barco.
 
 Kael no esperó. Saltó hacia la cabeza del monstruo. Esta vez no necesitó una daga física: la energía de los tres elementos (fuego negro, fuego blanco y luz dorada) brotó directamente de las marcas rúnicas grabadas en sus palmas.
 
 Con un solo movimiento cruzado en el aire, Kael trazó un símbolo de anulación que congeló al dragón de cristal en mitad del ataque, convirtiéndolo en una estatua de sal plateada que se desmoronó sobre el mar.
 
-—Tus poderes no han dejado de evolucionar desde que absorbiste el Núcleo... —dijo Ren, mirando la facilidad con la que Kael había controlado la magia.
+—Tus poderes no han dejado de evolucionar desde que absorbiste el Núcleo... —dijo Kael, mirando la facilidad con la que Kael había controlado la magia.
 
 —No es mi poder —dijo Kael cayendo de pie en la cubierta—. Es el recuerdo de la magia original.""",
                     "img": "escena_c1_e2.jpg"
@@ -153,9 +153,9 @@ Cada orbe guardaba la historia completa de un mundo que había existido antes qu
 
 En el centro del gran salón, flotando sobre un pedestal de runas rojas, se encontraba un ser anciano con túnicas ceremoniales rotas. Carecía de rostro humano; en su lugar, tres máscaras flotantes de oro giran a su alrededor, representando la Alegría, el Dolor y la Indiferencia.
 
-—Los tres fragmentos han regresado a casa —habló el ser. Su voz no resonaba en el aire, sino en las mentes de los tres hermanos a la vez—. Kael... el recipiente de la tinta. Sora... la custodia de la forma. Ren... el guardián de la luz.
+—Los tres fragmentos han regresado a casa —habló el ser. Su voz no resonaba en el aire, sino en las mentes de los tres hermanos a la vez—. Kael... el recipiente de la tinta. Sora... la custodia de la forma. Kael... el guardián de la luz.
 
-—¿Quién eres? —exigió Ren, poniéndose en guardia.
+—¿Quién eres? —exigió Kael, poniéndose en guardia.
 
 —Soy el Primer Escriba —respondió la entidad—. El último superviviente de los Creadores. Y quienes ustedes llaman 'humanos' no son más que los bocetos de nuestra última obra.""",
                     "img": "escena_c2_e1.jpg"
@@ -164,7 +164,7 @@ En el centro del gran salón, flotando sobre un pedestal de runas rojas, se enco
                     "nombre": "Escena 2: La Verdad del Primer Mundo",
                     "texto": """El Primer Escriba levantó la mano y los orbes de memoria del salón comenzaron a girar a gran velocidad, proyectando una ilusión tridimensional en mitad de la habitación.
 
-Kael, Sora y Ren vieron el origen de todo:
+Kael, Sora y Kael vieron el origen de todo:
 Mil años atrás, la humanidad no vivía dividida entre la Superficie y el Abismo. Vivían en una civilización próspera, pero destruida por una guerra civil catastróficamente violenta. Para evitar la extinción total, los Creadores decidieron diseñar el Sistema de Tinta: un mecanismo para borrar la capacidad de odiar de la mente humana, al costo de sacrificar los recuerdos personales.
 
 —Creamos el Relicario y dividimos las tres dagas entre los descendientes de nuestra propia sangre para equilibrar el sistema —explicó el Escriba—. Pero Aetheria fue una prueba fallida. La Emperatriz se corrompió con el poder. Y ahora que habéis apagado el Núcleo, la barrera que protegía este mundo del resto del universo se ha roto.
@@ -184,7 +184,7 @@ Eran los Devoradores de Ecos, guerreros del continente exterior que buscaban abs
 
 —¡Entrega el contenedor! —gritó el líder de los invasores, desenvainando una guadaña de fuego rojo.
 
-Ren y Sora reaccionaron de inmediato. Ren desató una ráfaga de luz dorada que desvió la guadaña, mientras Sora trazó barreras de tinta blanca para proteger al Escriba y los archivos.
+Kael y Sora reaccionaron de inmediato. Kael desató una ráfaga de luz dorada que desvió la guadaña, mientras Sora trazó barreras de tinta blanca para proteger al Escriba y los archivos.
 
 Kael apretó los puños. Las runas de sus palmas volvieron a encenderse, pero esta vez la tinta negra no salía de su cuerpo... la tinta del suelo y del mar plateado comenzó a responder a su llamado.
 
@@ -200,7 +200,7 @@ Kael apretó los puños. Las runas de sus palmas volvieron a encenderse, pero es
             "escenas": [
                 {
                     "nombre": "Escena 1: El Poder del Escriba",
-                    "texto": """El combate en la torre se volvió un caos de energía. Los Devoradores de Ecos se movían con una coordinación perfecta, atacando en ráfagas que desgastaban la defensa de Ren y Sora.
+                    "texto": """El combate en la torre se volvió un caos de energía. Los Devoradores de Ecos se movían con una coordinación perfecta, atacando en ráfagas que desgastaban la defensa de Kael y Sora.
 
 El Primer Escriba, flotando en el centro del salón, comenzó a cantar en un idioma antiguo. Las tres máscaras doradas que flotaban sobre su cabeza se unieron en un solo rostro de piedra.
 
@@ -217,7 +217,7 @@ Con un gesto de sus dedos, miles de orbes de memoria flotantes se convirtieron e
                     "nombre": "Escena 2: La Fusión de los Tres Mundos",
                     "texto": """Al recibir la Llave del Autor, la mente de Kael se expandió más allá de los límites humanos. Por primera vez desde que despertó en la fosa del Capítulo 1, Kael no solo recuperó la totalidad de sus propios recuerdos, sino que vio el mapa completo del planeta: tres continentes flotantes aislados entre sí, cada uno sufriendo bajo sistemas de poder destructivos.
 
-Sora y Ren se acercaron a él, sintiendo la inmensa presión mágica que emanaba de su hermano.
+Sora y Kael se acercaron a él, sintiendo la inmensa presión mágica que emanaba de su hermano.
 
 —¿Recuerdas todo, Kael? —preguntó Sora con la voz temblorosa.
 
@@ -225,7 +225,7 @@ Kael abrió los ojos. La pupila de su ojo derecho ya no tenía una sola runa, si
 
 —Lo recuerdo todo, Sora. Recuerdos de nuestra infancia, el día que hicimos el pacto... y el motivo por el cual la Emperatriz nos separó —dijo Kael mirando a sus dos hermanos—. Pero más importante: ahora sé cómo salvar a los otros continentes.
 
-Ren sonrió y levantó su espada.
+Kael sonrió y levantó su espada.
 
 —Entonces no hay tiempo que perder. La flota de los Devoradores viene en camino.""",
                     "img": "escena_c3_e2.jpg"
@@ -238,9 +238,9 @@ Kael no mostró pavor. Extendió ambos brazos hacia el cielo.
 
 La Llave del Autor reaccionó. El mar plateado a sus espaldas se levantó en tres columnas gigantescas de Tinta de Anulación que alcanzaron las nubes, formando un portal intercontinental de dimensiones bíblicas.
 
-—No vamos a defender este continente —dijo Kael, mirando a Sora y Ren—. Vamos a llevar la batalla a la capital de los Devoradores.
+—No vamos a defender este continente —dijo Kael, mirando a Sora y Kael—. Vamos a llevar la batalla a la capital de los Devoradores.
 
-Sora y Ren se colocaron a los lados de Kael. Los tres hermanos cruzaron sus manos en el centro del portal, desatando una luz que iluminó todo el océano plateado.""",
+Sora y Kael se colocaron a los lados de Kael. Los tres hermanos cruzaron sus manos en el centro del portal, desatando una luz que iluminó todo el océano plateado.""",
                     "img": "escena_c3_e3.jpg"
                 }
             ]
@@ -258,7 +258,7 @@ Al pisar la plaza central de la ciudad enemiga, la alarma general resonó con un
 
 Decenas de legiones de soldados de hierro los rodearon de inmediato.
 
-—Parece que no somos bienvenidos —bromeó Ren, desenfundando su mandoble de luz.
+—Parece que no somos bienvenidos —bromeó Kael, desenfundando su mandoble de luz.
 
 —Déjenme la vanguardia a mí —dijo Sora, abriendo los brazos mientras miles de agujas de tinta blanca flotaban a su alrededor como un ejército de mariposas de cristal.
 
@@ -308,7 +308,7 @@ Gracias a la Llave del Autor, Kael no destruyó los tres continentes, sino que l
 
 En la cima de la antigua Torre del Escriba, los tres hermanos se reunieron por última vez ante el gran libro de la creación.
 
-Ren entregó su mandoble dorado para ser sellado en la piedra. Sora guardó sus dagas en un cofre de bronce que colocaron en la base del monumento.
+Kael entregó su mandoble dorado para ser sellado en la piedra. Sora guardó sus dagas en un cofre de bronce que colocaron en la base del monumento.
 
 —¿Qué vas a hacer con la Pluma del Autor, Kael? —preguntó Sora mirando la herramienta en las manos de su hermano.
 
@@ -321,7 +321,7 @@ Kael contempló la pluma por un momento y luego la arrojó hacia el centro del m
                     "nombre": "Escena 2: El Libro Abierto",
                     "texto": """En la plaza central de la nueva capital unificada, la gente de todos los continentes se había reunido para celebrar el inicio de la era de la Tinta Libre. Los niños jugaban en las calles dibujando con tinta de colores sobre los muros de piedra que antes separaban los mundos.
 
-Ren asumió el liderazgo del consejo civil para coordinar el comercio y la construcción de viviendas. Sora fundó la primera Academia de la Memoria, donde se enseñaba la historia real de la humanidad sin censuras ni manipulaciones.
+Kael asumió el liderazgo del consejo civil para coordinar el comercio y la construcción de viviendas. Sora fundó la primera Academia de la Memoria, donde se enseñaba la historia real de la humanidad sin censuras ni manipulaciones.
 
 Y en las afueras de la ciudad, junto a un árbol de hojas doradas, Kael escribía en su cuaderno de viajes.
 
