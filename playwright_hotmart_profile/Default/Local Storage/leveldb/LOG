@@ -1,0 +1,17 @@
+2026/08/13-20:43:56.067 6354 Creating DB C:\Proyectos\mis-libros-editorial\playwright_hotmart_profile\Default\Local Storage\leveldb since it was missing.
+2026/08/13-20:43:56.095 6354 Reusing MANIFEST C:\Proyectos\mis-libros-editorial\playwright_hotmart_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/13-21:18:58.584 2174 Level-0 table #5: started
+2026/08/13-21:18:58.592 2174 Level-0 table #5: 52739 bytes OK
+2026/08/13-21:18:58.595 2174 Delete type=0 #3
+2026/08/13-22:02:58.586 2174 Level-0 table #7: started
+2026/08/13-22:02:58.593 2174 Level-0 table #7: 59551 bytes OK
+2026/08/13-22:02:58.595 2174 Delete type=0 #4
+2026/08/13-22:46:58.591 2174 Level-0 table #9: started
+2026/08/13-22:46:58.597 2174 Level-0 table #9: 59037 bytes OK
+2026/08/13-22:46:58.600 2174 Delete type=0 #6
+2026/08/13-23:30:58.593 2174 Level-0 table #11: started
+2026/08/13-23:30:58.601 2174 Level-0 table #11: 59470 bytes OK
+2026/08/13-23:30:58.604 2174 Delete type=0 #8
+2026/08/14-00:14:58.580 2174 Level-0 table #13: started
+2026/08/14-00:14:58.588 2174 Level-0 table #13: 59556 bytes OK
+2026/08/14-00:14:58.590 2174 Delete type=0 #10

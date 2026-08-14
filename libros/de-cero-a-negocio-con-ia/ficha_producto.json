@@ -1,29 +1,20 @@
 {
-  "id": "de-cero-a-negocio-con-ia",
-  "titulo": "DE CERO A NEGOCIO CON IA",
-  "subtitulo": "Cómo lanzar y ejecutar tu emprendimiento en 90 días",
-  "categoria": "Guía Práctica • Emprendimiento",
-  "precio_usd": 20.00,
-  "formato": "eBook PDF Digital",
-  "archivo_pdf": "DE CERO A NEGOCIO CON IA Cómo lanzar y ejecutar tu emprendimiento en 90 días.pdf",
-  "portada": "portada.jpg",
-  "resumen_corto": "La guía definitiva de 90 días para validar, construir y escalar tu negocio utilizando inteligencia artificial sin gastar capital ni saber programar.",
-  "puntos_clave": [
+  "titulo": "DE CERO A NEGOCIO CON IA: Cómo lanzar y ejecutar tu emprendimiento en 90 días",
+  "autor": "Nicolás Noguera",
+  "precio": 20.0,
+  "headline": "¿Quieres emprender con IA pero no sabes por dónde empezar?",
+  "descripcion": "Vamos a ser honestos: probablemente ya pensaste en emprender antes y encontraste mil razones para no hacerlo ('no tengo capital', 'no sé programar', 'y si fracaso'). La Inteligencia Artificial bajó drásticamente el costo y tiempo para lanzar un negocio. Lo que antes tomaba un equipo de 5 personas y 6 meses, hoy lo puedes armar tú solo en semanas. De Cero a Negocio con IA es un método práctico, sin relleno, diseñado para guiarte en el mercado real.",
+  "beneficios": [
     "Validación de negocio en 48 horas sin gastar dinero.",
     "Stack mínimo de herramientas de IA sin costos inflados.",
     "Automatizaciones esenciales antes de escalar.",
     "Estrategia paso a paso para tus primeros 10 clientes sin anuncios.",
     "Roadmap ejecutable de 90 días semana por semana."
   ],
-  "copy_ventas": {
-    "headline": "¿Quieres emprender con IA pero no sabes por dónde empezar?",
-    "subheadline": "Valida tu idea, construye tu producto mínimo viable y consigue tus primeros 10 clientes pagados en 90 días o menos.",
-    "cuerpo": "Vamos a ser honestos: probablemente ya pensaste en emprender antes y encontraste mil razones para no hacerlo ('no tengo capital', 'no sé programar', 'y si fracaso'). La Inteligencia Artificial bajó drásticamente el costo y tiempo para lanzar un negocio. Lo que antes tomaba un equipo de 5 personas y 6 meses, hoy lo puedes armar tú solo en semanas. De Cero a Negocio con IA es un método práctico, sin relleno, diseñado para guiarte en el mercado real.",
-    "modulos": [
-      { "titulo": "Parte 1: La Idea y la Validación", "capitulos": "Capítulos 1 al 3" },
-      { "titulo": "Parte 2: Construcción con IA", "capitulos": "Capítulos 4 al 7" },
-      { "titulo": "Parte 3: Consigue tus Primeros Clientes", "capitulos": "Capítulos 8 al 10" },
-      { "titulo": "Parte 4: Ejecución y Crecimiento", "capitulos": "Capítulos 11 al 13 + Roadmap 90 días" }
-    ]
-  }
+  "capitulos": [
+    "Parte 1: La Idea y la Validación: Capítulos 1 al 3",
+    "Parte 2: Construcción con IA: Capítulos 4 al 7",
+    "Parte 3: Consigue tus Primeros Clientes: Capítulos 8 al 10",
+    "Parte 4: Ejecución y Crecimiento: Capítulos 11 al 13 + Roadmap 90 días"
+  ]
 }

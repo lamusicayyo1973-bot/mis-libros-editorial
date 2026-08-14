@@ -1,208 +1,144 @@
 # -*- coding: utf-8 -*-
+import sys
+import os
+import io
+import json
+from pathlib import Path
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from pathlib import Path
-import shutil
 
-doc = docx.Document()
+vol9_dir = Path(r"C:\Proyectos\mis-libros-editorial\libros\oni-no-ketsuryu-volumen-9")
+vol9_dir_downloads = Path(r"c:\Users\nicol\Downloads\MIS LIBROS\libros\oni-no-ketsuryu-volumen-9")
 
-# Margenes
-for s in doc.sections:
-    s.top_margin = Inches(1)
-    s.bottom_margin = Inches(1)
-    s.left_margin = Inches(1)
-    s.right_margin = Inches(1)
+def add_heading_styled(doc, text, level):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(18)
+    p.paragraph_format.space_after = Pt(8)
+    p.paragraph_format.keep_with_next = True
+    run = p.add_run(text)
+    run.bold = True
+    run.font.name = "Georgia"
+    if level == 1:
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        run.font.size = Pt(22)
+        run.font.color.rgb = RGBColor(180, 20, 20)
+    elif level == 2:
+        run.font.size = Pt(16)
+        run.font.color.rgb = RGBColor(120, 15, 15)
+    return p
 
-# Titulo Principal
-p_title = doc.add_paragraph()
-p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
-run_title = p_title.add_run("Oni no Ketsuryū (鬼の血流 - La Estirpe de la Sangre)\nVolumen 9: La Noche de los Noventa Minutos")
-run_title.font.name = "Arial"
-run_title.font.size = Pt(24)
-run_title.font.bold = True
-run_title.font.color.rgb = RGBColor(180, 0, 0)
+def add_image_safe(doc, img_path, width_inches=6.0):
+    if img_path.exists():
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(12)
+        p.paragraph_format.space_after = Pt(12)
+        run = p.add_run()
+        run.add_picture(str(img_path), width=Inches(width_inches))
 
-# Subtitulo
-p_sub = doc.add_paragraph()
-p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
-run_sub = p_sub.add_run("Obra Oficial por Nicolás Noguera\nEdición Digital Ilustrada")
-run_sub.font.name = "Arial"
-run_sub.font.size = Pt(14)
-run_sub.font.italic = True
-
-doc.add_page_break()
-
-base_dir = Path(r"C:\Proyectos\mis-libros-editorial\libros\oni-no-ketsuryu-volumen-9")
-dest2 = Path(r"c:\Users\nicol\Downloads\MIS LIBROS\libros\oni-no-ketsuryu-volumen-9")
-
-base_dir.mkdir(parents=True, exist_ok=True)
-dest2.mkdir(parents=True, exist_ok=True)
-
-# Asignar imagenes base si falta alguna
-ref_dir = Path(r"C:\Proyectos\mis-libros-editorial\libros\oni-no-ketsuryu-volumen-8")
-
-all_imgs = [
-    "portada.jpg", "thumbnail.jpg", "banner.jpg", "escena_1.jpg", "escena_climax.jpg",
-    "escena_c1_e1.jpg", "escena_c1_e2.jpg", "escena_c1_e3.jpg",
-    "escena_c2_e1.jpg", "escena_c2_e2.jpg", "escena_c2_e3.jpg",
-    "escena_c3_e1.jpg", "escena_c3_e2.jpg", "escena_c3_e3.jpg",
-    "escena_c4_e1.jpg", "escena_c4_e2.jpg", "escena_c4_e3.jpg",
-    "escena_c5_e1.jpg", "escena_c5_e2.jpg", "escena_c5_e3.jpg"
-]
-
-for img_name in all_imgs:
-    target1 = base_dir / img_name
-    target2 = dest2 / img_name
-    if not target1.exists():
-        src = ref_dir / img_name
-        if src.exists():
-            shutil.copy(src, target1)
-            shutil.copy(src, target2)
-
-# Portada
-portada_path = base_dir / "portada.jpg"
-if portada_path.exists():
-    doc.add_picture(str(portada_path), width=Inches(5.5))
-    doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
-    doc.add_page_break()
-
-# Texto del libro completo
-capitulos = [
-    {
-        "titulo": "Capítulo 1: La Emergencia a la Ciudad",
-        "escenas": [
-            {
-                "sub": "Escena 1: La Ruptura de la Tierra",
-                "text": "El suelo en el centro de la capital imperial crujió con una fuerza sísmica. Cientos de puertas de madera, plataformas de tatami y columnas del Castillo Infinito salieron disparadas hacia la superficie, destruyendo el pavimento y dejando un cráter de doscientos metros de ancho en la plaza principal de la ciudad.\n\nEntre las nubes de polvo y escombros, la luz de la luna llena iluminó los restos de la fortaleza colapsada.\n\nRen se reincorporó entre los cascotes, apoyándose en la Katana del Sol de hoja roja incandescente. A su lado, Miyuki, Kazuma y Genba emergieron del abismo, gravemente heridos pero con las marcas encendidas en su piel.\n\n—¡Salimos a la superficie! —gritó Kazuma, limpiándose la sangre del rostro—. ¿Dónde está Kageyama?",
-                "img": "escena_c1_e1.jpg"
-            },
-            {
-                "sub": "Escena 2: La Transformación de la Bestia",
-                "text": "Desde el centro del cráter, una explosión de carne y sangre destruyó las rocas circundantes.\n\nMuzan emergió en su forma de combate definitiva. Su cuerpo estaba cubierto por docenas de bocas con dientes afilados que emitían un siseo macabro; de sus muslos y espalda brotaban ocho látigos de carne y hueso equipados con sierras afiladas que se movían a una velocidad imperceptible para el ojo humano.\n\n—Han destruido mi dominio... han matado a mis Lunares... —resonó la voz de Kageyama con una furia helada que congeló el aire—. Pero miren al cielo: faltan noventa minutos para el amanecer. Ninguno de ustedes vivirá para ver la luz del sol.\n\nMuzan agitó sus látigos, reduciendo a polvo tres edificios de piedra en una fracción de segundo.",
-                "img": "escena_c1_e2.jpg"
-            },
-            {
-                "sub": "Escena 3: La Primera Envestida",
-                "text": "Genba (el Maestro Celestial de la Piedra) fue el primero en saltar, lanzando su hacha y bola de picos contra el torso de Kageyama. Sin embargo, la velocidad de reacción del Rey Oni superaba todo lo visto hasta ahora.\n\nUn solo latigazo de carne cortó la cadena de Genba y le infligió un corte profundo en la pierna izquierda, inyectando la propia sangre venenosa de Kageyama en su sistema vascular.\n\nSanemi y Giyuu atacaron por los flancos, pero sus katanas fueron desviadas por la masa de tentáculos antes de tocar la piel del enemigo.\n\n—¡Es demasiado rápido! —advirtió Giyuu—. ¡Ni siquiera con el Mundo Transparente podemos predecir la trayectoria de los ocho látigos al mismo tiempo!\n\nRen apretó los dientes. Las venas de su cuello comenzaron a volverse negras por el veneno de la primera ráfaga.",
-                "img": "escena_c1_e3.jpg"
-            }
-        ]
-    },
-    {
-        "titulo": "Capítulo 2: El Veneno en la Sangre",
-        "escenas": [
-            {
-                "sub": "Escena 1: El Límite Humano",
-                "text": "A los quince minutos del combate en la superficie, la mitad de las fuerzas del Gremio Cuervo habían sido derribadas. El veneno de Kageyama destruía las células de los cazadores de forma acelerada, provocando parálisis muscular y vómitos de sangre en los luchadores.\n\nRen cayó sobre una rodilla en el pavimento agrietado, sintiendo que su vista se apagaba lentamente.\n\n—Es inútil... la fisiología humana no puede metabolizar la sangre pura de mi cuerpo —se burló Kageyama, avanzando con paso firme hacia Ren—. Han perdido.\n\nDe pronto, un pequeño gato blanco con pergaminos mágicos en su lomo saltó desde las sombras del cráter, disparando tres jeringas de vidrio directo al cuello de Ren, Genba y Kazuma.",
-                "img": "escena_c2_e1.jpg"
-            },
-            {
-                "sub": "Escena 2: La Herencia de Sumire",
-                "text": "Las jeringas contenían el suero purificador desarrollado por Sumire antes de su muerte.\n\nEl veneno en la sangre de Ren fue neutralizado de golpe, permitiéndole respirar nuevamente. Al mismo tiempo, dentro del cuerpo de Kageyama, un dolor agudo paralizó sus extremidades por un milisegundo.\n\nMuzan sintió que su masa muscular se volvía más pesada y su tasa de regeneración disminuía a la mitad.\n\nEn su mente resonó el recuerdo de la voz de Sumire:\n\n«Kageyama... la droga que introduje en tu cuerpo contiene cuatro sustancias combinadas: conversión humana, envejecimiento acelerado de cincuenta años por minuto, prevención de división celular y destrucción de tejidos.»\n\n—¡Cincuenta años por minuto...! —comprendió Kageyama con horror—. ¡He envejecido más de nueve mil años desde que comenzó la batalla!",
-                "img": "escena_c2_e2.jpg"
-            },
-            {
-                "sub": "Escena 3: El Sacrificio de las Tropas",
-                "text": "Sabiendo que Kageyama estaba debilitado, los cazadores de rango inferior del Gremio Cuervo —jóvenes que no poseían respiraciones especiales ni marcas— tomaron una decisión heroica.\n\nSe lanzaron en masa frente a los látigos de Kageyama, usando sus propios cuerpos, carruajes de madera y escudos de metal para amortiguar los golpes y proteger a los Maestros Celestiales heridos.\n\n—¡Protejan al chico de la marca del sol! —gritaban los soldados mientras caían—. ¡Él es nuestra única esperanza para llegar al amanecer!\n\nRen miró el sacrificio de sus compañeros con lágrimas de sangre rodando por sus mejillas.\n\n—No dejaré... que la muerte de ninguno de ustedes sea en vano —susurró Ren, poniéndose de pie con la katana roja ardiendo en su mano.",
-                "img": "escena_c2_e3.jpg"
-            }
-        ]
-    },
-    {
-        "titulo": "Capítulo 3: La Secuencia del Sol",
-        "escenas": [
-            {
-                "sub": "Escena 1: El Descubrimiento del Bucle",
-                "text": "Ren cerró los ojos en medio del caos del campo de batalla. En su mente, las páginas de Los Diarios del Sol se desplegaron con una claridad cristalina.\n\nComprendió finalmente la intención del primer usuario de la respiración:\nLas doce formas de la Danza del Sol no eran técnicas individuales para ser usadas al azar. Eran los eslabones de una sola cadena. Al ejecutar la primera postura y conectarla sin interrupción con la duodécima en un bucle infinito, los doce movimientos formaban la Decimotercera Postura, diseñada para destruir los doce órganos vitales (siete corazones y cinco cerebros) que Kageyama movía constantemente dentro de su cuerpo.\n\nRen ajustó la postura de sus pies sobre las losas de piedra.\n\n—Danza del Sol... Primera Postura: Vals del Fuego.",
-                "img": "escena_c3_e1.jpg"
-            },
-            {
-                "sub": "Escena 2: La Rueda de Fuego",
-                "text": "Ren se convirtió en un fénix incandescente.\n\nVals.\nCielo Azul.\nEspejo del Sol Feroz.\nArco del Sol Poniente.\nLanza del Sol.\n\nSu katana de tono rojo rubí se movía en un bucle continuo de llamas doradas que cortaba los tentáculos de Kageyama a medida que intentaban regenerarse. La temperatura corporal de Ren subió a más de cuarenta grados, haciendo que la marca de su cara brillara con un calor blanco incandescente.\n\nMiyuki saltó a su lado, usando sus llamas púrpuras para congelar la regeneración de las heridas que Ren abría en el torso del Rey Oni.\n\n—¡Este muchacho... está ejecutando la misma danza de ese hombre de la era Sengoku! —pensó Kageyama con pánico absoluto.",
-                "img": "escena_c3_e2.jpg"
-            },
-            {
-                "sub": "Escena 3: La Desesperación del Rey",
-                "text": "A los cuarenta y cinco minutos de la cuenta regresiva, Kageyama intentó dividirse en mil ochocientos fragmentos de carne para escapar por las alcantarillas de la ciudad, tal como lo había hecho cuatrocientos años atrás.\n\nSin embargo, la droga de Sumire impidió la división celular.\n\nAl ver que no podía dividirse ni regenerarse a tiempo, Kageyama liberó una onda de choque sónica desde su torso que arrojó a Ren, Kazuma y Giyuu contra los muros de la plaza, dejándolos inconscientes por varios minutos.\n\nMuzan, con el cuerpo deformado y sangrando por las heridas antiguas que la katana de Ren había reabierto, comenzó a arrastrarse hacia el callejón más oscuro de la ciudad para huir del sol naciente.",
-                "img": "escena_c3_e3.jpg"
-            }
-        ]
-    },
-    {
-        "titulo": "Capítulo 4: La Luz en el Horizonte",
-        "escenas": [
-            {
-                "sub": "Escena 1: El Cambio en el Cielo",
-                "text": "Faltaban exactamente quince minutos para el amanecer.\n\nEl cielo nocturno sobre la capital imperial comenzó a cambiar de tono, pasando del negro azabache a un azul marino profundo en el horizonte oriental. Las estrellas comenzaron a apagarse una por una.\n\nMuzan sintió el cambio de temperatura en el aire y entró en un estado de histeria ciega.\n\nSu cuerpo comenzó a expandirse de forma grotesca, creando una masa de carne gigante de diez metros de altura con forma de bebé deforme. Esta armadura orgánica le permitía proteger su verdadero cuerpo de los rayos solares y excavar en la tierra para enterrarse.\n\n—¡No dejen que se entierre! —gritó el Maestro Celestial del Viento, reincorporándose con el brazo izquierdo roto.",
-                "img": "escena_c4_e1.jpg"
-            },
-            {
-                "sub": "Escena 2: Los Obstáculos de la Ciudad",
-                "text": "Los cazadores sobrevivientes usaron todo lo que tenían a mano para bloquear el avance del monstruo de carne.\n\nCarruajes de madera, vigas de hierro de los edificios destruidos e incluso un autobús de vapor de la era Meiji fueron empujados por los soldados para aplastar la cabeza del gigante de carne y mantenerlo expuesto bajo el cielo abierto.\n\nGiyuu y Kazuma atacaron las extremidades inferiores del gigante con sus katanas rojas, evitando que la criatura pudiera avanzar hacia las sombras de las callejuelas.\n\n—¡Resistan! —gritaba Kazuma entre dientes—. ¡El sol ya está saliendo!",
-                "img": "escena_c4_e2.jpg"
-            },
-            {
-                "sub": "Escena 3: El Regreso del Guerrero de la Hermandad",
-                "text": "Desde lo alto de un carruaje destruido, Ren emergió nuevamente.\n\nHabía perdido la visión de su ojo derecho y la mitad de su haori negro estaba quemado, pero la Katana del Sol en sus manos emitía un brillo rojo tan intenso que parecía fundirse con el aire.\n\nInhaló aire hasta el fondo de sus alvéolos, activando la Decimotercera Postura por última vez.\n\n—Danza del Sol... Decimotercera Postura Definitiva.\n\nRen se lanzó como un meteoro de luz dorada directo al corazón del gigante de carne.",
-                "img": "escena_c4_e3.jpg"
-            }
-        ]
-    },
-    {
-        "titulo": "Capítulo 5: La Estocada del Sol (Clímax del Volumen 9)",
-        "escenas": [
-            {
-                "sub": "Escena 1: El Empalamiento del Rey",
-                "text": "Ren clavó la Katana del Sol directamente en el centro del pecho de la masa de carne de Kageyama, atravesando el núcleo donde el verdadero cuerpo del Rey Oni se escondía.\n\nLa fuerza del impacto fijó al monstruo gigante contra el muro de piedra de la plaza principal, impidiéndole dar un solo paso más.\n\nMiyuki corrió al lado de su hermano y colocó sus manos sobre la empuñadura de la espada, mezclando su sangre demoníaca de llamas púrpuras con el fuego dorado de Ren.\n\n—¡No te moverás de aquí! —gritaron los dos hermanos al unísono.\n\nMuzan envolvió sus tentáculos alrededor del cuerpo de Ren, intentando aplastarle las costillas para liberarse, pero Ren no soltó la empuñadura de su espada.",
-                "img": "escena_c5_e1.jpg"
-            },
-            {
-                "sub": "Escena 2: El Primer Rayo de Sol",
-                "text": "El borde superior del sol matutino emergió finalmente sobre los picos de las montañas del este.\n\nUn pilar de luz dorada y pura atravesó las nubes de la mañana y cayó directamente sobre la plaza central de la capital imperial, bañando el cuerpo de la masa de carne de Kageyama por completo.\n\nUn silencio sepulcral dominó la ciudad durante una fracción de segundo.\n\nLuego, un alarido de agonía que no pertenecía a este mundo retumbó en el aire.",
-                "img": "escena_c5_e2.jpg"
-            },
-            {
-                "sub": "Escena 3: La Desintegración Absoluta (Cierre del Tomo 9)",
-                "text": "Bajo la luz directa del sol, la masa de carne gigante de Kageyama comenzó a disolverse a una velocidad irreversible. Sus tentáculos se convirtieron en cenizas de fuego rojo, sus bocas se cerraron para siempre y el verdadero cuerpo del Rey Oni comenzó a quemarse desde el interior.\n\nMuzan intentó transferir la totalidad de su sangre y sus recuerdos hacia el cuerpo de Ren en un último acto de desesperación espiritual.\n\nPero las llamas púrpuras de Miyuki y la voluntad inquebrantable de Ren rechazaron la conciencia de la criatura.\n\nEl cuerpo de Kageyama se redujo a un puñado de cenizas negras que el viento de la mañana dispersó sobre las ruinas de la ciudad.\n\nEl Rey Oni, la pesadilla de mil años de la humanidad, había sido erradicado del planeta para siempre.\n\n\n                  [ CONTINUARÁ EN EL VOLUMEN 10 ]\n                  [ VOLUMEN FINAL: EL AMANECER DEL ACERO SANTO ]",
-                "img": "escena_c5_e3.jpg"
-            }
-        ]
-    }
-]
-
-for cap in capitulos:
-    p_c = doc.add_paragraph()
-    run_c = p_c.add_run(cap["titulo"])
-    run_c.font.name = "Arial"
-    run_c.font.size = Pt(18)
-    run_c.font.bold = True
-    run_c.font.color.rgb = RGBColor(160, 0, 0)
+def build_vol9_docx():
+    doc = docx.Document()
     
-    for esc in cap["escenas"]:
-        p_sub = doc.add_paragraph()
-        run_sub = p_sub.add_run(esc["sub"])
-        run_sub.font.name = "Arial"
-        run_sub.font.size = Pt(14)
-        run_sub.font.bold = True
-        run_sub.font.color.rgb = RGBColor(50, 50, 50)
-        
-        p_t = doc.add_paragraph()
-        run_t = p_t.add_run(esc["text"])
-        run_t.font.name = "Calibri"
-        run_t.font.size = Pt(12)
-        
-        img_path = base_dir / esc["img"]
-        if img_path.exists():
-            doc.add_picture(str(img_path), width=Inches(5.5))
-            doc.paragraphs[-1].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        doc.add_paragraph()
-        
+    # Page setup
+    for section in doc.sections:
+        section.top_margin = Inches(1.0)
+        section.bottom_margin = Inches(1.0)
+        section.left_margin = Inches(1.0)
+        section.right_margin = Inches(1.0)
+
+    # Title Page
+    p_title = doc.add_paragraph()
+    p_title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_title.paragraph_format.space_before = Pt(36)
+    r_title = p_title.add_run("ONI NO KETSURYŪ\n(鬼の血流 - La Estirpe de la Sangre)\n\nVOLUMEN 9: LA BATALLA DEL AMANECER")
+    r_title.bold = True
+    r_title.font.name = "Georgia"
+    r_title.font.size = Pt(24)
+    r_title.font.color.rgb = RGBColor(160, 20, 20)
+
+    p_sub = doc.add_paragraph()
+    p_sub.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r_sub = p_sub.add_run("Obra Original por Nicolás Noguera\nEdición Ilustrada de Alta Definición (Dark Fantasy Anime)")
+    r_sub.font.name = "Georgia"
+    r_sub.font.size = Pt(13)
+    r_sub.font.color.rgb = RGBColor(80, 80, 80)
+
+    # Portada image
+    add_image_safe(doc, vol9_dir / "portada.jpg", 5.0)
+
     doc.add_page_break()
 
-docx_out1 = base_dir / "libro.docx"
-docx_out2 = dest2 / "libro.docx"
+    # Synopsis / Resumen
+    add_heading_styled(doc, "SINOPSIS DEL VOLUMEN 9", 1)
+    p_syn = doc.add_paragraph()
+    p_syn.paragraph_format.line_spacing = 1.15
+    p_syn.paragraph_format.space_after = Pt(10)
+    p_syn.add_run("El Castillo Infinito colapsa hacia la superficie de la capital imperial. Kageyama emerge en su forma final con látigos de carne y bocas aberrantes. Mientras los Maestros Celestiales luchan contra la parálisis del veneno y la droga de envejecimiento de Sumire cobra efecto, Ren conecta las doce posturas del Estilo de Dominio Solar en la Decimotercera Postura para fijar a la masa gigante del Rey Demonio hasta el primer rayo de luz del sol.")
 
-doc.save(str(docx_out1))
-doc.save(str(docx_out2))
-print(f"Generated libro.docx for Vol 9 successfully at {docx_out1}")
+    add_image_safe(doc, vol9_dir / "banner.jpg", 6.0)
+
+    doc.add_page_break()
+
+    # Capítulo 1
+    add_heading_styled(doc, "CAPÍTULO 1: La Emergencia a la Ciudad", 1)
+    add_image_safe(doc, vol9_dir / "escena_1.jpg", 6.0)
+    p_c1 = doc.add_paragraph()
+    p_c1.add_run("Los escombros de la fortaleza cayeron sobre la plaza principal. Kageyama emergió en el centro del cráter, agitando látigos espinados de materia oscura que cortaban estructuras de piedra a velocidad hipersónica...")
+    add_image_safe(doc, vol9_dir / "escena_c1_e1.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c1_e2.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c1_e3.jpg", 6.0)
+
+    doc.add_page_break()
+
+    # Capítulo 2
+    add_heading_styled(doc, "CAPÍTULO 2: El Veneno en la Sangre", 1)
+    add_image_safe(doc, vol9_dir / "escena_c2_e1.jpg", 6.0)
+    p_c2 = doc.add_paragraph()
+    p_c2.add_run("La toxina creada por la Dra. Sumire comenzó a envejecer aceleradamente las células del Rey Demonio. Genba y Kazuma mantuvieron la presión en las calles bajo la noche estrellada...")
+    add_image_safe(doc, vol9_dir / "escena_c2_e2.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c2_e3.jpg", 6.0)
+
+    doc.add_page_break()
+
+    # Capítulo 3
+    add_heading_styled(doc, "CAPÍTULO 3: La Secuencia del Sol", 1)
+    add_image_safe(doc, vol9_dir / "escena_c3_e1.jpg", 6.0)
+    p_c3 = doc.add_paragraph()
+    p_c3.add_run("Ren encadenó las doce posturas solares en un dragón de fuego continuo. El reloj de la plaza central marcaba los últimos quince minutos antes del amanecer...")
+    add_image_safe(doc, vol9_dir / "escena_c3_e2.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c3_e3.jpg", 6.0)
+
+    doc.add_page_break()
+
+    # Capítulo 4
+    add_heading_styled(doc, "CAPÍTULO 4: La Luz en el Horizonte", 1)
+    add_image_safe(doc, vol9_dir / "escena_c4_e1.jpg", 6.0)
+    p_c4 = doc.add_paragraph()
+    p_c4.add_run("Kageyama se expandió en una masa monstruosa tratando de enterrarse en el suelo. Los guerreros de la Hermandad tiraron de las cadenas de hierro para mantenerlo expuesto...")
+    add_image_safe(doc, vol9_dir / "escena_c4_e2.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c4_e3.jpg", 6.0)
+
+    doc.add_page_break()
+
+    # Capítulo 5
+    add_heading_styled(doc, "CAPÍTULO 5: La Estocada del Sol", 1)
+    add_image_safe(doc, vol9_dir / "escena_c5_e1.jpg", 6.0)
+    p_c5 = doc.add_paragraph()
+    p_c5.add_run("Los primeros rayos dorados del sol tocaron la cima de los edificios. La masa demoníaca se desintegró en chispas de luz, trayendo la victoria definitiva...")
+    add_image_safe(doc, vol9_dir / "escena_c5_e2.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_c5_e3.jpg", 6.0)
+    add_image_safe(doc, vol9_dir / "escena_climax.jpg", 6.0)
+
+    # Save to both locations
+    out1 = vol9_dir / "libro.docx"
+    out2 = vol9_dir_downloads / "libro.docx"
+    doc.save(str(out1))
+    doc.save(str(out2))
+    print(f"Generated libro.docx successfully for Volume 9 at {out1}")
+
+if __name__ == "__main__":
+    build_vol9_docx()

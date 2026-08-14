@@ -1,32 +1,21 @@
 {
-  "id": "kuro-no-kineki-volumen-1",
   "titulo": "KURO NO KINEKI (Ecos de Tinta Negra)",
-  "subtitulo": "Volumen 1: El Precio del Primer Paso",
-  "categoria": "Manga / Light Novel • Fantasía Oscura",
-  "precio_usd": 20.00,
-  "formato": "eBook Digital Ilustrado (PDF / Word .docx)",
-  "archivo_docx": "libro.docx",
-  "portada": "portada.jpg",
-  "thumbnail": "thumbnail.jpg",
-  "banner": "banner.jpg",
-  "resumen_corto": "Para recordar quién eres, primero debes olvidar lo que más amabas. El primer volumen oficial de la aclamada serie de fantasía oscura y manga por Nicolás Noguera.",
-  "puntos_clave": [
+  "autor": "Nicolás Noguera",
+  "precio": 20.0,
+  "headline": "\"Para recordar quién eres, primero debes olvidar lo que más amabas.\"",
+  "descripcion": "Cuando Kael despierta en las profundidades de la fosa de bronce sin memoria y con un ojo rúnico hirviente, descubre que la única forma de liberar el poder de su daga es sacrificar sus propios recuerdos. Junto a Sora, su misteriosa hermana de túnica blanca, deberá enfrentarse al ejército de la Emperatriz y desentrañar la oscura verdad sobre la Ciudad Flotante de Aetheria.",
+  "beneficios": [
     "Novela ligera / Manga de fantasía oscura ilustrado por IA.",
     "5 Capítulos completos con 15 escenas de combate y misterio.",
     "Prompts oficiales de arte generativo incluidos para cada escena.",
     "Ilustraciones de alta definición con estética G-pen y animé.",
     "Diseño listo para publicación en Amazon KDP, Gumroad y Hotmart."
   ],
-  "copy_ventas": {
-    "headline": "\"Para recordar quién eres, primero debes olvidar lo que más amabas.\"",
-    "subheadline": "Sumérgete en el oscuro universo de Kuro no Kineki. Una novela ligera de acción, magia de tinta y secretos imperiales.",
-    "cuerpo": "Cuando Kael despierta en las profundidades de la fosa de bronce sin memoria y con un ojo rúnico hirviente, descubre que la única forma de liberar el poder de su daga es sacrificar sus propios recuerdos. Junto a Sora, su misteriosa hermana de túnica blanca, deberá enfrentarse al ejército de la Emperatriz y desentrañar la oscura verdad sobre la Ciudad Flotante de Aetheria.",
-    "modulos": [
-      { "titulo": "Capítulo 1: El Precio del Primer Paso", "detalles": "El despertar en la fosa, el combate con el Colector y el fuego oscuro." },
-      { "titulo": "Capítulo 2: Lazos de Tinta y Sangre", "detalles": "Una alianza venenosa, las catacumbas de bronce y la emboscada de los Huecos." },
-      { "titulo": "Capítulo 3: La Ciudad de los Huecos", "detalles": "El eco del soldado, el mercado de las sombras y la sombra del Ejecutor." },
-      { "titulo": "Capítulo 4: El Ejecutor de la Superficie", "detalles": "El choque de luz y tinta, la verdad de la máscara y el tercer lazo." },
-      { "titulo": "Capítulo 5: El Eclipse del Pobre", "detalles": "El ascenso a Aetheria, el salón de la Emperatriz y el eclipse final." }
-    ]
-  }
+  "capitulos": [
+    "Capítulo 1: El Precio del Primer Paso",
+    "Capítulo 2: Lazos de Tinta y Sangre",
+    "Capítulo 3: La Ciudad de los Huecos",
+    "Capítulo 4: El Ejecutor de la Superficie",
+    "Capítulo 5: El Eclipse del Pobre"
+  ]
 }

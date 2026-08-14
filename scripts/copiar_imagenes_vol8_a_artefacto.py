@@ -32,18 +32,18 @@ images = [
     ("escena_climax.jpg", "Clímax del Volumen 8 - Erupción del Rey Demonio bajo la luna llena")
 ]
 
-print("Copiando imágenes del Volumen 8 al directorio de artefactos...")
+print("Copiando imágenes actualizadas del Volumen 8 al directorio de artefactos...")
 for filename, desc in images:
     src_file = src_dir / filename
-    dest_file = artifact_dir / f"vol8_{filename}"
+    dest_file = artifact_dir / f"vol8_v2_{filename}"
     if src_file.exists():
         shutil.copy2(src_file, dest_file)
-        print(f"  [OK] {filename} -> vol8_{filename}")
+        print(f"  [OK] {filename} -> vol8_v2_{filename}")
 
 # Generate Markdown Artifact content
 md_path = artifact_dir / "galeria_volumen_8.md"
 
-md_content = """# 🎨 Galería Completa de Ilustraciones - Oni no Ketsuryū Volumen 8
+md_content = """# 🎨 Galería Completa de Ilustraciones - Oni no Ketsuryū Volumen 8 (Canon Oficial)
 
 A continuación podés revisar **las 20 ilustraciones HD una por una** del **Volumen 8 (La Noche de los Noventa Minutos)**. Podés recorrer el carrusel interactivo o ver el listado detallado más abajo.
 
@@ -56,7 +56,7 @@ A continuación podés revisar **las 20 ilustraciones HD una por una** del **Vol
 
 carousel_slides = []
 for filename, desc in images:
-    slide = f"![{desc}](file:///C:/Users/nicol/.gemini/antigravity/brain/6adf8ce5-9839-4292-a8a1-57beed4c3827/vol8_{filename})\n\n**{desc}**"
+    slide = f"![{desc}](file:///C:/Users/nicol/.gemini/antigravity/brain/6adf8ce5-9839-4292-a8a1-57beed4c3827/vol8_v2_{filename})\n\n**{desc}**"
     carousel_slides.append(slide)
 
 md_content += "\n<!-- slide -->\n".join(carousel_slides)
@@ -64,10 +64,10 @@ md_content += "\n````\n\n---\n\n## 🖼️ Listado Detallado Una por Una\n\n"
 
 for filename, desc in images:
     md_content += f"### 📌 {desc}\n\n"
-    md_content += f"![{desc}](file:///C:/Users/nicol/.gemini/antigravity/brain/6adf8ce5-9839-4292-a8a1-57beed4c3827/vol8_{filename})\n\n"
+    md_content += f"![{desc}](file:///C:/Users/nicol/.gemini/antigravity/brain/6adf8ce5-9839-4292-a8a1-57beed4c3827/vol8_v2_{filename})\n\n"
     md_content += f"*Archivo local:* [`{filename}`](file:///C:/Proyectos/mis-libros-editorial/libros/oni-no-ketsuryu-volumen-8/{filename})\n\n---\n\n"
 
 with open(md_path, "w", encoding="utf-8") as f:
     f.write(md_content)
 
-print("¡Artefacto galeria_volumen_8.md creado con éxito!")
+print("¡Artefacto galeria_volumen_8.md actualizado con éxito!")

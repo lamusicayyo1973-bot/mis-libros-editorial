@@ -1,32 +1,21 @@
 {
-  "id": "el-algoritmo-personal",
-  "titulo": "EL ALGORITMO PERSONAL",
-  "subtitulo": "Rediseñá tus hábitos, dominá tu enfoque y ejecutá con claridad",
-  "categoria": "Desarrollo Personal • Productividad",
-  "precio_usd": 20.00,
-  "formato": "eBook Digital (PDF / Word .docx)",
-  "archivo_pdf": "libro.docx",
-  "portada": "portada.jpg",
-  "thumbnail": "thumbnail.jpg",
-  "banner": "banner.jpg",
-  "resumen_corto": "El sistema definitivo para eliminar la procrastinación, auditar tu entorno y construir consistencia ininterrumpida sin depender de la motivación efímera.",
-  "puntos_clave": [
+  "titulo": "EL ALGORITMO PERSONAL: Rediseñá tus hábitos, dominá tu enfoque y ejecutá con claridad",
+  "autor": "Nicolás Noguera",
+  "precio": 20.0,
+  "headline": "¿Cansado de arrancar con entusiasmo y abandonar a los pocos días?",
+  "descripcion": "Casi todas las personas que fracasan en cambiar una conducta cometen el mismo error inicial: confían en la motivación. La motivación es una emoción efímera. Los superrealizadores no tienen más fuerza de voluntad que el resto; simplemente han diseñado un sistema donde no necesitan usarla de forma constante. El Algoritmo Personal es una guía práctica paso a paso por Nicolás Noguera para tomar el control definitivo de tu enfoque.",
+  "beneficios": [
     "La trampa de la motivación vs la arquitectura del hábito de 4 pasos.",
     "Auditoría del entorno: cómo eliminar la fricción invisible.",
     "La Regla del Micro-Aumento y la ciencia del 1% diario.",
     "Gestión biológica de la energía: los 4 bloques de enfoque profundo.",
     "El Manual de Ejecución: tu checklist diario para no romper la cadena."
   ],
-  "copy_ventas": {
-    "headline": "¿Cansado de arrancar con entusiasmo y abandonar a los pocos días?",
-    "subheadline": "No te elevás al nivel de tus metas; caés al nivel de tus sistemas. Rediseñá tu entorno y ejecutá con claridad matemática.",
-    "cuerpo": "Casi todas las personas que fracasan en cambiar una conducta cometen el mismo error inicial: confían en la motivación. La motivación es una emoción efímera. Los superrealizadores no tienen más fuerza de voluntad que el resto; simplemente han diseñado un sistema donde no necesitan usarla de forma constante. El Algoritmo Personal es una guía práctica paso a paso por Nicolás Noguera para tomar el control definitivo de tu enfoque.",
-    "modulos": [
-      { "titulo": "Capítulo 1: La Trampa de la Motivación y el Poder del Sistema", "detalles": "El mito de la fuerza de voluntad, arquitectura del hábito y de metas a identidad." },
-      { "titulo": "Capítulo 2: Auditar el Entorno", "detalles": "Eliminar la fricción invisible y la regla de un solo contexto por espacio." },
-      { "titulo": "Capítulo 3: La Regla del Micro-Aumento", "detalles": "El interés compuesto del 1% diario y el nivel de emergencia para no romper la cadena." },
-      { "titulo": "Capítulo 4: Gestión de la Energía", "detalles": "Los 4 bloques de energía biológica y dieta dopaminérgica." },
-      { "titulo": "Capítulo 5: El Manual de Ejecución", "detalles": "Ritual de apertura, ritual de cierre y la checklist diaria de alto rendimiento." }
-    ]
-  }
+  "capitulos": [
+    "Capítulo 1: La Trampa de la Motivación y el Poder del Sistema",
+    "Capítulo 2: Auditar el Entorno",
+    "Capítulo 3: La Regla del Micro-Aumento",
+    "Capítulo 4: Gestión de la Energía",
+    "Capítulo 5: El Manual de Ejecución"
+  ]
 }

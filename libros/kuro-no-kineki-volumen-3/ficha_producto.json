@@ -1,32 +1,21 @@
 {
-  "id": "kuro-no-kineki-volumen-3",
   "titulo": "KURO NO KINEKI (Ecos de Tinta Negra)",
-  "subtitulo": "Volumen 3: El Despertar de los Creadores [GRAN FINAL]",
-  "categoria": "Manga / Light Novel • Fantasía Oscura",
-  "precio_usd": 20.00,
-  "formato": "eBook Digital Ilustrado (PDF / Word .docx)",
-  "archivo_docx": "libro.docx",
-  "portada": "portada.jpg",
-  "thumbnail": "thumbnail.jpg",
-  "banner": "banner.jpg",
-  "resumen_corto": "El desenlace definitivo de la épica trilogía de fantasía oscura. El viaje al Continente de Plata, los Creadores de la Tinta y el Lienzo Blanco por Nicolás Noguera.",
-  "puntos_clave": [
+  "autor": "Nicolás Noguera",
+  "precio": 20.0,
+  "headline": "\"Los recuerdos no nos definen por lo que fuimos en el pasado, sino por lo que elegimos proteger hoy.\"",
+  "descripcion": "Seis meses después del Gran Descenso, Kael, Sora y Ren navegan por el Mar del Olvido hacia el Continente de Plata. Allí descubrirán el templo de los Creadores y deberán enfrentarse a la flota invasora de los Devoradores para reescribir las reglas del destino humano.",
+  "beneficios": [
     "El Gran Final oficial de la Trilogía Kuro no Kineki.",
     "5 Capítulos épicos con 15 escenas de batalla intercontinental y revelaciones.",
     "Prompts oficiales de arte generativo de IA para cada escena incluidos.",
     "Ilustraciones de la Llave del Autor y la Reunión de los Tres Mundos.",
     "Diseño listo para publicación en Amazon KDP, Gumroad y Hotmart."
   ],
-  "copy_ventas": {
-    "headline": "\"Los recuerdos no nos definen por lo que fuimos en el pasado, sino por lo que elegimos proteger hoy.\"",
-    "subheadline": "El emocionante capítulo final de Kuro no Kineki. La verdad sobre el origen de la magia de tinta y la reunificación de los mundos.",
-    "cuerpo": "Seis meses después del Gran Descenso, Kael, Sora y Ren navegan por el Mar del Olvido hacia el Continente de Plata. Allí descubrirán el templo de los Creadores y deberán enfrentarse a la flota invasora de los Devoradores para reescribir las reglas del destino humano.",
-    "modulos": [
-      { "titulo": "Capítulo 1: El Continente de Plata", "detalles": "El viaje en el océano de tinta, la desembocadura del abismo y la costa de los gigantes." },
-      { "titulo": "Capítulo 2: Los Archivos del Olvido", "detalles": "El interior de la torre, la verdad del primer mundo y el ataque de los invasores." },
-      { "titulo": "Capítulo 3: La Batalla de la Tinta de Plata", "detalles": "El poder del Escriba, la fusión de los tres mundos y el portal de los reyes." },
-      { "titulo": "Capítulo 4: La Capital del Olvido", "detalles": "El desembarco en Ignis-Null, el Rey sin Nombre y el Gran Borrador." },
-      { "titulo": "Capítulo 5: El Lienzo Blanco", "detalles": "La reunión de los mundos, el libro abierto y la última página de la trilogía." }
-    ]
-  }
+  "capitulos": [
+    "Capítulo 1: El Continente de Plata",
+    "Capítulo 2: Los Archivos del Olvido",
+    "Capítulo 3: La Batalla de la Tinta de Plata",
+    "Capítulo 4: La Capital del Olvido",
+    "Capítulo 5: El Lienzo Blanco"
+  ]
 }

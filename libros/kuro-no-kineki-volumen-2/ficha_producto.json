@@ -1,32 +1,21 @@
 {
-  "id": "kuro-no-kineki-volumen-2",
   "titulo": "KURO NO KINEKI (Ecos de Tinta Negra)",
-  "subtitulo": "Volumen 2: El Choque de los Tres Soles",
-  "categoria": "Manga / Light Novel • Fantasía Oscura",
-  "precio_usd": 20.00,
-  "formato": "eBook Digital Ilustrado (PDF / Word .docx)",
-  "archivo_docx": "libro.docx",
-  "portada": "portada.jpg",
-  "thumbnail": "thumbnail.jpg",
-  "banner": "banner.jpg",
-  "resumen_corto": "El apasionante desenlace de la batalla por Aetheria. La trinidad de las tres dagas, el secreto del Gran Núcleo y el descenso de la Ciudad Flotante por Nicolás Noguera.",
-  "puntos_clave": [
+  "autor": "Nicolás Noguera",
+  "precio": 20.0,
+  "headline": "Las tres dagas del Relicario al fin unidas en un solo destino.",
+  "descripcion": "Con Aetheria tambaleándose sobre las nubes y el Gran Núcleo a punto de colapsar, Kael, Sora y Ren deberán enfrentarse a la voluntad colectiva de la Emperatriz. Para salvar a miles de inocentes de la tierra y del cielo, Kael deberá asumir la carga imposible de todos los recuerdos perdidos.",
+  "beneficios": [
     "Volumen 2 y clímax oficial de la saga Kuro no Kineki.",
     "5 Capítulos épicos con 15 escenas de combate, revelaciones y sacrificio.",
     "Prompts oficiales de arte generativo de IA para cada escena incluidos.",
     "Ilustraciones de alta definición de la Trinidad de las Dagas.",
     "Diseño listo para publicación en Amazon KDP, Gumroad y Hotmart."
   ],
-  "copy_ventas": {
-    "headline": "Las tres dagas del Relicario al fin unidas en un solo destino.",
-    "subheadline": "El choque final contra la Suprema Emperatriz y el misterio del Gran Núcleo en el Volumen 2 de Kuro no Kineki.",
-    "cuerpo": "Con Aetheria tambaleándose sobre las nubes y el Gran Núcleo a punto de colapsar, Kael, Sora y Ren deberán enfrentarse a la voluntad colectiva de la Emperatriz. Para salvar a miles de inocentes de la tierra y del cielo, Kael deberá asumir la carga imposible de todos los recuerdos perdidos.",
-    "modulos": [
-      { "titulo": "Capítulo 1: La Caída del Mármol", "detalles": "El impacto de anulación, la elección del Ejecutor y el despertar de la tercera daga." },
-      { "titulo": "Capítulo 2: La Danza de las Tres Hojas", "detalles": "Choque trino, el sacrificio voluntario y la trinidad de la tinta." },
-      { "titulo": "Capítulo 3: El Secreto del Gran Núcleo", "detalles": "El desnivel de Aetheria, el dilema de la memoria madre y la carga imposible." },
-      { "titulo": "Capítulo 4: El Descenso de Aetheria", "detalles": "El golpe del olvido supremo, desintegración de la proyección y el huérfano de la tinta." },
-      { "titulo": "Capítulo 5: La Tierra sin Cielo", "detalles": "El nuevo mundo unido, el caminante de los ecos y el cliffhanger hacia las tierras olvidadas." }
-    ]
-  }
+  "capitulos": [
+    "Capítulo 1: La Caída del Mármol",
+    "Capítulo 2: La Danza de las Tres Hojas",
+    "Capítulo 3: El Secreto del Gran Núcleo",
+    "Capítulo 4: El Descenso de Aetheria",
+    "Capítulo 5: La Tierra sin Cielo"
+  ]
 }

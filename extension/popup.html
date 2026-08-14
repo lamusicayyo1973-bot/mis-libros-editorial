@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Loki Editorial</title>
+  <style>
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .header h2 {
+      margin: 0;
+      font-size: 16px;
+      color: #f59e0b;
+    }
+    .card {
+      background-color: #1e293b;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 14px;
+      border: 1px solid #334155;
+    }
+    .card-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .book-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .book-price {
+      font-size: 14px;
+      font-weight: 700;
+      color: #10b981;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: opacity 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .btn-payhip {
+      background-color: #6366f1;
+      color: white;
+    }
+    .btn-hotmart {
+      background-color: #10b981;
+      color: white;
+    }
+    .btn-refresh {
+      background-color: #334155;
+      color: #cbd5e1;
+      font-size: 11px;
+      padding: 6px;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      text-align: center;
+      min-height: 18px;
+    }
+    .success { color: #10b981; }
+    .error { color: #ef4444; }
+    .warning { color: #f59e0b; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span style="font-size: 20px;">🤖</span>
+    <h2>Loki Editorial</h2>
+  </div>
+
+  <div id="book-info" class="card">
+    <div class="card-title">Cargando libro seleccionado...</div>
+  </div>
+
+  <button id="btn-payhip" class="btn btn-payhip" disabled>⚡ Autocompletar Payhip</button>
+  <button id="btn-hotmart" class="btn btn-hotmart" disabled>⚡ Autocompletar Hotmart</button>
+  <button id="btn-refresh" class="btn btn-refresh">↺ Actualizar datos</button>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -22,6 +22,15 @@ from flask import Flask, render_template_string, request, jsonify
 
 app = Flask(__name__)
 
+current_book_data = {}
+
+@app.after_request
+def add_cors(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+    return response
+
 BASE_DIR = Path(r"C:\Proyectos\mis-libros-editorial")
 BOOKS_DIR = BASE_DIR / "libros"
 CONFIG_FILE = BASE_DIR / "configuracion_autor.json"
@@ -112,8 +121,11 @@ HTML_TEMPLATE = r"""
                                     <span class="badge bg-secondary">Portada: ${l.has_portada ? '✅' : '❌'}</span>
                                     <span class="badge bg-secondary">Ficha SEO: ${l.has_ficha ? '✅' : '❌'}</span>
                                 </div>
-                                <button onclick="publishEbook('${l.id}')" class="btn btn-publish w-100 py-2">
+                                <button onclick="publishEbook('${l.id}')" class="btn btn-publish w-100 py-2 mb-2">
                                     🚀 PUBLICAR ESTE LIBRO EN LAS 5 PLATAFORMAS
+                                </button>
+                                <button onclick="prepareForExtension('${l.id}', this)" class="btn w-100 py-2" style="background-color: #8b5cf6; color: white; font-weight: 700;">
+                                    📝 PREPARAR PARA EXTENSIÓN CHROME
                                 </button>
                             </div>
                         </div>
@@ -197,6 +209,38 @@ HTML_TEMPLATE = r"""
                 }
             } catch(e) {
                 alert('❌ Error de conexión al publicar.');
+            }
+        }
+
+        async function prepareForExtension(folderId, btnEl) {
+            console.log('[LOKI] Preparando libro para extensión:', folderId);
+            if (btnEl) {
+                btnEl.innerText = '⏳ Preparando...';
+                btnEl.disabled = true;
+            }
+            try {
+                const res = await fetch('/api/ebooks/set-current', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ folder_id: folderId })
+                });
+                const data = await res.json();
+                if (data.status === 'ok') {
+                    if (btnEl) {
+                        btnEl.innerText = '✅ ¡LISTO! ABRÍ LA EXTENSIÓN EN PAYHIP';
+                        btnEl.style.backgroundColor = '#10b981';
+                        btnEl.disabled = false;
+                    }
+                    // Abrir la pestaña de Payhip directamente
+                    window.open('https://payhip.com/product/add/digital', '_blank');
+                } else {
+                    alert('⚠️ Aviso: ' + data.message);
+                    if (btnEl) { btnEl.innerText = '📝 PREPARAR PARA EXTENSIÓN CHROME'; btnEl.disabled = false; }
+                }
+            } catch(e) {
+                console.error('[LOKI] Error:', e);
+                alert('❌ Error de conexión: ' + e.message);
+                if (btnEl) { btnEl.innerText = '📝 PREPARAR PARA EXTENSIÓN CHROME'; btnEl.disabled = false; }
             }
         }
 
@@ -322,8 +366,38 @@ def api_publish_platforms():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
+@app.route('/api/ebooks/current', methods=['GET'])
+def api_get_current():
+    if not current_book_data:
+        return jsonify({"status": "empty", "message": "Ningun libro seleccionado"}), 404
+    return jsonify({"status": "ok", "libro": current_book_data})
+
+@app.route('/api/ebooks/set-current', methods=['POST'])
+def api_set_current():
+    global current_book_data
+    data = request.get_json(silent=True) or request.form or {}
+    folder_id = data.get('folder_id', '')
+    folder_path = BOOKS_DIR / folder_id
+    ficha_file = folder_path / 'ficha_producto.json'
+    if not ficha_file.exists():
+        return jsonify({'status': 'error', 'message': 'No existe ficha_producto.json'}), 404
+    
+    with open(ficha_file, 'r', encoding='utf-8') as f:
+        ficha = json.load(f)
+    
+    ficha['folder_id'] = folder_id
+    current_book_data = ficha
+    
+    # Abrir la carpeta en el Explorador de Windows
+    try:
+        os.startfile(str(folder_path))
+    except Exception as e:
+        print("[LOKI] Error al abrir explorador:", e)
+
+    return jsonify({'status': 'ok', 'libro': ficha})
+
 if __name__ == "__main__":
     if sys.platform.startswith('win'):
         sys.stdout.reconfigure(encoding='utf-8')
-    print("[LOKI] Iniciando Panel de Control de Loki en: http://localhost:5000")
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    print("[EDITORIAL] Iniciando Panel Editorial en: http://localhost:5100")
+    app.run(host="0.0.0.0", port=5100, debug=False)

@@ -36,7 +36,16 @@ async def setup_loki_browser():
             await new_page.goto(url)
             
         print("\nAll 5 platforms opened in dedicated browser profile!")
-        print("Please check which platforms need login, log in once, and close the browser.")
+        print("El navegador permanecerá ABIERTO hasta que cierres la ventana manualmente.")
+        
+        # Keep browser open until closed by user
+        try:
+            while True:
+                await asyncio.sleep(2)
+                if not context.pages:
+                    break
+        except Exception:
+            pass
 
 if __name__ == "__main__":
     asyncio.run(setup_loki_browser())

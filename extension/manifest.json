@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Loki Editorial - Autocompletar",
+  "version": "1.0",
+  "description": "Autocompleta tus eBooks en Payhip y Hotmart directamente desde el Panel Editorial.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://payhip.com/*",
+    "https://*.payhip.com/*",
+    "https://app.hotmart.com/*",
+    "https://*.hotmart.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Loki Editorial - Autocompletar"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

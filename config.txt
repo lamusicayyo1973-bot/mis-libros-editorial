@@ -1,0 +1,20 @@
+{
+    "path_checkpoints": [
+        "C:\\pinokio\\api\\fooocus.git\\app\\models\\checkpoints"
+    ],
+    "path_loras": [
+        "C:\\pinokio\\api\\fooocus.git\\app\\models\\loras"
+    ],
+    "path_embeddings": "C:\\pinokio\\api\\fooocus.git\\app\\models\\embeddings",
+    "path_vae_approx": "C:\\pinokio\\api\\fooocus.git\\app\\models\\vae_approx",
+    "path_vae": "C:\\pinokio\\api\\fooocus.git\\app\\models\\vae",
+    "path_upscale_models": "C:\\pinokio\\api\\fooocus.git\\app\\models\\upscale_models",
+    "path_inpaint": "C:\\pinokio\\api\\fooocus.git\\app\\models\\inpaint",
+    "path_controlnet": "C:\\pinokio\\api\\fooocus.git\\app\\models\\controlnet",
+    "path_clip_vision": "C:\\pinokio\\api\\fooocus.git\\app\\models\\clip_vision",
+    "path_fooocus_expansion": "C:\\pinokio\\api\\fooocus.git\\app\\models\\prompt_expansion\\fooocus_expansion",
+    "path_wildcards": "C:\\pinokio\\api\\fooocus.git\\app\\wildcards",
+    "path_safety_checker": "C:\\pinokio\\api\\fooocus.git\\app\\models\\safety_checker",
+    "path_sam": "C:\\pinokio\\api\\fooocus.git\\app\\models\\sam",
+    "path_outputs": "C:\\pinokio\\api\\fooocus.git\\app\\outputs"
+}
